@@ -1,0 +1,27 @@
+@import  '../../styles/variables'
+.logo
+    cursor: pointer
+
+.navbar
+    padding: 5px $container_desktop
+    background-color: $blue_basic
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    position: stiky
+
+    .navContainer
+        display: flex
+        flex-direction: row
+
+        .navItem
+            color: $white_basic
+            padding: 10px 0
+            border-bottom: 3px solid transparent
+
+            &:hover
+                border-bottom: 3px solid $yellow_basic
+
+            &:not(:first-child)
+                margin-left: 20px
