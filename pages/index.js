@@ -3,5 +3,9 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <h2> Home Page </h2>
+    </>
+  );
 }
