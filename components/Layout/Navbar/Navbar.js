@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../assets/kemtech_full_white.svg";
-import PrimaryButton from "../PrimaryButton";
+import logo from "assets/kemtech_full_white.svg";
+import PrimaryButton from "components/PrimaryButton";
 import styles from "./Navbar.module.sass";
 
 export default function Navbar() {
