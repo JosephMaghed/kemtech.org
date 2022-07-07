@@ -1,0 +1,49 @@
+@import "../../../styles/variables"
+
+.footer
+    background-color: $blue_basic
+    color: $white_basic
+    display: flex
+    flex-direction: column
+    padding: 10px $container_desktop
+
+.topFooter
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    border-bottom: 1px solid $gray_500
+    margin-top: 30px
+
+.footerColumn
+    margin-left: 60px
+
+.columnTitle
+    margin: 0 10px 0 0
+    font-weight: 600
+    font-size: 1.3rem
+
+.columnRow
+    font-weight: 300
+    font-size: 0.9rem
+    cursor: pointer
+    align-items: center
+
+    &:not(:first-child)
+        margin-top: 10px
+
+.email
+    font-weight: 1000
+
+.bottomFooter
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    font-size: 0.7rem
+
+.social
+    @extend .columnRow
+
+    span
+        height: 100%
+        margin-left: 5px
+        vertical-align: middle
