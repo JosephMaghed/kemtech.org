@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import Image from "next/image";
 
 // Components imports
-import PrimaryButton from "components/PrimaryButton";
+import Button from "components/Button";
 
 // styles import
 import styles from "./Hero.module.sass";
@@ -31,7 +31,7 @@ export const Hero = () => {
               morbi. Vitae leo volutpat elit volutpat eleifend elit pharetra.
               Feugiat purus et ornare pellentesque. Vivam
             </p>
-            <PrimaryButton innerText="Apply Now" />
+            <Button innerText="Apply Now" type="primary" />
           </div>
           <div className={styles.leftBottom}>
             <div>

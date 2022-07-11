@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "assets/kemtech_full_white.svg";
-import PrimaryButton from "components/PrimaryButton";
+import Button from "components/Button";
 import styles from "./Navbar.module.sass";
 
 export default function Navbar() {
@@ -31,7 +31,7 @@ export default function Navbar() {
           </div>
         ))}
       </div>
-      <PrimaryButton innerText="Apply now" />
+      <Button innerText="Apply now" type="primary" />
     </nav>
   );
 }
