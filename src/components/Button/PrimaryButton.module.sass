@@ -11,3 +11,28 @@
     p
         color: $black_basic
         font-weight: 600
+
+@mixin SecondaryButton-color($color)
+    padding: 1px 40px
+    height: fit-content
+    border: 1px solid $color
+    width: fit-content
+    border-radius: 25px
+    cursor: pointer
+    background: linear-gradient(to right, $yellow_basic 0%, $yellow_basic 50%, #ffffff00 50%, #ffffff00 100%)
+    background-size: 200% 100%
+    background-position: 100% 0
+    transition: background-position 0.3s
+
+    p
+        color: $color
+        font-weight: 600
+
+    &:hover
+        background-position: 0 0
+
+.SecondaryButton_white
+    @include SecondaryButton-color($color: $white_basic)
+
+.SecondaryButton_black
+    @include SecondaryButton-color($color: $black_basic)

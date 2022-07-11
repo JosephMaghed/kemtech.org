@@ -10,7 +10,9 @@ export default function Button(props) {
           className={
             props.type === "primary"
               ? styles.primaryButton
-              : styles.SecondaryButton
+              : props.type === "secondary-white"
+              ? styles.SecondaryButton_white
+              : styles.SecondaryButton_black
           }
         >
           <p>{props.innerText}</p>
