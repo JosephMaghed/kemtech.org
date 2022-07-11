@@ -15,7 +15,7 @@ export default function Button(props) {
               : styles.SecondaryButton_black
           }
         >
-          <p>{props.innerText}</p>
+          <div>{props.innerText}</div>
         </div>
       </Link>
     </Fragment>
