@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.css";
 import AboutCard from "components/Home/AboutCard";
 import Hero from "components/Home/Hero";
 import Accelerators from "components/Home/Accelerators";
+import OurDomains from "components/Home/OurDomains";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <AboutCard />
       <Accelerators />
+      <OurDomains />
     </>
   );
 }
