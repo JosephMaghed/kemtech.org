@@ -3,36 +3,54 @@
 .heroSection
     display: flex
     flex-direction: row
-    margin: 50px $container_desktop
+    // margin: 50px $container_desktop
+    @include ContainerMargin($top: 50px)
+    gap: 50px
+    @media only screen and ( max-width: $breakpoint_laptop )
+        justify-content: center
+        flex-direction: column-reverse
 
     .leftColumn
-        width: 80%
+        width: 70%
         display: flex
         flex-direction: column
         gap: 20px
-
-        .heroTitle
-            font-size: 3rem
-            color: $blue_basic
+        @media only screen and ( max-width: $breakpoint_laptop )
+            width: 100%
 
         .heroText
             color: $gray_600
+            margin-bottom: 30px
 
-    .leftBottom
+        .leftBottom
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            flex-wrap: wrap
+
+            p
+                text-transform: uppercase
+                font-size: 1rem
+                font-weight: 500
+                color: $gray_500
+                @media only screen and ( max-width: $breakpoint_tablet )
+                    font-size: 0.7rem
+
+            img
+                // filter: grayscale(0)
+                filter: opacity(0.8) grayscale(1)
+
+                @media only screen and ( max-width: $breakpoint_tablet )
+                    display: none
+
+                &:hover
+                    filter: opacity(1) grayscale(0)
+                    transition: 0.5s
+
+    .rightColumn
         display: flex
-        flex-direction: row
-        gap: 15%
-
-        p
-            text-transform: uppercase
-            font-size: 1rem
-            font-weight: 500
-            color: $gray_500
-
-        img
-            // filter: grayscale(0)
-            filter: opacity(0.8) grayscale(1)
-
-            &:hover
-                filter: opacity(1) grayscale(0)
-                transition: 0.5s
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        @media only screen and ( max-width: $breakpoint_laptop )
+            display: none

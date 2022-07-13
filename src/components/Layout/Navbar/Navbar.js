@@ -31,7 +31,9 @@ export default function Navbar() {
           </div>
         ))}
       </div>
-      <Button innerText="Apply now" type="primary" />
+      <div className={styles.applyButton}>
+        <Button innerText="Apply now" type="primary" />
+      </div>
     </nav>
   );
 }

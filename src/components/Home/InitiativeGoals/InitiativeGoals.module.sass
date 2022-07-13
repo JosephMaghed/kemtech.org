@@ -1,7 +1,8 @@
 @import  '../../../styles/variables'
 
 .goalsSection
-    padding: 40px $container_desktop
+    // padding: 40px $container_desktop
+    @include ContainerPadding($top: 40px)
     background-color: $blue_basic
 
     .subtitle
@@ -18,7 +19,7 @@
         gap: 5px
         margin-bottom: 5px
 
-        @media only screen and (max-width: 1000px)
+        @media only screen and (max-width: 900px)
             flex-direction: column
 
     .cardWarperTwo
@@ -26,7 +27,7 @@
         flex-direction: row
         justify-content: center
         gap: 5px
-        @media only screen and (max-width: 1000px)
+        @media only screen and (max-width: 900px)
             flex-direction: column
 
 @mixin card($color)

@@ -3,17 +3,22 @@
     cursor: pointer
 
 .navbar
-    padding: 5px $container_desktop
+    // padding: 5px $container_desktop
+    @include ContainerPadding($top: 5px)
     background-color: $blue_basic
     display: flex
     flex-direction: row
     justify-content: space-between
     align-items: center
-    position: stiky
+    position: sticky
 
     .navContainer
         display: flex
         flex-direction: row
+        gap: 20px
+
+        @media only screen and (max-width: $breakpoint_laptop)
+            display: none
 
         .navItem
             color: $white_basic
@@ -23,5 +28,6 @@
             &:hover
                 border-bottom: 3px solid $yellow_basic
 
-            &:not(:first-child)
-                margin-left: 20px
+    .applyButton
+        @media only screen and (max-width: $breakpoint_laptop)
+            display: none

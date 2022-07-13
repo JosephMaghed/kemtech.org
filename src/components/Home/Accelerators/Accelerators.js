@@ -34,7 +34,7 @@ export const Accelerators = () => {
       <h2 className="sectionTitle">Accelerators</h2>
       {Accelerators.map((x) => (
         <div key={x.alt.replace(" ", "-")}>
-          <Image src={x.img} alt={x.alt} height={65} />
+          <Image src={x.img} alt={x.alt} height={50} />
           <p>{x.description}</p>
         </div>
       ))}

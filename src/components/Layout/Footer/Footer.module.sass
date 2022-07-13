@@ -5,7 +5,8 @@
     color: $white_basic
     display: flex
     flex-direction: column
-    padding: 10px $container_desktop
+    // padding: 10px $container_desktop
+    @include ContainerPadding($top: 10px)
 
 .topFooter
     display: flex
@@ -13,23 +14,48 @@
     align-items: flex-start
     border-bottom: 1px solid $gray_500
     margin-top: 30px
+    gap: 30px
+    flex-wrap: wrap
+    @media only screen and ( max-width: $breakpoint_laptop )
+        flex-direction: column
+        gap: 40px
 
-.footerColumn
-    margin-left: 60px
+    .topLeft
+        @media only screen and ( max-width: $breakpoint_laptop )
+            display: flex
+            justify-content: center
+            width: 100%
 
-.columnTitle
-    margin: 0 10px 0 0
-    font-weight: 600
-    font-size: 1.3rem
+    .topRight
+        display: flex
+        flex-direction: row
+        align-items: flex-start
+        flex-wrap: wrap
+        gap: 30px
+        // justify-content: space-evenly
 
-.columnRow
-    font-weight: 300
-    font-size: 0.9rem
-    cursor: pointer
-    align-items: center
+        @media only screen and ( max-width: $breakpoint_tablet )
+            flex-direction: column
+            justify-content: flex-start
+            gap: 20px
 
-    &:not(:first-child)
-        margin-top: 10px
+        .footerColumn
+            flex: 1 1 auto
+            justify-content: flex-start
+
+        .columnTitle
+            margin: 0 10px 0 0
+            font-weight: 600
+            font-size: 1.3rem
+
+        .columnRow
+            font-weight: 300
+            font-size: 0.9rem
+            cursor: pointer
+            align-items: center
+
+            &:not(:first-child)
+                margin-top: 10px
 
 .email
     font-weight: 1000

@@ -42,7 +42,34 @@ $success_400: #83F49C
 $success_basic: #5CEC8A
 
 // Default margin or padding for the pages container
+$breakpoint_mobile: 320px
+$breakpoint_tablet: 481px
+$breakpoint_laptop: 950px
+$breakpoint_desktop: 1201px
 
-$container_desktop: 100px
-$container_tablet: 60px
 $container_mobile: 16px
+$container_tablet: 50px
+$container_laptop: 80px
+$container_desktop: 100px
+
+@mixin ContainerPadding($top: 0)
+    padding: $top $container_mobile
+    @media only screen and (min-width: $breakpoint_mobile)
+        padding: $top $container_mobile
+    @media only screen and (min-width: $breakpoint_tablet)
+        padding: $top $container_tablet
+    @media only screen and (min-width: $breakpoint_laptop)
+        padding: $top $container_laptop
+    @media only screen and (min-width: $breakpoint_desktop)
+        padding: $top $container_desktop
+
+@mixin ContainerMargin($top: 0)
+    margin: $top $container_mobile
+    @media only screen and (min-width: $breakpoint_mobile)
+        margin: $top $container_mobile
+    @media only screen and (min-width: $breakpoint_tablet)
+        margin: $top $container_tablet
+    @media only screen and (min-width: $breakpoint_laptop)
+        margin: $top $container_laptop
+    @media only screen and (min-width: $breakpoint_desktop)
+        margin: $top $container_desktop

@@ -2,21 +2,32 @@
 
 .AboutCard
     background-color: $blue_basic
-    margin: 0 $container_desktop
+    // margin: 0 $container_desktop
+    @include ContainerMargin()
     border-radius: 25px
     display: flex
     flex-direction: row
     min-height: 350px
+    @media only screen and ( max-width: $breakpoint_laptop )
+        height: 600px
+        flex-direction: column-reverse
 
     .leftColumn
-        padding: 50px 100px
+        // padding: 50px 100px
+        @include ContainerPadding($top: 50px)
+
         width: 90%
         color: $white_basic
+        @media only screen and ( max-width: $breakpoint_laptop )
+            @include ContainerPadding($top: 30px)
+            width: 100%
 
         h2
             font-size: 2.5rem
             font-weight: 600
             margin: 0
+            @media only screen and ( max-width: $breakpoint_laptop )
+                font-size: 2rem
         p
             font-weight: 100
             font-size: 1rem
@@ -29,3 +40,6 @@
         background-size: cover
         border-radius: 0 25px 25px 0
         width: 100%
+        @media only screen and ( max-width: $breakpoint_laptop )
+            height: 100%
+            border-radius: 25px 25px 0 0

@@ -36,7 +36,7 @@ export const ApplyProcess = () => {
       <div className={styles.applyWrapper}>
         {process.map((x) => (
           <div key={x.text.split(" ").join("-")} className={styles.applyCard}>
-            <Image src={x.img} alt={`${x.text} icon`} />
+            <Image src={x.img} alt={`${x.text} icon`} height={64} />
             <p>{x.text}</p>
           </div>
         ))}

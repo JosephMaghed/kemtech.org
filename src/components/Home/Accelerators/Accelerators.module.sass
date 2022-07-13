@@ -1,7 +1,8 @@
 @import  'styles/variables'
 
 .accelSection
-    margin: 0 $container_desktop
+    // margin: 0 $container_desktop
+    @include ContainerMargin()
 
     div
         display: flex
@@ -11,3 +12,7 @@
         font-size: 1rem
         color: $gray_600
         text-align: center
+        justify-content: center
+
+        p
+            @include ContainerPadding()
