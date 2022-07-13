@@ -7,6 +7,7 @@ import AboutCard from "components/Home/AboutCard";
 import Hero from "components/Home/Hero";
 import Accelerators from "components/Home/Accelerators";
 import OurDomains from "components/Home/OurDomains";
+import ApplyProcess from "components/Home/ApplyProcess";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <AboutCard />
       <Accelerators />
       <OurDomains />
+      <ApplyProcess />
     </>
   );
 }
