@@ -8,6 +8,7 @@ import Hero from "components/Home/Hero";
 import Accelerators from "components/Home/Accelerators";
 import OurDomains from "components/Home/OurDomains";
 import ApplyProcess from "components/Home/ApplyProcess";
+import InitiativeGoals from "components/Home/InitiativeGoals";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Accelerators />
       <OurDomains />
       <ApplyProcess />
+      <InitiativeGoals />
     </>
   );
 }

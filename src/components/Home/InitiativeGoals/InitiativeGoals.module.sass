@@ -1,0 +1,61 @@
+@import  '../../../styles/variables'
+
+.goalsSection
+    padding: 40px $container_desktop
+    background-color: $blue_basic
+
+    .subtitle
+        font-weight: 500
+        color: $yellow_basic
+
+    h2
+        margin-top: -10px
+
+    .cardWarperOne
+        display: flex
+        flex-direction: row
+        justify-content: center
+        gap: 5px
+        margin-bottom: 5px
+
+        @media only screen and (max-width: 1000px)
+            flex-direction: column
+
+    .cardWarperTwo
+        display: flex
+        flex-direction: row
+        justify-content: center
+        gap: 5px
+        @media only screen and (max-width: 1000px)
+            flex-direction: column
+
+@mixin card($color)
+    flex: 1 1 33.33%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    text-align: center
+    color: $black_basic
+    background-color: $white_basic
+    border-radius: 15px
+    padding: 25px
+
+    .cardTitle
+        font-weight: 1000
+        color: $color
+        font-size: 3rem
+        margin: 0
+
+    .cardText
+        color: $black_basic
+
+.culture
+    @include card($color: #1B998B)
+.aware
+    @include card($color: #E56B6F)
+.util
+    @include card($color: #B56576)
+.upgrade
+    @include card($color: #0046AD)
+.tecnovate
+    @include card($color: $yellow_basic)
