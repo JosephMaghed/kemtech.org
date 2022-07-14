@@ -1,0 +1,20 @@
+@import  'styles/variables'
+
+.artSection
+    @include ContainerPadding()
+    width: 100%
+    display: flex
+    justify-content: center
+
+    div
+        @media only screen and ( max-width: $breakpoint_mobile )
+            width: 80%
+
+    .shape
+        position: absolute
+        left: 0
+        top: 60%
+        @media only screen and ( max-width: $breakpoint_tablet  )
+            width: 80px
+        @media only screen and ( max-width: $breakpoint_mobile  )
+            display: none
