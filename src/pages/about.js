@@ -1,5 +1,5 @@
-import Introduction from "components/About/Introduction";
-import KemtechArt from "components/About/KemtechArt";
+import Introduction from "components/about/Introduction";
+import KemtechArt from "components/about/KemtechArt";
 
 export default function about() {
   return (
