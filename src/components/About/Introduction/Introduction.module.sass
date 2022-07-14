@@ -1,0 +1,28 @@
+@import  'styles/variables'
+
+.introduction
+    @include ContainerMargin()
+
+    .columnsContainer
+        display: flex
+        flex-direction: row
+        gap: 50px
+        flex-wrap: wrap
+        justify-content: space-between
+
+        @media only screen and ( max-width: $breakpoint_laptop  )
+            flex-direction: column
+
+        div
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            flex-direction: column
+            flex: 1 1 40%
+            text-align: justify
+
+    .shape
+        position: absolute
+        right: 0
+        top: 25%
+        width: 70px

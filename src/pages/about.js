@@ -1,3 +1,9 @@
+import Introduction from "components/About/Introduction";
+
 export default function about() {
-  return <h1>About</h1>;
+  return (
+    <>
+      <Introduction />
+    </>
+  );
 }
