@@ -5,7 +5,7 @@ import linkedinLogo from "assets/linkedin-mono.svg";
 import facebookLogo from "assets/face-mono.svg";
 import Image from "next/image";
 import Link from "next/link";
-import { programsData } from "programsData";
+import { programsData } from "data/programsData";
 import styles from "./Footer.module.sass";
 
 export default function Footer() {
