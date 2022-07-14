@@ -10,7 +10,6 @@
     flex-direction: row
     justify-content: space-between
     align-items: center
-    position: sticky
 
     .navContainer
         display: flex
@@ -20,13 +19,20 @@
         @media only screen and (max-width: $breakpoint_laptop)
             display: none
 
-        .navItem
+        %navItemTemp
             color: $white_basic
             padding: 10px 0
             border-bottom: 3px solid transparent
 
             &:hover
                 border-bottom: 3px solid $yellow_basic
+
+        .navItem
+            @extend %navItemTemp
+
+        .navItemActive
+            @extend %navItemTemp
+            border-bottom: 3px solid $yellow_basic
 
     .applyButton
         @media only screen and (max-width: $breakpoint_laptop)
