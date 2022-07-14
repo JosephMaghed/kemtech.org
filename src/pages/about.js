@@ -1,3 +1,4 @@
+import FoundersWord from "components/about/FoundersWord";
 import Introduction from "components/about/Introduction";
 import KemtechArt from "components/about/KemtechArt";
 
@@ -6,6 +7,7 @@ export default function about() {
     <>
       <Introduction />
       <KemtechArt />
+      <FoundersWord />
     </>
   );
 }

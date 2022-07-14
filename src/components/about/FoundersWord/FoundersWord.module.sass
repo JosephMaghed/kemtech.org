@@ -1,0 +1,20 @@
+@import  'styles/variables'
+
+.founderWords
+    @include ContainerMargin()
+    .wordCard
+        background: linear-gradient(89.46deg, #2E3C6A 0%, #C12748 100%)
+        padding: 30px
+        color: $white_basic
+        border-radius: 25px
+
+    .picsWrapper
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+        margin-top: 30px
+        gap: 10px
+
+        .holdingPic
+            img
+                filter: opacity(0.3) grayscale(1) brightness(0.5)
