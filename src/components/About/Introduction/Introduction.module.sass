@@ -2,6 +2,13 @@
 
 .introduction
     @include ContainerMargin()
+    color: $black_basic
+
+    @media only screen and ( max-width: $breakpoint_mobile  )
+        font-size: 0.8rem
+
+        .logo
+            width: 180px
 
     .columnsContainer
         display: flex
@@ -10,8 +17,9 @@
         flex-wrap: wrap
         justify-content: space-between
 
-        @media only screen and ( max-width: $breakpoint_laptop  )
+        @media only screen and ( max-width: $breakpoint_tablet  )
             flex-direction: column
+            gap: 10px
 
         div
             display: flex
@@ -26,3 +34,7 @@
         right: 0
         top: 25%
         width: 70px
+        @media only screen and ( max-width: $breakpoint_tablet  )
+            width: 40px
+        @media only screen and ( max-width: $breakpoint_mobile  )
+            display: none

@@ -12,7 +12,9 @@ import shape from "assets/shape-yellow.svg";
 export const Introduction = () => {
   return (
     <section className={styles.introduction}>
-      <Image src={kemtechTypoLogo} alt="Kemtech logo" />
+      <div className={styles.logo}>
+        <Image src={kemtechTypoLogo} alt="Kemtech logo" />
+      </div>
       <p>
         The “Egyptian Applied Technological Valley- Kemtech Valley” initiative
         aims to build highly specialized technical cadres and develop the
@@ -31,11 +33,7 @@ export const Introduction = () => {
             quality and adequacy required by the labor market and achieving
             excellence, creativity and global leadership.
           </p>
-          <Image
-            src={nctuLogo}
-            alt="New Cairo Technological University logo"
-            layout="fixed"
-          />
+          <Image src={nctuLogo} alt="New Cairo Technological University logo" />
         </div>
         <div>
           <p>
