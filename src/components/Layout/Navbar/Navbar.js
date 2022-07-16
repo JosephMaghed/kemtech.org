@@ -21,7 +21,11 @@ export default function Navbar() {
   const [isToggled, setToggled] = useState(false);
 
   const navToggleHandler = (isToggleBoolean) => {
-    setToggled(() => isToggleBoolean || !isToggled, [isToggled, setToggled]);
+    // Change state to the nav toggle
+    setToggled(() => isToggleBoolean, [isToggled, setToggled]);
+
+    console.log(`parameter: ${isToggleBoolean}`);
+    console.log(`state: ${isToggled}`);
 
     // Turn off scroll when toggled
     !isToggled
@@ -40,10 +44,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <div
-        className={isToggled ? styles.navWarperActive : styles.navWarper}
-        onClick={() => navToggleHandler(false)}
-      >
+      <div className={isToggled ? styles.navWarperActive : styles.navWarper}>
         <Link href="/">
           <Image
             className={styles.logo}
@@ -51,6 +52,7 @@ export default function Navbar() {
             width={100}
             height={100}
             alt="Kemtech logo"
+            onClick={() => navToggleHandler(false)}
           />
         </Link>
         <div className={styles.navItemContainer}>
