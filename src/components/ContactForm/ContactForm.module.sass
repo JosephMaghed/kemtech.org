@@ -1,0 +1,45 @@
+@import  '../../styles/variables'
+
+.contactSection
+    @include ContainerMargin()
+    margin-bottom: 150px
+
+    .contactForm
+        .fromItem
+            display: flex
+            flex-direction: column
+            margin-top: 30px
+            width: 100%
+            @media screen and ( max-width: $breakpoint_mobile )
+                margin-top: 10px
+
+            label
+                margin: 0 0 2px 5px
+                color: $gray_600
+                font-weight: 1000
+
+            input
+                height: 50px
+                width: 40%
+                padding: 10px 20px
+                @media screen and ( max-width: $breakpoint_mobile )
+                    width: 80%
+
+            textarea
+                width: 100%
+                height: 300px
+                resize: none
+                padding: 20px
+
+            input, textarea
+                background-color: $gray_300
+                border: none
+                border-radius: 10px
+
+                &:focus
+                    outline: none
+                    border: 3px solid $blue_300
+
+        .button
+            margin-top: 20px
+            margin-bottom: 50px
