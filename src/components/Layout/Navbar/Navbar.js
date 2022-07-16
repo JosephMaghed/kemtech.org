@@ -24,9 +24,6 @@ export default function Navbar() {
     // Change state to the nav toggle
     setToggled(() => isToggleBoolean, [isToggled, setToggled]);
 
-    console.log(`parameter: ${isToggleBoolean}`);
-    console.log(`state: ${isToggled}`);
-
     // Turn off scroll when toggled
     !isToggled
       ? (document.body.style.overflow = "hidden")
