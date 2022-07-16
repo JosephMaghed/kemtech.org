@@ -131,7 +131,6 @@ export const ContactForm = () => {
             errorText="Something is wrong!"
             style={{
               borderColor: "#2E3D49",
-              color: "#2E3D49",
             }}
             size="large"
           />
