@@ -1,4 +1,14 @@
 @import  "styles/variables"
+
+// Baisc style template for nav item 
+@mixin navItemTemp()
+    color: $white_basic
+    padding: 10px 0
+    border-bottom: 3px solid transparent
+
+    &:hover
+        border-bottom: 3px solid $yellow_basic
+
 .logo
     cursor: pointer
 
@@ -8,32 +18,86 @@
     background-color: $blue_basic
     display: flex
     flex-direction: row
-    justify-content: space-between
     align-items: center
+    @media only screen and (max-width: $breakpoint_tablet)
+        justify-content: space-between
 
-    .navContainer
+    .navWarper
+        width: 100%
         display: flex
         flex-direction: row
-        gap: 20px
+        justify-content: space-between
+        align-items: center
+        transition: all 0.5s
 
-        @media only screen and (max-width: $breakpoint_tablet)
-            display: none
+        .navItemContainer
+            display: flex
+            flex-direction: row
+            gap: 20px
 
-        %navItemTemp
-            color: $white_basic
-            padding: 10px 0
-            border-bottom: 3px solid transparent
-
-            &:hover
-                border-bottom: 3px solid $yellow_basic
+            @media only screen and (max-width: $breakpoint_tablet)
+                display: none
 
         .navItem
-            @extend %navItemTemp
+            @include navItemTemp()
 
         .navItemActive
-            @extend %navItemTemp
+            @include navItemTemp()
             border-bottom: 3px solid $yellow_basic
 
-    .applyButton
-        @media only screen and (max-width: $breakpoint_laptop)
+        .applyButton
+            @media only screen and (max-width: $breakpoint_laptop)
+                display: none
+
+        .xToggle
             display: none
+        @media only screen and (max-width: $breakpoint_tablet)
+            display: block
+
+    // Responsive navbar
+    .navWarperActive
+        @media only screen and (max-width: $breakpoint_tablet)
+            position: absolute
+            width: 100vw
+            height: 100vh
+            top: 0
+            right: 0
+            z-index: 10000
+            background-color: $blue_basic
+            transition: all 0.5s
+            display: flex
+            flex-direction: column
+            padding: 50px
+            overflow: hidden
+
+            .navItemContainer
+                display: flex
+                flex-direction: column
+                gap: 10px
+                margin-top: 30px
+                text-align: center
+
+                .navItem
+                    @include navItemTemp()
+
+                .navItemActive
+                    @include navItemTemp()
+                    border-bottom: 3px solid $yellow_basic
+
+            .applyButton
+                display: block
+                position: absolute
+                bottom: 10%
+                left: 50%
+                transform: translate(-50%, -50%)
+
+            .xToggle
+                position: absolute
+                top: 5%
+                right: 0.1%
+
+    // Hide hamburger menue 
+    .menuToggle
+        display: none
+        @media only screen and (max-width: $breakpoint_tablet)
+            display: block
