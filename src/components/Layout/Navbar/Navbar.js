@@ -25,9 +25,9 @@ export default function Navbar() {
     setToggled(() => isToggleBoolean, [isToggled, setToggled]);
 
     // Turn off scroll when toggled
-    !isToggled
+    isToggleBoolean
       ? (document.body.style.overflow = "hidden")
-      : (document.body.style.overflow = "visible");
+      : (document.body.style.overflow = "scroll");
   };
 
   // Data to Generate nav links
