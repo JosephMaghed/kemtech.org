@@ -41,9 +41,9 @@ export const InitiativeGoals = () => {
         <div className={styles.tecnovate}>
           <p className={styles.cardTitle}>Technovate In Egypt</p>
           <p className={styles.cardText}>
-            Creating a forum to communicate with local and international
+            {`Creating a forum to communicate with local and international
             investment channels, Global marketing of Egyptian products and
-            applications under the slogan ”Technovate in Egypt"
+            applications under the slogan "Technovate in Egypt"`}
           </p>
         </div>
       </div>
