@@ -22,7 +22,7 @@ export const AboutCard = () => {
             volutpat eleifend elit pharetra. Feugiat purus et ornare
             pellentesque. Vivam Lorem ipsum dolor sit amet
           </p>
-          <Button innerText="About Us" type="secondary-white" />
+          <Button innerText="About Us" type="secondary-white" href="/about" />
         </div>
         <div className={styles.rightColumn}>
           {/* <Image src={studentsImg} layout="intrinsic" alt="" /> */}
