@@ -1,7 +1,7 @@
 @import  'styles/variables'
 
 .introduction
-    @include ContainerMargin()
+    @include ContainerMargin($top: 50px)
     color: $black_basic
 
     @media only screen and ( max-width: $breakpoint_mobile  )
@@ -29,6 +29,13 @@
             flex: 1 1 40%
             text-align: justify
 
+            @media only screen and ( max-width: $breakpoint_tablet  )
+                margin-top: 10px
+                align-items: flex-start
+                flex-direction: column-reverse
+                // NOTE quick fix to img size
+                img
+                    height: 40px !important
     .shape
         position: absolute
         right: 0

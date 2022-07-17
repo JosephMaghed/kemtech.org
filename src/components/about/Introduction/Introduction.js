@@ -22,6 +22,7 @@ export const Introduction = () => {
         small and medium-sized companies in the field of applied technology and
         build digital community awareness through various programs.
         <br />
+        <br />
         The initiative was launched in cooperation between:
       </p>
       <div className={styles.columnsContainer}>
