@@ -14,12 +14,14 @@
 
     .leftColumn
         // padding: 50px 100px
-        @include ContainerPadding($top: 50px)
+        padding: 50px
 
         width: 90%
         color: $white_basic
         @media only screen and ( max-width: $breakpoint_tablet )
             @include ContainerPadding($top: 30px)
+            padding-right: 30px !important
+            padding-left: 30px !important
             width: 100%
 
         h2
