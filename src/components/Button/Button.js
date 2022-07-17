@@ -5,7 +5,7 @@ import styles from "./PrimaryButton.module.sass";
 export default function Button(props) {
   return (
     <Fragment>
-      <Link href={props.link || "#"}>
+      <Link href={props.href || "#"}>
         <div
           className={
             props.type === "primary"
