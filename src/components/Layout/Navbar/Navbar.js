@@ -27,7 +27,7 @@ export default function Navbar() {
     // Turn off scroll when toggled
     isToggleBoolean
       ? (document.body.style.overflow = "hidden")
-      : (document.body.style.overflow = "scroll");
+      : (document.body.style.overflow = "initial");
   };
 
   // Data to Generate nav links
