@@ -10,6 +10,7 @@ export default function careers() {
       </Head>
       <NotReady img={PageArt}>
         There is no positions available right now ! You can send your resume at:
+        <br />
         <strong> careers@ptscorp-eg.com</strong>
       </NotReady>
     </>
