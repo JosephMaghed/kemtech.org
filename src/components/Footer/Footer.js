@@ -20,13 +20,19 @@ export default function Footer() {
           <div className={styles.footerColumn}>
             <h4 className={styles.columnTitle}>Initiative programs</h4>
             <ul>
-              {programsData.map((program) => (
+              {Object.keys(programsData).map((key) => (
                 <Link
-                  key={`/programs/${program.name.split(" ").join("-")}`}
-                  href={`/programs/${program.name.split(" ").join("-")}`}
+                  key={`/programs/${programsData[key].name
+                    .toLowerCase()
+                    .split(" ")
+                    .join("-")}`}
+                  href={`/programs/${programsData[key].name
+                    .toLowerCase()
+                    .split(" ")
+                    .join("-")}`}
                 >
                   <li className={styles.columnRow}>
-                    {program.name.replace("Program", "")}
+                    {programsData[key].name.replace("Program", "")}
                   </li>
                 </Link>
               ))}
