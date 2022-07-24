@@ -9,7 +9,8 @@ export default function careers() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <NotReady img={PageArt}>
-        There is no positions available right now ! You can send your resume at:
+        There is no positions available right now !<br /> You can send your
+        resume at:
         <br />
         <strong> careers@ptscorp-eg.com</strong>
       </NotReady>

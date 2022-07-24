@@ -10,6 +10,7 @@ import OurDomains from "components/home/OurDomains";
 import ApplyProcess from "components/home/ApplyProcess";
 import InitiativeGoals from "components/home/InitiativeGoals";
 import ContactForm from "components/ContactForm";
+import ProgramsView from "components/ProgramsView";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Accelerators />
       <OurDomains />
       <ApplyProcess />
+      {/* <ProgramsView /> */}
       <InitiativeGoals />
       <ContactForm />
     </>

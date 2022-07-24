@@ -12,9 +12,9 @@ export default function community() {
       </Head>
       <NotReady img={pageArt}>
         <strong>Join Us</strong>
-        <br /> Become one of the first technovative Partners in Egypt. For
-        inquires contact us using the form below or email us at: <br />{" "}
-        <strong>info@kemtech.com</strong>
+        <br /> Become one of the first technovative Partners in Egypt.
+        <br /> For inquires contact us using the form below or email us at:{" "}
+        <br /> <strong>info@kemtech.com</strong>
       </NotReady>
 
       <ContactForm />

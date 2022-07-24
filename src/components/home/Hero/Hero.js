@@ -21,13 +21,11 @@ export const Hero = () => {
           <div className={styles.leftTop}>
             <h1 className="sectionTitle">Rendering your dreams into reality</h1>
             <p className={styles.heroText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis et
-              ipsum volutpat morbi eget posuere morbi. Vitae leo volutpat elit
-              volutpat eleifend elit pharetra. Feugiat purus et ornare
-              pellentesque. Vivam Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Turpis et ipsum volutpat morbi eget posuere
-              morbi. Vitae leo volutpat elit volutpat eleifend elit pharetra.
-              Feugiat purus et ornare pellentesque. Vivam
+              Kemtech Valley helps you turn your dreams in the world of
+              investment and technology into reality by helping you prepare a
+              distinguished business plan, conduct a professional study of the
+              market, and start with you in the first steps of your startup
+              project.
             </p>
             <Button innerText="Apply Now" type="primary" />
           </div>
