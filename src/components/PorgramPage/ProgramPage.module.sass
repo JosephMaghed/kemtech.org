@@ -1,0 +1,51 @@
+@import  "styles/variables"
+
+.programPageContainer
+    @include ContainerMargin($top: 50px)
+    color: $black_basic
+
+    .headerContainer
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        gap: 50px
+        margin-bottom: 60px
+
+        @media only screen and ( max-width: $breakpoint_tablet )
+            flex-direction: column-reverse
+            gap: 20px
+
+        .leftColumn
+            flex: 1 0 45%
+            color: $gray_600
+
+            h1
+                margin: 5px 0
+                @media only screen and ( max-width: $breakpoint_tablet )
+                    margin: 0
+
+        .rightColumn
+            img
+                height: 400px !important
+                @media only screen and ( max-width: $breakpoint_tablet )
+                    height: 250px !important
+
+    .programsSectionTitle
+        font-size: 2rem
+        color: $blue_basic
+        font-weight: 200
+        @media only screen and ( max-width: $breakpoint_laptop )
+            font-size: 1.8rem
+
+    .cardsContainer
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        width: 100%
+
+    .noAct
+        color: $gray_500
+        font-size: 1.5rem
+        text-align: center
