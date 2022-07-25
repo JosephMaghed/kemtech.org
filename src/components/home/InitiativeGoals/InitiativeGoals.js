@@ -15,7 +15,9 @@ export const InitiativeGoals = () => {
           </p>
         </div>
         <div className={styles.aware}>
-          <p className={styles.cardTitle}>Awareness</p>
+          <div>
+            <p className={styles.cardTitle}>Awareness</p>
+          </div>
           <p className={styles.cardText}>
             Contribute in building societal awareness based on digital and
             information technology
