@@ -5,8 +5,6 @@ export default function CourseDetails() {
   /*
   If the path dose not contain /training-&-career-development-program
   ==> Redirect to a 404
-
-  TODO : Redirect if the course is not found
   */
   const router = useRouter();
   // REVIEW: this implementation is causing delay in redirects

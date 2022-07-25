@@ -30,7 +30,7 @@ export const ProgramPage = (props) => {
 
       {!programsData[pId].activities ? (
         <div>
-          <h3 className="sectionTitle">Program Activities</h3>
+          <h3 className={styles.programsSectionTitle}>Program Activities</h3>
           <p className={styles.noAct}>
             {" "}
             No activities available currently for this program !
