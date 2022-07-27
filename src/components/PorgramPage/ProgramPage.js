@@ -16,6 +16,9 @@ export const ProgramPage = (props) => {
   let programsList = Object.keys(programsData);
   if (!programsList.includes(pId)) return <Custom404 />;
 
+  // Active program
+  const ActiveActivities = programsData[pId].activities.active;
+
   return (
     <section className={styles.programPageContainer}>
       <div className={styles.headerContainer}>
@@ -42,14 +45,13 @@ export const ProgramPage = (props) => {
             Active Program Activities
           </h3>
           <div className={styles.cardsContainer}>
-            {programsData[pId].activities.active ? (
-              programsData[pId].activities.active.map((x) => (
+            {ActiveActivities ? (
+              Object.keys(ActiveActivities).map((x) => (
                 <ActivityCard
-                  key={x.name}
-                  name={x.name}
-                  description={x.description}
-                  href={x.href}
-                  colors={x.color}
+                  key={ActiveActivities[x].name}
+                  title={ActiveActivities[x].name}
+                  href={ActiveActivities[x].href}
+                  colors={ActiveActivities[x].color}
                 />
               ))
             ) : (
