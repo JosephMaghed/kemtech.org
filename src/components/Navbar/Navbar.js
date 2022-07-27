@@ -32,6 +32,7 @@ export default function Navbar() {
 
   // Data to Generate nav links
   let navLinks = [
+    { pageName: "Home", pageLink: "/" },
     { pageName: "About kemtech", pageLink: "/about" },
     { pageName: "Initiative programs", pageLink: "/programs" },
     { pageName: "Community", pageLink: "/community" },
@@ -40,44 +41,59 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={styles.navbar}>
-      <div className={isToggled ? styles.navWarperActive : styles.navWarper}>
-        <Link href="/">
-          <Image
-            className={styles.logo}
-            src={logo}
-            width={100}
-            height={100}
-            alt="Kemtech logo"
-            onClick={() => navToggleHandler(false)}
-          />
-        </Link>
-        <div className={styles.navItemContainer}>
-          {navLinks.map((navLink) => (
-            <div
-              key={navLink.pageLink}
-              className={
-                currentPage === navLink.pageLink
-                  ? styles.navItemActive
-                  : styles.navItem
-              }
+    <header>
+      <nav className={styles.navbar}>
+        <div className={isToggled ? styles.navWarperActive : styles.navWarper}>
+          <Link href="/">
+            <Image
+              className={styles.logo}
+              src={logo}
+              width={100}
+              height={100}
+              alt="Kemtech logo"
               onClick={() => navToggleHandler(false)}
-            >
-              <Link href={navLink.pageLink}>{navLink.pageName}</Link>
-            </div>
-          ))}
+            />
+          </Link>
+          <div className={styles.navItemContainer}>
+            {navLinks.map((navLink) => (
+              <div
+                key={navLink.pageLink}
+                className={
+                  currentPage === navLink.pageLink
+                    ? styles.navItemActive
+                    : styles.navItem
+                }
+                onClick={() => navToggleHandler(false)}
+              >
+                <Link href={navLink.pageLink}>{navLink.pageName}</Link>
+              </div>
+            ))}
+          </div>
+          <div className={styles.applyButton}>
+            <Button innerText="Apply now" type="primary" />
+          </div>
+          <div
+            className={styles.xToggle}
+            onClick={() => navToggleHandler(false)}
+          >
+            <Image src={xIcon} alt="" height={50} />
+          </div>
         </div>
-        <div className={styles.applyButton}>
-          <Button innerText="Apply now" type="primary" />
-        </div>
-        <div className={styles.xToggle} onClick={() => navToggleHandler(false)}>
-          <Image src={xIcon} alt="" height={50} />
-        </div>
-      </div>
 
-      <div className={styles.menuToggle} onClick={() => navToggleHandler(true)}>
-        <Image src={hamburgerMenu} alt="" height={30} width={40} />
+        <div
+          className={styles.menuToggle}
+          onClick={() => navToggleHandler(true)}
+        >
+          <Image src={hamburgerMenu} alt="" height={30} width={40} />
+        </div>
+      </nav>
+
+      <div className={styles.banner}>
+        <p>
+          All trainings are available at <strong>100 L.E.</strong> only for all
+          NCT students 🎉
+        </p>
       </div>
-    </nav>
+    </header>
   );
 }
