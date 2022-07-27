@@ -31,7 +31,8 @@ export const ProgramPage = (props) => {
         </div>
       </div>
 
-      {!programsData[pId].activities ? (
+      {programsData[pId].activities === null ? (
+        //if no activities available or null
         <div>
           <h3 className={styles.programsSectionTitle}>Program Activities</h3>
           <p className={styles.noAct}>
@@ -45,7 +46,7 @@ export const ProgramPage = (props) => {
             Active Program Activities
           </h3>
           <div className={styles.cardsContainer}>
-            {ActiveActivities ? (
+            {programsData[pId].activities.active ? (
               Object.keys(ActiveActivities).map((x) => (
                 <ActivityCard
                   key={ActiveActivities[x].name}
@@ -55,6 +56,7 @@ export const ProgramPage = (props) => {
                 />
               ))
             ) : (
+              // Noa active activities
               <p className={styles.noAct}>
                 {" "}
                 No activities available currently for this program!

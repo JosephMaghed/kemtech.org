@@ -229,35 +229,63 @@ export const programsData = {
     img: startupImg,
     description: `The program is based on  a venture studio model for entrepreneurship, whereas the valley adopts a one-stop shop approach for startups combining company building with venture funding  either by generating new ideas for startups or by recruiting founders with ideas, and then they apply significant amounts of time and capital to the process of growing the startup successfully.
     By design, venture studios play the role of matchmaker, linking business ideas to their talented counterparts to execute those ideas.`,
+    activities: {
+      active: null,
+      paused: null,
+    },
   },
   "technovate-lab-program": {
     name: "Technovate Lab Program",
     img: technovateImg,
     description: `The program focuses on offering students, entrepreneurs and startups world-class secure facilities, with access to tools, technology, labs, equipment, and support, along with the opportunity to learn, design and networking with corporates and supported ecosystems. Whereas their presence on the valley will allow them to work in the same space and collaborate to research and co-create innovative solutions and cutting-edge projects syncing with existing NCT programs and facilities.`,
+    activities: {
+      active: null,
+      paused: null,
+    },
   },
   "co-manufacturing-space-program": {
     name: "Co-Manufacturing Space Program",
     img: manufactureImg,
     description: `The program offers the access to clean, efficient and smart manufacturing work space through partnering with different local manufacturers so that an entrepreneur or startup can find a suitable space to be conducive to their manufacturing, research and development or prototyping needs and avoiding a huge investment in their own facilities`,
+    activities: {
+      active: null,
+      paused: null,
+    },
   },
   "investment-cluster-program": {
     name: "Investment Cluster Program",
     img: investmentImg,
     description: `The program provides the opportunity for qualified startups to find investment opportunities for their projects by communicating with investors interested in entrepreneurship, whether from local or  international venture capital companies, angel investors,  banks, and financial funds.`,
+    activities: {
+      active: null,
+      paused: null,
+    },
   },
   "digital-transformation-program": {
     name: "Digital Transformation Program",
     img: transformImg,
     description: `Bashkateb.io program provides a stack of Business Optech platform that empowers businesses and creative professionals  focusing mainly on startups,  freelancers and SMEs that seamless managing and monitoring all business process aspects of the company while leverage AI- Driven Decision making strategy based on personalization profile.`,
+    activities: {
+      active: null,
+      paused: null,
+    },
   },
   "exports-development-program": {
     name: "Exports Development Program",
     img: exportImg,
     description: `The program was developed to create the  opportunities for emerging companies and their products to access and compete in the global markets and to raise the quality and efficiency of the Egyptian product and increase its ability to compete by enriching innovation techniques.`,
+    activities: {
+      active: null,
+      paused: null,
+    },
   },
   "consulting-engineer-avenue-program": {
     name: "Consulting Engineer Avenue Program",
     img: consultingImg,
     description: `The program provides engineering  collaborative platform where  experts, consulting engineers, professors from multi-disciplines of engineering can share knowledge, connecting the ecosystem and co- participate in national projects in the way  to best utilize effectively their diverse experience for Egypt development.`,
+    activities: {
+      active: null,
+      paused: null,
+    },
   },
 };
