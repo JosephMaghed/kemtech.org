@@ -4,7 +4,7 @@ import Button from "components/Button";
 import styles from "./ActivityCard.module.sass";
 
 export const ActivityCard = (props) => {
-  const { title, href, colors, buttonText } = props;
+  let { title, href, colors, buttonText } = props;
 
   //default color if color colors is not available
   if (colors === undefined) colors = ["#292C6B", "#0046AD"];
