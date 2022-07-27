@@ -5,6 +5,7 @@ import ProgramPage from "components/PorgramPage";
 
 import { NextPageContext } from "next";
 import { GetServerSideProps } from "next";
+import Head from "next/head";
 
 export const getServerSideProps = async (context) => {
   {
@@ -26,5 +27,15 @@ export default function ProgramDetails(props) {
     }
   }, []);
 
-  return <ProgramPage pId={query.progId} />;
+  // Head title
+  const pageTitle = programsData[query.progId].name;
+  return (
+    <>
+      <Head>
+        <title>{`${pageTitle} - Kemtech`}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <ProgramPage pId={query.progId} />;
+    </>
+  );
 }

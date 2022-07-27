@@ -48,18 +48,22 @@ export const ProgramPage = (props) => {
           <div className={styles.cardsContainer}>
             {programsData[pId].activities.active ? (
               Object.keys(ActiveActivities).map((x) => (
-                <ActivityCard
+                <div
+                  className={styles.cardWrapper}
                   key={ActiveActivities[x].name}
-                  title={ActiveActivities[x].name}
-                  href={ActiveActivities[x].href}
-                  colors={ActiveActivities[x].color}
-                />
+                >
+                  <ActivityCard
+                    title={ActiveActivities[x].name}
+                    href={ActiveActivities[x].href}
+                    colors={ActiveActivities[x].color}
+                  />
+                </div>
               ))
             ) : (
               // Noa active activities
               <p className={styles.noAct}>
                 {" "}
-                No activities available currently for this program!
+                No activities available currently for this program !
               </p>
             )}
           </div>

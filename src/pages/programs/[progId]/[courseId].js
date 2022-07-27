@@ -1,22 +1,43 @@
+import CoursePage from "components/CoursePage";
+import { programsData } from "data/programsData";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-export default function CourseDetails() {
+export const getServerSideProps = async (context) => {
+  {
+    const { query } = context;
+    return { props: { query } };
+  }
+};
+
+export default function CourseDetails(props) {
   /*
   If the path dose not contain /training-&-career-development-program
   ==> Redirect to a 404
   */
   const router = useRouter();
-  // REVIEW: this implementation is causing delay in redirects
-  // A better implementation should be done
   useEffect(() => {
-    const { progId } = router.query;
-    if (progId != "training-&-career-development-program") {
+    const { courseId } = props.query;
+    // List with active courses
+    const courseList = Object.keys(
+      programsData["training-&-career-development-program"].activities.active
+    );
+    //push paused courses to the list
+    courseList.push(
+      Object.keys(
+        programsData["training-&-career-development-program"].activities.paused
+      )
+    );
+    if (!courseList.includes(courseId)) {
       router.push("/404");
     }
   }, []);
 
-  const { courseId } = router.query;
+  const { courseId } = props.query;
 
-  return <p>Post: {courseId}</p>;
+  return (
+    <>
+      <CoursePage courseId={courseId} />
+    </>
+  );
 }
