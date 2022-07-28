@@ -11,6 +11,7 @@ import styles from "./Navbar.module.sass";
 import logo from "assets/kemtech_full_white.svg";
 import hamburgerMenu from "assets/menu-icon.svg";
 import xIcon from "assets/x.svg";
+import { Banner } from "./Banner";
 
 export default function Navbar() {
   // Current page
@@ -88,12 +89,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <div className={styles.banner}>
-        <p>
-          All trainings are available at <strong>100 L.E.</strong> only for all
-          NCT students 🎉
-        </p>
-      </div>
+      <Banner />
     </header>
   );
 }
