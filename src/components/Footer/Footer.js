@@ -1,12 +1,19 @@
 import { Fragment } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { programsData } from "data/programsData";
+
+//styles
+import styles from "./Footer.module.sass";
+
+//images
 import kemtechLogo from "assets/kemtech-simi-white.svg";
 import instaLogo from "assets/insta-mono.svg";
 import linkedinLogo from "assets/linkedin-mono.svg";
 import facebookLogo from "assets/face-mono.svg";
-import Image from "next/image";
-import Link from "next/link";
-import { programsData } from "data/programsData";
-import styles from "./Footer.module.sass";
+import mailIcon from "assets/mail.svg";
+import teleIcon from "assets/tele.svg";
+import locationIcon from "assets/location.svg";
 
 export default function Footer() {
   return (
@@ -91,10 +98,40 @@ export default function Footer() {
 
           <div className={styles.footerColumn}>
             <h4 className={styles.columnTitle}>Connect with us</h4>
-            <p>
-              For support or questions: <br />
-              Email us at <span className={styles.email}>info@kemtech.com</span>
-            </p>
+            <ul>
+              <li className={styles.social}>
+                <a
+                  href="mailto:info@kemtech.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image alt="Linkedin logo" src={mailIcon} />
+                  <span>Info@kemtech.com</span>
+                </a>
+              </li>
+
+              <li className={styles.social}>
+                <a
+                  href="tel:+201001222844"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image alt="Linkedin logo" src={teleIcon} />
+                  <span>+20 100 122 2844</span>
+                </a>
+              </li>
+
+              <li className={styles.social}>
+                <a
+                  href="geo:30.02274928075786, 31.52303803111338"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image alt="Linkedin logo" src={locationIcon} />
+                  <span>5th settlement, El-louts, cairo</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
