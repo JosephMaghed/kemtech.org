@@ -20,7 +20,7 @@ export const ActivityCard = (props) => {
       }}
     >
       <h2>{title}</h2>
-      <Button type="primary" innerText={buttonText} href={`${href}`} />
+      <Button type="secondary-white" innerText={buttonText} href={`${href}`} />
     </div>
   );
 };
