@@ -27,6 +27,7 @@ import pic2 from "assets/carouselPics/pic2.jpg";
 import pic3 from "assets/carouselPics/pic3.jpg";
 import pic4 from "assets/carouselPics/pic4.jpg";
 import pic5 from "assets/carouselPics/pic5.jpg";
+import OnGoingActivities from "components/home/OnGoingActivities";
 
 export default function Home() {
   return (
@@ -75,6 +76,8 @@ export default function Home() {
           </SwiperSlide>
         </Swiper>
       </div>
+
+      <OnGoingActivities />
 
       <InitiativeGoals />
       <ContactForm />
