@@ -71,7 +71,7 @@ export default function Navbar() {
             ))}
           </div>
           <div className={styles.applyButton}>
-            <Button innerText="Apply now" type="primary" />
+            <Button innerText="Apply now" type="primary" href="https://forms.gle/aYFK3WT3k3byXyNT7"/>
           </div>
           <div
             className={styles.xToggle}

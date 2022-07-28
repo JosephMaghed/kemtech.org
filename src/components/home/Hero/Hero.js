@@ -27,7 +27,7 @@ export const Hero = () => {
               market, and start with you in the first steps of your startup
               project.
             </p>
-            <Button innerText="Apply Now" type="primary" />
+            <Button innerText="Apply Now" type="primary" href="https://forms.gle/aYFK3WT3k3byXyNT7"/>
           </div>
           <div className={styles.leftBottom}>
             <div>
