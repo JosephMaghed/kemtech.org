@@ -25,7 +25,7 @@ export default function Footer() {
         <div className={styles.topRight}>
           {/* Programs column dynamically created form programData */}
           <div className={styles.footerColumn}>
-            <h4 className={styles.columnTitle}>Initiative programs</h4>
+            <h4 className={styles.columnTitle}>Kemtech Programs</h4>
             <ul>
               {Object.keys(programsData).map((key) => (
                 <Link

@@ -1,15 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.sass";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
 
 //page Components
 import AboutCard from "components/home/AboutCard";
@@ -43,39 +34,6 @@ export default function Home() {
       <OurDomains />
       <ApplyProcess />
       {/* <ProgramsView /> */}
-
-      <div className={styles.carouselContainer}>
-        <Swiper
-          spaceBetween={30}
-          centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
-          className={styles.carouselSwiper}
-        >
-          <SwiperSlide className={styles.carouselSlide}>
-            <Image alt="" src={pic1} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image alt="" src={pic2} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image alt="" src={pic3} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image alt="" src={pic4} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image alt="" src={pic5} />
-          </SwiperSlide>
-        </Swiper>
-      </div>
 
       <OnGoingActivities />
 

@@ -31,7 +31,7 @@ export const Accelerators = () => {
   ];
   return (
     <section className={styles.accelSection}>
-      <h2 className="sectionTitle">Accelerators</h2>
+      <h2 className="sectionTitle">Studio Programs</h2>
       {Accelerators.map((x) => (
         <div key={x.alt.replace(" ", "-")}>
           <Image src={x.img} alt={x.alt} height={50} />

@@ -35,7 +35,7 @@ export default function Navbar() {
   let navLinks = [
     { pageName: "Home", pageLink: "/" },
     { pageName: "About kemtech", pageLink: "/about" },
-    { pageName: "Initiative programs", pageLink: "/programs" },
+    { pageName: "Kemtech programs", pageLink: "/programs" },
     { pageName: "Community", pageLink: "/community" },
     { pageName: "Careers", pageLink: "/careers" },
     { pageName: "Partners", pageLink: "/partners" },
@@ -71,7 +71,11 @@ export default function Navbar() {
             ))}
           </div>
           <div className={styles.applyButton}>
-            <Button innerText="Apply now" type="primary" href="https://forms.gle/aYFK3WT3k3byXyNT7"/>
+            <Button
+              innerText="Apply now"
+              type="primary"
+              href="https://forms.gle/aYFK3WT3k3byXyNT7"
+            />
           </div>
           <div
             className={styles.xToggle}

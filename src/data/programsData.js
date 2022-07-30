@@ -143,7 +143,7 @@ export const programsData = {
           name: "Natural Gas Vehicle",
           color: ["#606c88", "#3f4c6b"],
           img: null,
-          href: "/programs/training-&-career-development-program/automotive-electric-&-electronics",
+          href: "/programs/training-&-career-development-program/natural-gas-vehicle",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
           enrollDate: "August",

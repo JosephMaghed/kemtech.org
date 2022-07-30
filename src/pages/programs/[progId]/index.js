@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { programsData } from "data/programsData";
 import { useEffect } from "react";
-import ProgramPage from "components/PorgramPage";
+import ProgramPage from "components/ProgramPage";
 
 import { NextPageContext } from "next";
 import { GetServerSideProps } from "next";
