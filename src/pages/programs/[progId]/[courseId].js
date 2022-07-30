@@ -1,7 +1,9 @@
 import CoursePage from "components/CoursePage";
 import { programsData } from "data/programsData";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import { capitalizeFirstLetter } from "utils/utils";
 
 export const getServerSideProps = async (context) => {
   {
@@ -35,8 +37,16 @@ export default function CourseDetails(props) {
 
   const { courseId } = props.query;
 
+  // Head title
+  let pageTitle = courseId.split("-").join(" ");
+  pageTitle = capitalizeFirstLetter(pageTitle);
+
   return (
     <>
+      <Head>
+        <title>{`${pageTitle} - Kemtech`}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <CoursePage courseId={courseId} />
     </>
   );
