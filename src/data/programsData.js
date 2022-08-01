@@ -1,11 +1,11 @@
-import trainingImg from "assets/t&d.svg";
-import startupImg from "assets/startup.svg";
-import technovateImg from "assets/tecnovate-lap.svg";
-import manufactureImg from "assets/manufacturing.svg";
-import investmentImg from "assets/investment.svg";
+import consultingImg from "assets/consluting.svg";
 import transformImg from "assets/digital-transform.svg";
 import exportImg from "assets/export.svg";
-import consultingImg from "assets/consluting.svg";
+import investmentImg from "assets/investment.svg";
+import manufactureImg from "assets/manufacturing.svg";
+import startupImg from "assets/startup.svg";
+import trainingImg from "assets/t&d.svg";
+import technovateImg from "assets/tecnovate-lap.svg";
 
 export const programsData = {
   "training-&-career-development-program": {
@@ -24,7 +24,14 @@ export const programsData = {
           enrollDate: "August",
           price: "400 L.E.",
           instructorName: "Dr. Sayed El-Far",
-          instructorBio: null,
+          instructorImg: "/instructors-imgs/sayed-elfar.jpg",
+          instructorBio: `
+          Dr El-Sayed Abdel-Razek El-Far, is currently the Vice Dean of College of Industry and Energy Technology, New Cairo Technological University, Egypt.
+          He received Ph.D. degree in Electrical Power Engineering from Technical University, Hamburg, Germany, 1994.
+          He is a member of IEEE and Several research groups.
+          He participated as PI in more than five external funded projects in KSA and in Egypt as well. He also participated as local PI in two projects funded from Erasmus+ (European Union).     
+          His research interests are in the areas of Renewable/Alternate Energy Systems, Harmonics and Power Quality, Applications of solar energy, Solar and wind technology, electrical power systems, applications of nanotechnology in High voltage insulations and dielectrics and electromagnetic. He has more than 100 publications in high impact journals and conferences.
+          `,
           content: [
             "Insight into smart grid infrastructure",
             "The role of power electronics and energy storage in smart grids",
@@ -47,6 +54,7 @@ export const programsData = {
           enrollDate: "August",
           price: "400 L.E.",
           instructorName: "Eng. Aliaa Khaled",
+          instructorImg: "/instructors-imgs/aliaa-khaled.jpg",
           instructorBio:
             "Eng. Aliaa is working now as teaching Assistant at Faculty of Industry and Energy Technology, New Cairo Technological University. She graduated from Integrated Technical Education Cluster with Excellent Grad in 2021. She has a good experience in many majors related to the Renewable Energy System. Now, she is preparing to start her Master degree study.",
           content: [
@@ -66,15 +74,17 @@ export const programsData = {
         },
         PLC1: {
           name: "PLC1",
-          color: ["#556270", "#FF6B6B"],
+          color: ["#606c88", "#3f4c6b"],
           img: null,
           href: "/programs/training-&-career-development-program/PLC1",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
-          instructorName: "Eng. Khaled Hamed",
-          instructorBio: null,
+          instructorName: "Eng. Mahmoud Abdrabo",
+          instructorImg: "/instructors-imgs/mohamed-saber.jpg",
+          instructorBio:
+            "Mahmoud Saber Abdrabbo is a Teaching Assistant at Faculty of Industry and Energy Technology, New Cairo Technological University (NCTU). He received the B.Sc. degree in mechatronics engineering from Misr University of Science and Technology (MUST) in 2017 and currently, he is a M.sc. student in Mechanical Engineering department in Benha University. He is well versed in the fields of Mechatronics systems, Process Control, Automatic Control, Embedded systems, Robotics, as well as practical experience in Embedded programming(ARM, AVR), PLC and SCADA.",
           content: [
             "Introduction to PLC and it's working principles",
             "PLC used languages",
@@ -93,15 +103,17 @@ export const programsData = {
         },
         "basic-electronics": {
           name: "Basic Electronics",
-          color: ["#556270", "#FF6B6B"],
+          color: ["#606c88", "#3f4c6b"],
           img: null,
           href: "/programs/training-&-career-development-program/basic-electronics",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
-          instructorName: "Eng. Eman",
-          instructorBio: null,
+          instructorName: "Eng. Rowan Nasr",
+          instructorImg: "/instructors-imgs/rowan-nasr.jpg",
+          instructorBio:
+            "Eng. Rowan Nasr received the BSc degree in Power and Electrical Machinery from Kafr El Sheikh University in 2014, Diploma in Control of Computer Systems in 2017. Currently, she is a MSc student in Industrial Electronics and Control Department at Menouf Electronic Engineering Faculty. She has worked as a technology trainer at Al Amerya Integrated Technological Cluster AITC for 6 years in the Department of Electrical and Electronics Technology. She has great experience in field of Analog and Digital Electronics, Embedded systems, Automatic Control and Instrumentation, Micro-controller Systems, Classic Control Systems. as well as practical experience in Automation systems. Currently, she is a Teaching Assistant in Mechatronics Technology Program at New Cairo Technological University NCTU. ",
           content: [
             "Introduction about electricity",
             "Measurement Devices",
@@ -125,34 +137,6 @@ export const programsData = {
           ],
           outcomes: [],
         },
-        "automotive-electric-&-electronics": {
-          name: "Automotive Electric & Electronics",
-          color: ["#606c88", "#3f4c6b"],
-          img: null,
-          href: "/programs/training-&-career-development-program/automotive-electric-&-electronics",
-          applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
-          duration: "5 Days",
-          enrollDate: "August",
-          price: "400 L.E.",
-          instructorName: null,
-          instructorBio: null,
-          content: null,
-          outcomes: [],
-        },
-        "natural-gas-vehicle": {
-          name: "Natural Gas Vehicle",
-          color: ["#606c88", "#3f4c6b"],
-          img: null,
-          href: "/programs/training-&-career-development-program/natural-gas-vehicle",
-          applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
-          duration: "5 Days",
-          enrollDate: "August",
-          price: "400 L.E.",
-          instructorName: null,
-          instructorBio: null,
-          content: null,
-          outcomes: [],
-        },
         "ethical-hacker-l1": {
           name: "Ethical Hacker L1",
           color: ["#5C258D", "#4389A2"],
@@ -163,7 +147,11 @@ export const programsData = {
           enrollDate: "August",
           price: "400 L.E.",
           instructorName: "Eng. Hani Saad",
-          instructorBio: null,
+          instructorImg: "/instructors-imgs/hani-saad.jpg",
+          instructorBio: `Eng. Hani Saad received the BSc degree in Computer Science from Benha University in 2007, MSc degree in Computer Science from Annamalai University in India.
+          He was an Assistant Lecturer in ICT Dept. in NCT New Cairo Technological University Also; he was an IT Manager for a lot of Industrial companies in Egypt and Saudi Arabia.
+         He was also a TOT Instructor from CISCO & Huawei Academies.
+         He was specialized in Networking, Security, Cyber Security and Ethical Hacker.`,
           content: [
             "Foundations for Information Security",
             "Exploiting and Protecting Web Applications",
@@ -183,8 +171,10 @@ export const programsData = {
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
-          instructorName: "Eng. Maha",
-          instructorBio: null,
+          instructorName: "Eng. Maha Gamal",
+          instructorImg: "/instructors-imgs/maha-gamal.jpg",
+          instructorBio:
+            "She has a Bachelor of electronics and electrical communications engineering. She is working as Demonstrator at NCT (New Cairo Technological University). And played different roles in her career, like: \r\n 1-Networks and VOIP engineer at Connect Company \n 2-Instructor at Egypt institute for wireless studies \n 3-Technical trainer at 4G Center \r\n 4-Technical support at Exceed company \r\n 5- Training at National Authority for Remote Sensing and Space science (NARSS)",
           content: [
             "Understand what is routing and its types",
             "Create a network with 3 switches and 3 router with static route",

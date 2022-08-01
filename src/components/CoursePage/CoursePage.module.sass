@@ -100,9 +100,23 @@
                     text-align: justify
 
             .rightColumn
+
+                .imgCropper
+                    width: 180px
+                    height: 180px
+                    position: relative
+                    overflow: hidden
+                    border-radius: 50%
+
+                    img
+                        display: inline
+                        margin: 0 auto
+                        height: 100%
+                        width: auto
+
                 @media only screen and ( max-width: $breakpoint-mobile  )
                     img
-                        width: 150px !important
+                        width: 180px !important
 
     //lists
     .listContainer

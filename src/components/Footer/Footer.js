@@ -1,19 +1,19 @@
-import { Fragment } from "react";
+import { programsData } from "data/programsData";
 import Image from "next/image";
 import Link from "next/link";
-import { programsData } from "data/programsData";
+import { Fragment } from "react";
 
 //styles
 import styles from "./Footer.module.sass";
 
 //images
-import kemtechLogo from "assets/kemtech-simi-white.svg";
-import instaLogo from "assets/insta-mono.svg";
-import linkedinLogo from "assets/linkedin-mono.svg";
 import facebookLogo from "assets/face-mono.svg";
+import instaLogo from "assets/insta-mono.svg";
+import kemtechLogo from "assets/kemtech-simi-white.svg";
+import linkedinLogo from "assets/linkedin-mono.svg";
+import locationIcon from "assets/location.svg";
 import mailIcon from "assets/mail.svg";
 import teleIcon from "assets/tele.svg";
-import locationIcon from "assets/location.svg";
 
 export default function Footer() {
   return (
@@ -101,23 +101,23 @@ export default function Footer() {
             <ul>
               <li className={styles.social}>
                 <a
-                  href="mailto:info@kemtech.com"
+                  href="mailto:info@kemtech.org"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Image alt="Linkedin logo" src={mailIcon} />
-                  <span>Info@kemtech.com</span>
+                  <span>Info@kemtech.org</span>
                 </a>
               </li>
 
               <li className={styles.social}>
                 <a
-                  href="tel:+201001222844"
+                  href="tel:+201063142273"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Image alt="Linkedin logo" src={teleIcon} />
-                  <span>+20 100 122 2844</span>
+                  <span>+20 106 314 2273</span>
                 </a>
               </li>
 

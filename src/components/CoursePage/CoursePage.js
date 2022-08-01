@@ -9,7 +9,6 @@ import styles from "./CoursePage.module.sass";
 
 //import Images
 import defaultProfile from "assets/default-profile.svg";
-import defaultBanner from "assets/Untitled.png";
 
 export const CoursePage = (props) => {
   // Get the Course Id
@@ -35,14 +34,19 @@ export const CoursePage = (props) => {
       courseId
     ];
 
+  console.log(`img ${courseData.instructorImg}`);
   return (
     <section className={styles.container}>
-      <div
+      {/* banner image */}
+      {/* <div
         className={styles.imgContainer}
         style={{
-          backgroundImage: `url('assets/Untitled.png')`,
+          backgroundImage: `url('/Untitled.png')`,
+          objectPosition: "50% 50%",
+          backgroundAttachment: "scroll",
+          backgroundPosition: "center",
         }}
-      ></div>
+      ></div> */}
 
       <div className={styles.titleContainer}>
         <h1 className={styles.courseName}>{courseData.name}</h1>
@@ -87,7 +91,21 @@ export const CoursePage = (props) => {
               )}
             </div>
             <div className={styles.rightColumn}>
-              <Image src={defaultProfile} alt="default image" />
+              {courseData.instructorImg ? (
+                <div className={styles.imgCropper}>
+                  <Image
+                    src={courseData.instructorImg}
+                    alt={`${courseData.instructorName} picture`}
+                    width="100%"
+                    height="100%"
+                    layout="fill"
+                    objectFit="cover"
+                    objectPosition={"top"}
+                  />
+                </div>
+              ) : (
+                <Image src={defaultProfile} alt="default image" />
+              )}
             </div>
           </div>
         </div>

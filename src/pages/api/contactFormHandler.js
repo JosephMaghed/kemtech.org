@@ -18,7 +18,7 @@ export default async function contactHandle(req, res) {
   // create email payload
   const data = {
     from: Email,
-    to: "o.sakr@ptscorp-eg.com",
+    to: "h.mamdouh@kemtech.org",
     subject: `Kemtech.org Contact form submission from ${Name}`,
     html: `<h1>New Inquiry from Kemtech.org</h1>
       <h4>new contact form submission</h4><br>
