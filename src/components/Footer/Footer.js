@@ -36,7 +36,7 @@ export default function Footer() {
                   href={`/programs/${programsData[key].name
                     .toLowerCase()
                     .split(" ")
-                    .join("-")}`}
+                    .join("-")}-program`}
                 >
                   <li className={styles.columnRow}>
                     {programsData[key].name.replace("Program", "")}
