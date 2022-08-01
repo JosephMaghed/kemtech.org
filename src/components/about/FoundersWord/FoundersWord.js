@@ -10,21 +10,22 @@ import signaturePic from "assets/signature.svg";
 export const FoundersWord = () => {
   return (
     <section className={styles.founderWords}>
-      <h1 className="sectionTitle">
-        This what our founders are saying about Kemtech
-      </h1>
+      <h1 className="sectionTitle">Our Founder is saying about Kemtech</h1>
 
       <div className={styles.wordCard}>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis et
-          ipsum volutpat morbi eget posuere morbi. Vitae leo volutpat elit
-          volutpat eleifend elit pharetra. Feugiat purus et ornare pellentesque.
-          Vivam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
-          et ipsum volutpat morbi eget posuere morbi. Vitae leo volutpat elit
-          volutpat eleifend elit pharetra. Feugiat purus et ornare pellentesque.
-          Vivam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
-          et ipsum volutpat morbi eget posuere morbi. Vitae leo volutpat elit
-          volutpat eleifend elit pharetra.
+          “ Looking to the current entrepreneurial ecosystem, I have found most
+          of our creative minds and entrepreneurs hardily struggle during their
+          startup journey and some of them unfortunately failed during this
+          journey , only because they couldn’t find the right support on the
+          right time. Kemtech Valley was established upon a dream to have an
+          effective collaboration between financial investments institutions,
+          Industry leaders and academic institutions mainly to support our
+          creative youth secure seed funding &amp; enabling them to the globe
+          through providing tailored in-kind supportive and functional services.
+          At Kemtech Valley initiative, we are welcoming all like-minded leaders
+          to be part of our initiative and take an effective role in the
+          journey.”
         </p>
 
         <div className={styles.picsWrapper}>
