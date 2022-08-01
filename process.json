@@ -5,12 +5,12 @@
         "env" : {
             "SMTP_USER":"h.mamdouh@kemtech.org",
             "SMTP_PASSWORD":"htpdojcbyofhzftq",
-            "PORT" : 3001
+            "PORT" : 443
         },
         "env_production" : {
             "SMTP_USER":"h.mamdouh@kemtech.org",
             "SMTP_PASSWORD":"htpdojcbyofhzftq",
-            "PORT" : 3001
+            "PORT" : 443
         }
     }]
 }
