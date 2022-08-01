@@ -9,6 +9,11 @@ export default async function contactHandle(req, res) {
     host: "smtp.gmail.com",
     port: 587,
     secure: false,
+    tls: {
+      secure: false,
+      ignoreTLS: true,
+      rejectUnauthorized: false,
+    },
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASSWORD,
