@@ -10,8 +10,6 @@ export default async function contactHandle(req, res) {
     port: 587,
     secure: false,
     tls: {
-      secure: false,
-      ignoreTLS: true,
       rejectUnauthorized: false,
     },
     auth: {
