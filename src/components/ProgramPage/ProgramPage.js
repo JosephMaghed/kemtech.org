@@ -1,5 +1,6 @@
 import Custom404 from "components/404";
 import ActivityCard from "components/ActivityCard";
+import Accelerators from "components/home/Accelerators";
 import { programsData } from "data/programsData";
 import Image from "next/image";
 
@@ -30,8 +31,9 @@ export const ProgramPage = (props) => {
           <Image src={programsData[pId].img} alt="" />
         </div>
       </div>
-
-      {programsData[pId].activities === null ? (
+      {pId === "startup-studio-program" ? (
+        <Accelerators />
+      ) : programsData[pId].activities === null ? (
         //if no activities available or null
         <div>
           <h3 className={styles.programsSectionTitle}>Program Activities</h3>
