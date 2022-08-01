@@ -11,6 +11,7 @@ import styles from "./Navbar.module.sass";
 import logo from "assets/kemtech_full_white.svg";
 import hamburgerMenu from "assets/menu-icon.svg";
 import xIcon from "assets/x.svg";
+import { Banner } from "./Banner";
 
 export default function Navbar() {
   // Current page
@@ -32,52 +33,67 @@ export default function Navbar() {
 
   // Data to Generate nav links
   let navLinks = [
+    { pageName: "Home", pageLink: "/" },
     { pageName: "About kemtech", pageLink: "/about" },
-    { pageName: "Initiative programs", pageLink: "/programs" },
+    { pageName: "Kemtech programs", pageLink: "/programs" },
     { pageName: "Community", pageLink: "/community" },
     { pageName: "Careers", pageLink: "/careers" },
     { pageName: "Partners", pageLink: "/partners" },
   ];
 
   return (
-    <nav className={styles.navbar}>
-      <div className={isToggled ? styles.navWarperActive : styles.navWarper}>
-        <Link href="/">
-          <Image
-            className={styles.logo}
-            src={logo}
-            width={100}
-            height={100}
-            alt="Kemtech logo"
-            onClick={() => navToggleHandler(false)}
-          />
-        </Link>
-        <div className={styles.navItemContainer}>
-          {navLinks.map((navLink) => (
-            <div
-              key={navLink.pageLink}
-              className={
-                currentPage === navLink.pageLink
-                  ? styles.navItemActive
-                  : styles.navItem
-              }
+    <header>
+      <nav className={styles.navbar}>
+        <div className={isToggled ? styles.navWarperActive : styles.navWarper}>
+          <Link href="/">
+            <Image
+              className={styles.logo}
+              src={logo}
+              width={100}
+              height={100}
+              alt="Kemtech logo"
               onClick={() => navToggleHandler(false)}
-            >
-              <Link href={navLink.pageLink}>{navLink.pageName}</Link>
-            </div>
-          ))}
+            />
+          </Link>
+          <div className={styles.navItemContainer}>
+            {navLinks.map((navLink) => (
+              <div
+                key={navLink.pageLink}
+                className={
+                  currentPage === navLink.pageLink
+                    ? styles.navItemActive
+                    : styles.navItem
+                }
+                onClick={() => navToggleHandler(false)}
+              >
+                <Link href={navLink.pageLink}>{navLink.pageName}</Link>
+              </div>
+            ))}
+          </div>
+          <div className={styles.applyButton}>
+            <Button
+              innerText="Apply now"
+              type="primary"
+              href="https://forms.gle/aYFK3WT3k3byXyNT7"
+            />
+          </div>
+          <div
+            className={styles.xToggle}
+            onClick={() => navToggleHandler(false)}
+          >
+            <Image src={xIcon} alt="" height={50} />
+          </div>
         </div>
-        <div className={styles.applyButton}>
-          <Button innerText="Apply now" type="primary" />
-        </div>
-        <div className={styles.xToggle} onClick={() => navToggleHandler(false)}>
-          <Image src={xIcon} alt="" height={50} />
-        </div>
-      </div>
 
-      <div className={styles.menuToggle} onClick={() => navToggleHandler(true)}>
-        <Image src={hamburgerMenu} alt="" height={30} width={40} />
-      </div>
-    </nav>
+        <div
+          className={styles.menuToggle}
+          onClick={() => navToggleHandler(true)}
+        >
+          <Image src={hamburgerMenu} alt="" height={30} width={40} />
+        </div>
+      </nav>
+
+      <Banner />
+    </header>
   );
 }

@@ -1,0 +1,133 @@
+@import 'styles/variables'
+
+.container
+    @include ContainerMargin($top: 50px)
+
+    // tittle h2 of each section
+    .sectionTitle
+        font-size: 2.5rem
+        margin: 0
+        margin-bottom: 20px
+        color: $blue_400
+        @media only screen and ( max-width: $breakpoint_laptop )
+            font-size: 2rem
+
+    //Image section
+    .imgContainer
+        width: 100%
+        height: 300px
+        background-color: $blue_300
+        position: relative
+        background-size: cover
+        border-radius: 25px
+        margin-bottom: 30px
+
+    .titleContainer
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        gap: 20px
+
+        .courseName
+            font-size: 2.5rem
+            margin: 0
+            color: $blue_basic
+            @media only screen and ( max-width: $breakpoint_laptop )
+                font-size: 2rem
+
+    // Details section
+    .detailsContainer
+        margin-top: 50px
+        display: flex
+        flex-direction: row
+        gap: 10%
+        justify-content: center
+        align-items: center
+        text-align: center
+
+        .detailsTitle
+            font-weight: 600
+
+        span
+            height: 70px
+            width: 5px
+            background-color: $gray_500
+            border-radius: 990px
+
+        @media only screen and ( max-width: $breakpoint_mobile )
+            margin-top: 20px
+            gap: 5%
+
+            .detailsSection
+                flex: 1 1 33.333%
+                display: flex
+                flex-direction: column
+                gap: 1px
+
+            p
+                font-size: 0.8rem
+
+            span
+                width: 3px
+                height: 100px
+
+    // Instructor Section
+    .instructorContainer
+        margin-top: 60px
+
+        .flexContainer
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 60px
+            flex-wrap: wrap-reverse
+            @media only screen and ( max-width: $breakpoint-mobile  )
+                gap: 20px
+
+            .leftColumn
+                flex: 1 1 60%
+
+                .instructorName
+                    font-weight: 600
+                    margin: 0
+                    font-size: 1.5rem
+                    @media only screen and ( max-width: $breakpoint-mobile  )
+                        text-align: center
+
+                .instructorBio
+                    text-align: justify
+
+            .rightColumn
+
+                .imgCropper
+                    width: 180px
+                    height: 180px
+                    position: relative
+                    overflow: hidden
+                    border-radius: 50%
+
+                    img
+                        display: inline
+                        margin: 0 auto
+                        height: 100%
+                        width: auto
+
+                @media only screen and ( max-width: $breakpoint-mobile  )
+                    img
+                        width: 180px !important
+
+    //lists
+    .listContainer
+        margin-top: 30px
+
+        ol
+            margin: 20px 0 0 20px
+
+            li
+                list-style: decimal-leading-zero
+                margin-top: 10px
+
+    .activityCard
+        margin-top: 50px

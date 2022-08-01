@@ -16,6 +16,9 @@ export const ProgramPage = (props) => {
   let programsList = Object.keys(programsData);
   if (!programsList.includes(pId)) return <Custom404 />;
 
+  // Active program
+  const ActiveActivities = programsData[pId].activities.active;
+
   return (
     <section className={styles.programPageContainer}>
       <div className={styles.headerContainer}>
@@ -28,7 +31,8 @@ export const ProgramPage = (props) => {
         </div>
       </div>
 
-      {!programsData[pId].activities ? (
+      {programsData[pId].activities === null ? (
+        //if no activities available or null
         <div>
           <h3 className={styles.programsSectionTitle}>Program Activities</h3>
           <p className={styles.noAct}>
@@ -43,19 +47,23 @@ export const ProgramPage = (props) => {
           </h3>
           <div className={styles.cardsContainer}>
             {programsData[pId].activities.active ? (
-              programsData[pId].activities.active.map((x) => (
-                <ActivityCard
-                  key={x.name}
-                  name={x.name}
-                  description={x.description}
-                  href={x.href}
-                  colors={x.color}
-                />
+              Object.keys(ActiveActivities).map((x) => (
+                <div
+                  className={styles.cardWrapper}
+                  key={ActiveActivities[x].name}
+                >
+                  <ActivityCard
+                    title={ActiveActivities[x].name}
+                    href={ActiveActivities[x].href}
+                    colors={ActiveActivities[x].color}
+                  />
+                </div>
               ))
             ) : (
+              // Noa active activities
               <p className={styles.noAct}>
                 {" "}
-                No activities available currently for this program!
+                No activities available currently for this program !
               </p>
             )}
           </div>

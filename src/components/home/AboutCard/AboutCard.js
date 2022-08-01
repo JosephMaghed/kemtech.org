@@ -1,5 +1,5 @@
-import { Fragment } from "react";
 import Image from "next/image";
+import { Fragment } from "react";
 
 // Components
 import Button from "components/Button";
@@ -17,7 +17,7 @@ export const AboutCard = () => {
         <div className={styles.leftColumn}>
           <h2>Empowering Technovation In Egypt</h2>
           <p>
-            {` believing in the value of modern technology in all sectors of
+            {` Believing in the value of modern technology in all sectors of
             business and in accordance with Egypt 2030's sustainable development
             plan, Kemtech Valley always seeks to increase support and investment
             for technological projects. Therefore, The best partner to

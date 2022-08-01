@@ -1,0 +1,20 @@
+@import  'styles/variables'
+.container
+    @include ContainerMargin($top: 50px)
+
+    .cardsContainer
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: row
+        flex-wrap: wrap
+        width: 100%
+        gap: 30px
+        @media only screen and ( max-width: $breakpoint_mobile )
+            flex-direction: column
+
+        .cardWrapper
+            height: 250px
+            flex: 0 0 25%
+            @media only screen and ( max-width: $breakpoint_mobile )
+                width: 100%

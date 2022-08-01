@@ -1,5 +1,5 @@
-import { Fragment } from "react";
 import Image from "next/image";
+import { Fragment } from "react";
 
 // Components imports
 import Button from "components/Button";
@@ -8,10 +8,10 @@ import Button from "components/Button";
 import styles from "./Hero.module.sass";
 
 // images import
-import heroArt from "assets/home-heroArt.png";
 import holdingLogo from "assets/holding.svg";
-import oroLogo from "assets/oro-black.svg";
+import heroArt from "assets/home-heroArt.png";
 import nctuLogo from "assets/nctu.png";
+import oroLogo from "assets/oro-black.svg";
 
 export const Hero = () => {
   return (
@@ -21,13 +21,18 @@ export const Hero = () => {
           <div className={styles.leftTop}>
             <h1 className="sectionTitle">Rendering your dreams into reality</h1>
             <p className={styles.heroText}>
-              Kemtech Valley helps you turn your dreams in the world of
-              investment and technology into reality by helping you prepare a
-              distinguished business plan, conduct a professional study of the
-              market, and start with you in the first steps of your startup
-              project.
+              The “Egyptian Applied Technological Valley - Kemtech Valley”
+              initiative aims to build highly specialized technical cadres and
+              develop the creative capabilities of Egyptian youth, as well as
+              support start- ups, small and medium-sized companies in the field
+              of applied technology and build digital community awareness
+              through various programs.
             </p>
-            <Button innerText="Apply Now" type="primary" />
+            <Button
+              innerText="Apply Now"
+              type="primary"
+              href="https://forms.gle/aYFK3WT3k3byXyNT7"
+            />
           </div>
           <div className={styles.leftBottom}>
             <div>
