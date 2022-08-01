@@ -14,19 +14,19 @@ export const Accelerators = () => {
       img: kemtizeLogo,
       alt: "kemtize logo",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis et ipsum volutpat morbi eget posuere morbi. Vitae leo volutpat elit volutpat eleifend elit pharetra. Feugiat purus et ornare pellentesque. Vivam Lorem ipsum dolor sit amet",
+        "Mainly focus on Digitalization Platforms industry wide that support improving world living standards e.g. Health-tech, Edu-tech, Fin-tech, etc...",
     },
     {
       img: kemtronixLogo,
       alt: "kemtronix logo",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis et ipsum volutpat morbi eget posuere morbi. Vitae leo volutpat elit volutpat eleifend elit pharetra. Feugiat purus et ornare pellentesque. Vivam Lorem ipsum dolor sit amet",
+        "Mainly focus on disruptive technologies that introduce an entirely new business model and a new growth market e.g. metaverse, Blockchain, etc...",
     },
     {
       img: kemetaLogo,
       alt: "kemeta logo",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis et ipsum volutpat morbi eget posuere morbi. Vitae leo volutpat elit volutpat eleifend elit pharetra. Feugiat purus et ornare pellentesque. Vivam Lorem ipsum dolor sit amet",
+        "Mainly focus on applied technologies/ Advanced Technological Industries that requires manufacturing production lines e.g. Agri-tech, mining-tech, etc...",
     },
   ];
   return (
