@@ -72,7 +72,11 @@ export const CoursePage = (props) => {
 
         <div className={styles.detailsSection}>
           <p className={styles.detailsTitle}>Price</p>
-          <p>{courseData.price}</p>
+          <p>
+            <del>600 L.E.</del>
+            <br />
+            {courseData.price}
+          </p>
         </div>
       </div>
 
