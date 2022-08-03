@@ -20,13 +20,13 @@ export const Accelerators = () => {
       img: kemtronixLogo,
       alt: "kemtronix logo",
       description:
-        "Mainly focus on disruptive technologies that introduce an entirely new business model and a new growth market e.g. metaverse, Blockchain, etc...",
+        "Mainly focus on applied technologies/ Advanced Technological Industries that requires manufacturing production lines e.g. Agri-tech, mining-tech, etc...",
     },
     {
       img: kemetaLogo,
       alt: "kemeta logo",
       description:
-        "Mainly focus on applied technologies/ Advanced Technological Industries that requires manufacturing production lines e.g. Agri-tech, mining-tech, etc...",
+        "Mainly focus on disruptive technologies that introduce an entirely new business model and a new growth market e.g. metaverse, Blockchain, etc...",
     },
   ];
   return (
