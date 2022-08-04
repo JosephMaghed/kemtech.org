@@ -162,7 +162,7 @@ export const programsData = {
           ],
           outcomes: [],
         },
-        "CCNA-R&S1": {
+        "CCNA-R&S2": {
           name: "CCNA R&S2",
           color: ["#5C258D", "#4389A2"],
           img: "/ict.png",
