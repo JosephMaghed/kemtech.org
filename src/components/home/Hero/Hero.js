@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Fragment } from "react";
+import ScrollAnimate from "react-scroll-fade-animation";
 
 // Components imports
 import Button from "components/Button";
@@ -14,57 +15,65 @@ import nctuLogo from "assets/nctu.png";
 import oroLogo from "assets/oro-black.svg";
 
 export const Hero = () => {
+  let sponsorsLogos = [
+    {
+      txt: "Powered by",
+      img: holdingLogo,
+      imgAlt: "Pts projects logo",
+    },
+    {
+      txt: "IN ASSOCIATION WITH",
+      img: nctuLogo,
+      imgAlt: "New Cairo University of Technology logo",
+    },
+    {
+      txt: "DELIVERED BY",
+      img: oroLogo,
+      imgAlt: "Oro venture labs logo",
+    },
+  ];
   return (
     <Fragment>
       <div className={styles.heroSection}>
         <div className={styles.leftColumn}>
-          <div className={styles.leftTop}>
-            <h1 className="sectionTitle">Rendering your dreams into reality</h1>
-            <p className={styles.heroText}>
-              The “Egyptian Applied Technological Valley - Kemtech Valley”
-              initiative aims to build highly specialized technical cadres and
-              develop the creative capabilities of Egyptian youth, as well as
-              support start- ups, small and medium-sized companies in the field
-              of applied technology and build digital community awareness
-              through various programs.
-            </p>
-            <Button
-              innerText="Apply Now"
-              type="primary"
-              href="https://forms.gle/aYFK3WT3k3byXyNT7"
-            />
-          </div>
-          <div className={styles.leftBottom}>
-            <div>
-              <p>Powered by</p>
-              <Image
-                src={holdingLogo}
-                layout="responsive"
-                alt="pts holing logo"
+          <ScrollAnimate path={"bottom"}>
+            <div className={styles.leftTop}>
+              <ScrollAnimate path={"right"}>
+                <h1 className="sectionTitle">
+                  Rendering your dreams into reality
+                </h1>
+              </ScrollAnimate>
+              <ScrollAnimate path={"left"}>
+                <p className={styles.heroText}>
+                  The “Egyptian Applied Technological Valley - Kemtech Valley”
+                  initiative aims to build highly specialized technical cadres
+                  and develop the creative capabilities of Egyptian youth, as
+                  well as support start- ups, small and medium-sized companies
+                  in the field of applied technology and build digital community
+                  awareness through various programs.
+                </p>
+              </ScrollAnimate>
+              <Button
+                innerText="Apply Now"
+                type="primary"
+                href="https://forms.gle/aYFK3WT3k3byXyNT7"
               />
             </div>
-            <div>
-              <p>In association with</p>
-              <Image
-                src={nctuLogo}
-                layout="responsive"
-                alt="New cairo technological university logo "
-              />
+            <div className={styles.leftBottom}>
+              {sponsorsLogos.map((x) => (
+                <div key={x.txt}>
+                  <p>{x.txt}</p>
+                  <Image src={x.img} layout="responsive" alt={x.imgAlt} />
+                </div>
+              ))}
             </div>
-            <div>
-              <p>Delivered by</p>
-
-              <Image
-                src={oroLogo}
-                layout="responsive"
-                alt="oro ventures logo"
-              />
-            </div>
-          </div>
+          </ScrollAnimate>
         </div>
-        <div className={styles.rightColumn}>
-          <Image src={heroArt} alt="kemtech technology art" />
-        </div>
+        <ScrollAnimate path={"left"}>
+          <div className={styles.rightColumn}>
+            <Image src={heroArt} alt="kemtech technology art" />
+          </div>
+        </ScrollAnimate>
       </div>
     </Fragment>
   );

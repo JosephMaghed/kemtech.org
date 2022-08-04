@@ -1,5 +1,6 @@
 import ActivityCard from "components/ActivityCard";
 import { programsData } from "data/programsData";
+import ScrollAnimate from "react-scroll-fade-animation";
 
 //styles
 import styles from "./OnGoingActivities.module.sass";

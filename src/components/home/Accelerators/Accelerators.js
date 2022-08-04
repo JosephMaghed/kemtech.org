@@ -7,6 +7,7 @@ import styles from "./Accelerators.module.sass";
 import kemetaLogo from "assets/kemeta.svg";
 import kemtizeLogo from "assets/kemtize.svg";
 import kemtronixLogo from "assets/kemtronix.svg";
+import ScrollAnimate from "react-scroll-fade-animation";
 
 export const Accelerators = () => {
   const Accelerators = [
@@ -29,15 +30,23 @@ export const Accelerators = () => {
         "Mainly focus on disruptive technologies that introduce an entirely new business model and a new growth market e.g. metaverse, Blockchain, etc...",
     },
   ];
+
   return (
     <section className={styles.accelSection}>
-      <h2 className="sectionTitle">Studio Programs</h2>
-      {Accelerators.map((x) => (
-        <div key={x.alt.replace(" ", "-")}>
-          <Image src={x.img} alt={x.alt} height={50} />
-          <p>{x.description}</p>
-        </div>
-      ))}
+      <ScrollAnimate path={"bottom"}>
+        <h2 className="sectionTitle">Studio Programs</h2>
+      </ScrollAnimate>
+      {Accelerators.map((x, i = 0) => {
+        i++;
+        return (
+          <div key={x.alt.replace(" ", "-")}>
+            <ScrollAnimate path={i % 2 === 0 ? "right" : "left"}>
+              <Image src={x.img} alt={x.alt} height={50} />
+              <p>{x.description}</p>
+            </ScrollAnimate>
+          </div>
+        );
+      })}
     </section>
   );
 };

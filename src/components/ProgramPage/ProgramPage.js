@@ -3,6 +3,7 @@ import ActivityCard from "components/ActivityCard";
 import Accelerators from "components/home/Accelerators";
 import { programsData } from "data/programsData";
 import Image from "next/image";
+import ScrollAnimate from "react-scroll-fade-animation";
 
 // styles
 import styles from "./ProgramPage.module.sass";
@@ -24,12 +25,18 @@ export const ProgramPage = (props) => {
     <section className={styles.programPageContainer}>
       <div className={styles.headerContainer}>
         <div className={styles.leftColumn}>
-          <h1 className="sectionTitle">{programsData[pId].name}</h1>
-          <p>{programsData[pId].description}</p>
+          <ScrollAnimate path="bottom">
+            <h1 className="sectionTitle">{programsData[pId].name}</h1>
+          </ScrollAnimate>
+          <ScrollAnimate path="right">
+            <p>{programsData[pId].description}</p>
+          </ScrollAnimate>
         </div>
-        <div className={styles.rightColumn}>
-          <Image src={programsData[pId].img} alt="" />
-        </div>
+        <ScrollAnimate path="left">
+          <div className={styles.rightColumn}>
+            <Image src={programsData[pId].img} alt="" />
+          </div>
+        </ScrollAnimate>
       </div>
       {pId === "startup-studio-program" ? (
         <Accelerators />

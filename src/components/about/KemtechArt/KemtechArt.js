@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScrollAnimate from "react-scroll-fade-animation";
 
 //styles
 import styles from "./KemtechArt.module.sass";
@@ -10,9 +11,11 @@ import shape from "assets/shape-blue.svg";
 export const KemtechArt = () => {
   return (
     <section className={styles.artSection}>
-      <div>
-        <Image src={art} alt="Kemtech name origin art " />
-      </div>
+      <ScrollAnimate path="bottom">
+        <div>
+          <Image src={art} alt="Kemtech name origin art " />
+        </div>
+      </ScrollAnimate>
 
       <div className={styles.shape}>
         <Image src={shape} alt="yellow blob" />
