@@ -1,10 +1,9 @@
-import { useRouter } from "next/router";
-import { programsData } from "data/programsData";
-import { useEffect } from "react";
 import ProgramPage from "components/ProgramPage";
+import { programsData } from "data/programsData";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
-import { NextPageContext } from "next";
-import { GetServerSideProps } from "next";
+import { GetServerSideProps, NextPageContext } from "next";
 import Head from "next/head";
 
 export const getServerSideProps = async (context) => {
