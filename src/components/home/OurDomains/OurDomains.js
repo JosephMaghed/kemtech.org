@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScrollAnimate from "react-scroll-fade-animation";
 
 //Styles
 import styles from "./OurDomains.module.sass";
@@ -41,12 +42,16 @@ export const OurDomains = () => {
 
   return (
     <section className={styles.domainSection}>
-      <h2 className="sectionTitle">Our domains</h2>
+      <ScrollAnimate path={"bottom"}>
+        <h2 className="sectionTitle">Our domains</h2>
+      </ScrollAnimate>
       <div className={styles.domainsContainer}>
         {domains.map((x) => (
           <div key={x.name.split(" ").join("-")} className={styles.domainCard}>
-            <Image src={x.img} alt={`${x.name} icon`} />
-            <p>{x.name}</p>
+            <ScrollAnimate path={"top"}>
+              <Image src={x.img} alt={`${x.name} icon`} />
+              <p>{x.name}</p>
+            </ScrollAnimate>
           </div>
         ))}
       </div>

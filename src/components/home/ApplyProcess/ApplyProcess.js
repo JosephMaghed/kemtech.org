@@ -1,13 +1,14 @@
-import Image from "next/image";
 import Button from "components/Button";
+import Image from "next/image";
+import ScrollAnimate from "react-scroll-fade-animation";
 
 //styles
 import styles from "./ApplyProcess.module.sass";
 
 //Images
+import compare_icon from "assets/compare-icon.svg";
 import form_icon from "assets/form-icon.svg";
 import presentation_icon from "assets/presentation-icon.svg";
-import compare_icon from "assets/compare-icon.svg";
 import profit_icon from "assets/profit-icon.svg";
 
 export const ApplyProcess = () => {
@@ -31,19 +32,32 @@ export const ApplyProcess = () => {
   ];
 
   return (
-    <section className={styles.applyProcess}>
-      <h2 className="sectionTitleWhite">How to Apply</h2>
-      <div className={styles.applyWrapper}>
-        {process.map((x) => (
-          <div key={x.text.split(" ").join("-")} className={styles.applyCard}>
-            <Image src={x.img} alt={`${x.text} icon`} height={64} />
-            <p>{x.text}</p>
+    <>
+      <ScrollAnimate path={"top"}>
+        <section className={styles.applyProcess}>
+          <ScrollAnimate path={"bottom"}>
+            <h2 className="sectionTitleWhite">How to Apply</h2>
+          </ScrollAnimate>
+
+          <div className={styles.applyWrapper}>
+            {process.map((x) => (
+              <ScrollAnimate
+                key={x.text.split(" ").join("-")}
+                className={styles.applyCard}
+                path={"bottom"}
+              >
+                <div>
+                  <Image src={x.img} alt={`${x.text} icon`} height={64} />
+                  <p>{x.text}</p>
+                </div>
+              </ScrollAnimate>
+            ))}
           </div>
-        ))}
-      </div>
-      <div className={styles.centerButton}>
-        <Button innerText="Apply Now" type="primary" />
-      </div>
-    </section>
+          <div className={styles.centerButton}>
+            <Button innerText="Apply Now" type="primary" />
+          </div>
+        </section>
+      </ScrollAnimate>
+    </>
   );
 };

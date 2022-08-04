@@ -33,10 +33,7 @@ export default function Footer() {
                     .toLowerCase()
                     .split(" ")
                     .join("-")}`}
-                  href={`/programs/${programsData[key].name
-                    .toLowerCase()
-                    .split(" ")
-                    .join("-")}`}
+                  href={`/programs/${key}`}
                 >
                   <li className={styles.columnRow}>
                     {programsData[key].name.replace("Program", "")}
@@ -112,12 +109,12 @@ export default function Footer() {
 
               <li className={styles.social}>
                 <a
-                  href="tel:+201063142273"
+                  href="tel:+201001222844"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Image alt="Linkedin logo" src={teleIcon} />
-                  <span>+20 106 314 2273</span>
+                  <span>+20 0100 122 2844</span>
                 </a>
               </li>
 

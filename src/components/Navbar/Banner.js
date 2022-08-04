@@ -8,8 +8,8 @@ export const Banner = () => {
   return (
     <div className={styles.banner}>
       <p>
-        All trainings are available at <strong>100 L.E.</strong> only for all
-        NCT students 🎉
+        Special discount <strong>33%</strong> for early birds + additional
+        discount for NCT students.
       </p>
     </div>
   );

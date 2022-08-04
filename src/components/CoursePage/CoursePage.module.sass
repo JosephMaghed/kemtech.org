@@ -1,7 +1,7 @@
 @import 'styles/variables'
 
 .container
-    @include ContainerMargin($top: 50px)
+    @include ContainerMargin($top: 30px)
 
     // tittle h2 of each section
     .sectionTitle
@@ -14,13 +14,25 @@
 
     //Image section
     .imgContainer
-        width: 100%
-        height: 300px
-        background-color: $blue_300
+        max-width: 100%
         position: relative
         background-size: cover
-        border-radius: 25px
-        margin-bottom: 30px
+        border-radius: 10px
+        margin: 0 auto 30px auto
+        background-position: 50%
+        image-rendering: -webkit-optimize-contrast
+        image-rendering: crisp-edges
+        image-rendering: -moz-crisp-edges
+        image-rendering: -o-crisp-edges
+        -ms-interpolation-mode: nearest-neighbor
+        max-height: 300px
+        min-height: 120px
+        overflow: hidden
+        padding-bottom: 20%
+        &::before
+            content: ""
+            display: block
+            padding-bottom: 25%
 
     .titleContainer
         display: flex

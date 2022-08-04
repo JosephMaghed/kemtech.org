@@ -1,0 +1,16 @@
+{
+    "apps": [{
+        "name" : "kemtech-pm2",
+        "script" : "./server.js",
+        "env" : {
+            "SMTP_USER":"h.mamdouh@kemtech.org",
+            "SMTP_PASSWORD":"htpdojcbyofhzftq",
+            "PORT" : 80
+        },
+        "env_production" : {
+            "SMTP_USER":"h.mamdouh@kemtech.org",
+            "SMTP_PASSWORD":"htpdojcbyofhzftq",
+            "PORT" : 80
+        }
+    }]
+}
