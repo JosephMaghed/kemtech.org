@@ -162,8 +162,8 @@ export const programsData = {
           ],
           outcomes: [],
         },
-        "CCNA-R&S2": {
-          name: "CCNA R&S2",
+        "CCNA-R&S1": {
+          name: "CCNA R&S1",
           color: ["#5C258D", "#4389A2"],
           img: "/ict.png",
           href: "/programs/training-&-career-development-program/CCNA-R&S2",
