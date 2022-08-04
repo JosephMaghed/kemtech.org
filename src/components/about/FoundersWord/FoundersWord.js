@@ -33,16 +33,12 @@ export const FoundersWord = () => {
           </p>
 
           <div className={styles.picsWrapper}>
-            <ScrollAnimate path="top">
-              <div className={styles.signaturePic}>
-                <Image src={signaturePic} alt="  " />
-              </div>
-            </ScrollAnimate>
-            <ScrollAnimate path="left">
-              <div className={styles.holdingPic}>
-                <Image src={holdingLogo} alt="  " />
-              </div>
-            </ScrollAnimate>
+            <div className={styles.signaturePic}>
+              <Image src={signaturePic} alt="  " />
+            </div>
+            <div className={styles.holdingPic}>
+              <Image src={holdingLogo} alt="  " />
+            </div>
           </div>
         </div>
       </ScrollAnimate>
