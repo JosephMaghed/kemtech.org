@@ -38,15 +38,14 @@ export const CoursePage = (props) => {
   return (
     <section className={styles.container}>
       {/* banner image */}
-      {/* <div
-        className={styles.imgContainer}
-        style={{
-          backgroundImage: `url('/Untitled.png')`,
-          objectPosition: "50% 50%",
-          backgroundAttachment: "scroll",
-          backgroundPosition: "center",
-        }}
-      ></div> */}
+      {courseData.img && (
+        <div
+          style={{
+            backgroundImage: `url('${courseData.img}')`,
+          }}
+          className={styles.imgContainer}
+        ></div>
+      )}
 
       <div className={styles.titleContainer}>
         <h1 className={styles.courseName}>{courseData.name}</h1>

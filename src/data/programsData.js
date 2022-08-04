@@ -17,7 +17,7 @@ export const programsData = {
         "smart-grid-features": {
           name: "Smart Grid features",
           color: ["#43cea2", "#185a9d"],
-          img: null,
+          img: "/renewable.png",
           href: "/programs/training-&-career-development-program/smart-grid-features",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
@@ -47,7 +47,7 @@ export const programsData = {
         "hydrogen-energy": {
           name: "Hydrogen Energy",
           color: ["#43cea2", "#185a9d"],
-          img: null,
+          img: "/renewable.png",
           href: "/programs/training-&-career-development-program/hydrogen-energy",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
@@ -75,7 +75,7 @@ export const programsData = {
         PLC1: {
           name: "PLC1",
           color: ["#606c88", "#3f4c6b"],
-          img: null,
+          img: "/mechatronics.png",
           href: "/programs/training-&-career-development-program/PLC1",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
@@ -104,7 +104,7 @@ export const programsData = {
         "basic-electronics": {
           name: "Basic Electronics",
           color: ["#606c88", "#3f4c6b"],
-          img: null,
+          img: "/mechatronics.png",
           href: "/programs/training-&-career-development-program/basic-electronics",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
@@ -140,7 +140,7 @@ export const programsData = {
         "ethical-hacker-l1": {
           name: "Ethical Hacker L1",
           color: ["#5C258D", "#4389A2"],
-          img: null,
+          img: "/ict.png",
           href: "/programs/training-&-career-development-program/ethical-hacker-l1",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
@@ -165,7 +165,7 @@ export const programsData = {
         "CCNA-R&S2": {
           name: "CCNA R&S2",
           color: ["#5C258D", "#4389A2"],
-          img: null,
+          img: "/ict.png",
           href: "/programs/training-&-career-development-program/CCNA-R&S2",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
