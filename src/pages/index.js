@@ -22,6 +22,10 @@ export default function Home() {
       <Head>
         <title>Kemtech Valley وادي التكنولوجيا المصري</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="The Egyptian Applied Technological Valley - “Kemtech Valley” initiative aims to build highly specialized technical cadres and develop the creative capabilities of Egyptian youth."
+        />
       </Head>
 
       <Hero />
