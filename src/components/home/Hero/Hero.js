@@ -56,7 +56,7 @@ export const Hero = () => {
               <Button
                 innerText="Apply Now"
                 type="primary"
-                href="https://forms.gle/aYFK3WT3k3byXyNT7"
+                href="/programs/training-&-career-development-program"
               />
             </div>
             <div className={styles.leftBottom}>
