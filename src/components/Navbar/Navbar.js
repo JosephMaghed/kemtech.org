@@ -1,6 +1,6 @@
+import Button from "components/Button";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "components/Button";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
@@ -74,7 +74,7 @@ export default function Navbar() {
             <Button
               innerText="Apply now"
               type="primary"
-              href="https://forms.gle/aYFK3WT3k3byXyNT7"
+              href="/programs/training-&-career-development-program"
             />
           </div>
           <div
