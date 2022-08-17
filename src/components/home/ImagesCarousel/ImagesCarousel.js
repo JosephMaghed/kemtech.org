@@ -12,11 +12,11 @@ import "swiper/css/pagination";
 // import required modules
 import { Navigation, Pagination } from "swiper";
 
-import pic01 from "assets/carouselPics/pic01.png";
-import pic02 from "assets/carouselPics/pic02.png";
-import pic03 from "assets/carouselPics/pic03.png";
-import pic04 from "assets/carouselPics/pic04.png";
-import pic05 from "assets/carouselPics/pic05.png";
+import pic01 from "assets/carouselPics/pic01.webp";
+import pic02 from "assets/carouselPics/pic02.webp";
+import pic03 from "assets/carouselPics/pic03.webp";
+import pic04 from "assets/carouselPics/pic04.webp";
+import pic05 from "assets/carouselPics/pic05.webp";
 
 export const ImagesCarousel = () => {
   let picArr = [pic03, pic01, pic02, pic04, pic05];

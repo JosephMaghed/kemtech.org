@@ -10,8 +10,8 @@ import styles from "./Hero.module.sass";
 
 // images import
 import holdingLogo from "assets/holding.svg";
-import heroArt from "assets/home-heroArt.png";
-import nctuLogo from "assets/nctu.png";
+import heroArt from "assets/home-heroArt.webp";
+import nctuLogo from "assets/nctu.webp";
 import oroLogo from "assets/oro-black.svg";
 
 export const Hero = () => {
