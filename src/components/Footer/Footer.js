@@ -120,6 +120,17 @@ export default function Footer() {
 
               <li className={styles.social}>
                 <a
+                  href="tel:+201050971717"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image alt="Linkedin logo" src={teleIcon} />
+                  <span>+20 105 097 1717</span>
+                </a>
+              </li>
+
+              <li className={styles.social}>
+                <a
                   href="geo:30.02274928075786, 31.52303803111338"
                   target="_blank"
                   rel="noopener noreferrer"
