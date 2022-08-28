@@ -81,7 +81,7 @@ export default function Navbar() {
             className={styles.xToggle}
             onClick={() => navToggleHandler(false)}
           >
-            <Image src={xIcon} alt="" height={50} />
+            <Image src={xIcon} alt="" height={40} width={40} />
           </div>
         </div>
 
@@ -89,7 +89,7 @@ export default function Navbar() {
           className={styles.menuToggle}
           onClick={() => navToggleHandler(true)}
         >
-          <Image src={hamburgerMenu} alt="" height={30} width={40} />
+          <Image src={hamburgerMenu} alt="" height={40} width={40} />
         </div>
       </nav>
 
