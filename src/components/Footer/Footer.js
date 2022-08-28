@@ -20,7 +20,12 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.topFooter}>
         <div className={styles.topLeft}>
-          <Image src={kemtechLogo} alt="kemtech logo" />
+          <Image
+            src={kemtechLogo}
+            alt="kemtech logo"
+            width={180}
+            height={180}
+          />
         </div>
         <div className={styles.topRight}>
           {/* Programs column dynamically created form programData */}
