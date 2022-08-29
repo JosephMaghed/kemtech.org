@@ -17,14 +17,14 @@ export const programsData = {
         "smart-grid-features": {
           name: "Smart Grid features",
           color: ["#43cea2", "#185a9d"],
-          img: "/renewable.png",
+          img: "/renewable.webp",
           href: "/programs/training-&-career-development-program/smart-grid-features",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
           instructorName: "Dr. Sayed El-Far",
-          instructorImg: "/instructors-imgs/sayed-elfar.jpg",
+          instructorImg: "/instructors-imgs/sayed-elfar.webp",
           instructorBio: `
           Dr El-Sayed Abdel-Razek El-Far, is currently the Vice Dean of College of Industry and Energy Technology, New Cairo Technological University, Egypt.
           He received Ph.D. degree in Electrical Power Engineering from Technical University, Hamburg, Germany, 1994.
@@ -47,14 +47,14 @@ export const programsData = {
         "hydrogen-energy": {
           name: "Hydrogen Energy",
           color: ["#43cea2", "#185a9d"],
-          img: "/renewable.png",
+          img: "/renewable.webp",
           href: "/programs/training-&-career-development-program/hydrogen-energy",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
           instructorName: "Eng. Aliaa Khaled",
-          instructorImg: "/instructors-imgs/aliaa-khaled.jpg",
+          instructorImg: "/instructors-imgs/aliaa-khaled.webp",
           instructorBio:
             "Eng. Aliaa is working now as teaching Assistant at Faculty of Industry and Energy Technology, New Cairo Technological University. She graduated from Integrated Technical Education Cluster with Excellent Grad in 2021. She has a good experience in many majors related to the Renewable Energy System. Now, she is preparing to start her Master degree study.",
           content: [
@@ -75,14 +75,14 @@ export const programsData = {
         PLC1: {
           name: "PLC1",
           color: ["#606c88", "#3f4c6b"],
-          img: "/mechatronics.png",
+          img: "/mechatronics.webp",
           href: "/programs/training-&-career-development-program/PLC1",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
           instructorName: "Eng. Mahmoud Abdrabo",
-          instructorImg: "/instructors-imgs/mohamed-saber.jpg",
+          instructorImg: "/instructors-imgs/mohamed-saber.webp",
           instructorBio:
             "Mahmoud Saber Abdrabbo is a Teaching Assistant at Faculty of Industry and Energy Technology, New Cairo Technological University (NCTU). He received the B.Sc. degree in mechatronics engineering from Misr University of Science and Technology (MUST) in 2017 and currently, he is a M.sc. student in Mechanical Engineering department in Benha University. He is well versed in the fields of Mechatronics systems, Process Control, Automatic Control, Embedded systems, Robotics, as well as practical experience in Embedded programming(ARM, AVR), PLC and SCADA.",
           content: [
@@ -104,14 +104,14 @@ export const programsData = {
         "basic-electronics": {
           name: "Basic Electronics",
           color: ["#606c88", "#3f4c6b"],
-          img: "/mechatronics.png",
+          img: "/mechatronics.webp",
           href: "/programs/training-&-career-development-program/basic-electronics",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
           instructorName: "Eng. Rowan Nasr",
-          instructorImg: "/instructors-imgs/rowan-nasr.jpg",
+          instructorImg: "/instructors-imgs/rowan-nasr.webp",
           instructorBio:
             "Eng. Rowan Nasr received the BSc degree in Power and Electrical Machinery from Kafr El Sheikh University in 2014, Diploma in Control of Computer Systems in 2017. Currently, she is a MSc student in Industrial Electronics and Control Department at Menouf Electronic Engineering Faculty. She has worked as a technology trainer at Al Amerya Integrated Technological Cluster AITC for 6 years in the Department of Electrical and Electronics Technology. She has great experience in field of Analog and Digital Electronics, Embedded systems, Automatic Control and Instrumentation, Micro-controller Systems, Classic Control Systems. as well as practical experience in Automation systems. Currently, she is a Teaching Assistant in Mechatronics Technology Program at New Cairo Technological University NCTU. ",
           content: [
@@ -140,14 +140,14 @@ export const programsData = {
         "ethical-hacker-l1": {
           name: "Ethical Hacker L1",
           color: ["#5C258D", "#4389A2"],
-          img: "/ict.png",
+          img: "/ict.webp",
           href: "/programs/training-&-career-development-program/ethical-hacker-l1",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
           instructorName: "Eng. Hani Saad",
-          instructorImg: "/instructors-imgs/hani-saad.jpg",
+          instructorImg: "/instructors-imgs/hani-saad.webp",
           instructorBio: `Eng. Hani Saad received the BSc degree in Computer Science from Benha University in 2007, MSc degree in Computer Science from Annamalai University in India.
           He was an Assistant Lecturer in ICT Dept. in NCT New Cairo Technological University Also; he was an IT Manager for a lot of Industrial companies in Egypt and Saudi Arabia.
          He was also a TOT Instructor from CISCO & Huawei Academies.
@@ -165,14 +165,14 @@ export const programsData = {
         "CCNA-R&S1": {
           name: "CCNA R&S1",
           color: ["#5C258D", "#4389A2"],
-          img: "/ict.png",
-          href: "/programs/training-&-career-development-program/CCNA-R&S2",
+          img: "/ict.webp",
+          href: "/programs/training-&-career-development-program/CCNA-R&S1",
           applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
           instructorName: "Eng. Maha Gamal",
-          instructorImg: "/instructors-imgs/maha-gamal.jpg",
+          instructorImg: "/instructors-imgs/maha-gamal.webp",
           instructorBio:
             "She has a Bachelor of electronics and electrical communications engineering. She is working as Demonstrator at NCT (New Cairo Technological University). And played different roles in her career, like: \r\n 1-Networks and VOIP engineer at Connect Company \n 2-Instructor at Egypt institute for wireless studies \n 3-Technical trainer at 4G Center \r\n 4-Technical support at Exceed company \r\n 5- Training at National Authority for Remote Sensing and Space science (NARSS)",
           content: [

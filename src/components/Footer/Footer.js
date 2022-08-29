@@ -20,7 +20,12 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.topFooter}>
         <div className={styles.topLeft}>
-          <Image src={kemtechLogo} alt="kemtech logo" />
+          <Image
+            src={kemtechLogo}
+            alt="kemtech logo"
+            width={180}
+            height={180}
+          />
         </div>
         <div className={styles.topRight}>
           {/* Programs column dynamically created form programData */}
@@ -115,6 +120,17 @@ export default function Footer() {
                 >
                   <Image alt="Linkedin logo" src={teleIcon} />
                   <span>+20 0100 122 2844</span>
+                </a>
+              </li>
+
+              <li className={styles.social}>
+                <a
+                  href="tel:+201050971717"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image alt="Linkedin logo" src={teleIcon} />
+                  <span>+20 105 097 1717</span>
                 </a>
               </li>
 

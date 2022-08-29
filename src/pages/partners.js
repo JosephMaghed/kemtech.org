@@ -1,30 +1,39 @@
-import NotReady from "components/NotReady";
-import pageArt from "assets/paid-idea-cuate.svg";
 import Head from "next/head";
-import ContactForm from "components/ContactForm";
-import oroLogo from "assets/oro-black.svg";
 import Image from "next/image";
 
-export default function community() {
+import styles from "styles/Partners.module.sass";
+
+export default function Partners() {
+  function importAll(r) {
+    let images = {};
+    r.keys().forEach((item, index) => {
+      images[item.replace("./", "")] = r(item);
+    });
+    return images;
+  }
+  const imagesArr = importAll(
+    require.context("assets/partnersLogos", false, /\.(png|jpe?g|svg|webp)$/)
+  );
+
   return (
     <>
       <Head>
         <title>Partners - Kemtech</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <NotReady img={pageArt}>
-        <h1 className="sectionTitle">Our partners</h1>
-        <Image src={oroLogo} alt="oro ventures logo" height={100} width={200} />
-        <br />
-        <br />
-        <br />
-        <strong>Join Us</strong>
-        <br /> Become one of the first technovative Partners in Egypt.
-        <br /> For inquires contact us using the form below or email us at:{" "}
-        <br /> <strong>info@kemtech.org</strong>
-      </NotReady>
 
-      <ContactForm />
+      <section className={styles.container}>
+        {Object.keys(imagesArr).map(
+          (x) =>
+            // This implementation bypass the duplicated pictures caused by require.context
+            // REVIEW: This solution requires more review
+            x[0] === "p" && (
+              <div className={styles.imgContainer} key="x">
+                <Image src={imagesArr[x].default} alt="kemtech partner" />
+              </div>
+            )
+        )}
+      </section>
     </>
   );
 }

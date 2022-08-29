@@ -9,7 +9,7 @@ import Button from "components/Button";
 import styles from "./AboutCard.module.sass";
 
 // Images
-import studentsImg from "assets/students.jpg";
+import studentsImg from "assets/students.webp";
 
 export const AboutCard = () => {
   return (

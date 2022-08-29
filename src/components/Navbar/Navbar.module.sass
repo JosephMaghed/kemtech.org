@@ -1,10 +1,11 @@
 @import  "styles/variables"
 
 // Baisc style template for nav item 
-@mixin navItemTemp()
+@mixin navItemTemplate()
     color: $white_basic
     padding: 10px 0
     border-bottom: 3px solid transparent
+    width: fit-content
 
     &:hover
         border-bottom: 3px solid $yellow_basic
@@ -19,10 +20,12 @@
     display: flex
     flex-direction: row
     align-items: center
+
     @media only screen and (max-width: $breakpoint_tablet)
         justify-content: space-between
 
     .navWarper
+        transition: all 0.3s
         width: 100%
         display: flex
         flex-direction: row
@@ -33,15 +36,16 @@
             display: flex
             flex-direction: row
             gap: 20px
+            justify-content: center
 
             @media only screen and (max-width: $breakpoint_tablet)
                 display: none
 
         .navItem
-            @include navItemTemp()
+            @include navItemTemplate()
 
         .navItemActive
-            @include navItemTemp()
+            @include navItemTemplate()
             border-bottom: 3px solid $yellow_basic
 
         .applyButton
@@ -63,11 +67,11 @@
             right: 0
             z-index: 10000
             background-color: $blue_basic
-            transition: all 0.5s
             display: flex
             flex-direction: column
             padding: 50px
             overflow: hidden
+            animation: opeiningAnimation 0.4s ease
 
             .navItemContainer
                 display: flex
@@ -75,28 +79,41 @@
                 gap: 10px
                 margin-top: 30px
                 text-align: center
+                align-items: center
 
                 .navItem
-                    @include navItemTemp()
+                    @include navItemTemplate()
 
                 .navItemActive
-                    @include navItemTemp()
+                    @include navItemTemplate()
                     border-bottom: 3px solid $yellow_basic
 
             .applyButton
                 display: block
                 position: absolute
-                bottom: 15%
+                bottom: 12%
                 left: 50%
                 transform: translate(-50%, -50%)
+                // for Iphone 5/SE screens
+                @media only screen and (max-width: 325)
+                    color: red
+                    bottom: 1%
 
             .xToggle
                 position: absolute
                 top: 5%
-                right: 0.1%
+                right: 5%
 
     // Hide hamburger menue 
     .menuToggle
         display: none
         @media only screen and (max-width: $breakpoint_tablet)
             display: block
+
+// responsive navigation opining animation
+@keyframes opeiningAnimation
+    0%
+        height: 50vh
+
+    100%
+        height: 100vh

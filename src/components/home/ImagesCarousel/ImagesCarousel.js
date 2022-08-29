@@ -12,14 +12,19 @@ import "swiper/css/pagination";
 // import required modules
 import { Navigation, Pagination } from "swiper";
 
-import pic01 from "assets/carouselPics/pic01.png";
-import pic02 from "assets/carouselPics/pic02.png";
-import pic03 from "assets/carouselPics/pic03.png";
-import pic04 from "assets/carouselPics/pic04.png";
-import pic05 from "assets/carouselPics/pic05.png";
-
 export const ImagesCarousel = () => {
-  let picArr = [pic03, pic01, pic02, pic04, pic05];
+  // Import all pictures in assets/carouselPics
+  function importAll(r) {
+    let images = {};
+    r.keys().forEach((item, index) => {
+      images[item.replace("./", "")] = r(item);
+    });
+    return images;
+  }
+  const imagesArr = importAll(
+    require.context("assets/carouselPics", false, /\.(png|jpe?g|svg|webp)$/)
+  );
+
   return (
     <section className={styles.container}>
       <Swiper
@@ -32,13 +37,18 @@ export const ImagesCarousel = () => {
         navigation={true}
         modules={[Pagination, Navigation]}
       >
-        {picArr.map((x) => (
-          <SwiperSlide key="cPic" className={styles.swiperSlide}>
-            <div>
-              <Image src={x} alt="" />
-            </div>
-          </SwiperSlide>
-        ))}
+        {Object.keys(imagesArr).map(
+          (x) =>
+            // This implementation bypass the duplicated pictures caused by require.context
+            // REVIEW: This solution requires more review
+            x[0] === "p" && (
+              <SwiperSlide key="cPic" className={styles.swiperSlide}>
+                <div>
+                  <Image src={imagesArr[x].default} alt="" layout="fill" />
+                </div>
+              </SwiperSlide>
+            )
+        )}
       </Swiper>
     </section>
   );

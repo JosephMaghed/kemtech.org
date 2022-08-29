@@ -7,7 +7,7 @@ import styles from "./Introduction.module.sass";
 // imgs
 import holdingLogo from "assets/holding.svg";
 import kemtechTypoLogo from "assets/kemtech-typo.svg";
-import nctuLogo from "assets/nctu.png";
+import nctuLogo from "assets/nctu.svg";
 import shape from "assets/shape-yellow.svg";
 
 export const Introduction = () => {
