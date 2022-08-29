@@ -30,7 +30,7 @@ export const InitiativeGoals = () => {
         </ScrollAnimate>
         <ScrollAnimate path="top">
           <div className={styles.util}>
-            <p className={styles.cardTitle}>Utlization</p>
+            <p className={styles.cardTitle}>Utilization</p>
             <p className={styles.cardText}>
               Maximizing the utilization of scientific cadres and specialized
               experts
