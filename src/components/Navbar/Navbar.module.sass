@@ -71,7 +71,7 @@
             flex-direction: column
             padding: 50px
             overflow: hidden
-            animation: opeiningAnimation 0.5s linear
+            animation: opeiningAnimation 0.4s ease
 
             .navItemContainer
                 display: flex
@@ -91,9 +91,13 @@
             .applyButton
                 display: block
                 position: absolute
-                bottom: 20%
+                bottom: 12%
                 left: 50%
                 transform: translate(-50%, -50%)
+                // for Iphone 5/SE screens
+                @media only screen and (max-width: 325)
+                    color: red
+                    bottom: 1%
 
             .xToggle
                 position: absolute
