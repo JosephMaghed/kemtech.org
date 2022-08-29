@@ -1,0 +1,15 @@
+@import  'styles/variables'
+
+.container
+    @include ContainerMargin($top: 80px)
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    gap: 100px
+
+    .imgContainer
+        display: block
+        width: 250px
+        height: fit-content
