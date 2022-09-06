@@ -19,7 +19,8 @@ export const programsData = {
           color: ["#43cea2", "#185a9d"],
           img: "/renewable.webp",
           href: "/programs/training-&-career-development-program/smart-grid-features",
-          applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
+          applyHref:
+            "https://docs.google.com/forms/d/1BOwmqBCtdAeQ8aKy6_2eJiOffETNQo8fBrEHFLUFDzo/edit",
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
@@ -49,7 +50,8 @@ export const programsData = {
           color: ["#43cea2", "#185a9d"],
           img: "/renewable.webp",
           href: "/programs/training-&-career-development-program/hydrogen-energy",
-          applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
+          applyHref:
+            "https://docs.google.com/forms/d/1BOwmqBCtdAeQ8aKy6_2eJiOffETNQo8fBrEHFLUFDzo/edit",
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
@@ -77,7 +79,8 @@ export const programsData = {
           color: ["#606c88", "#3f4c6b"],
           img: "/mechatronics.webp",
           href: "/programs/training-&-career-development-program/PLC1",
-          applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
+          applyHref:
+            "https://docs.google.com/forms/d/1BOwmqBCtdAeQ8aKy6_2eJiOffETNQo8fBrEHFLUFDzo/edit",
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
@@ -106,7 +109,8 @@ export const programsData = {
           color: ["#606c88", "#3f4c6b"],
           img: "/mechatronics.webp",
           href: "/programs/training-&-career-development-program/basic-electronics",
-          applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
+          applyHref:
+            "https://docs.google.com/forms/d/1BOwmqBCtdAeQ8aKy6_2eJiOffETNQo8fBrEHFLUFDzo/edit",
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
@@ -142,7 +146,8 @@ export const programsData = {
           color: ["#5C258D", "#4389A2"],
           img: "/ict.webp",
           href: "/programs/training-&-career-development-program/ethical-hacker-l1",
-          applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
+          applyHref:
+            "https://docs.google.com/forms/d/1BOwmqBCtdAeQ8aKy6_2eJiOffETNQo8fBrEHFLUFDzo/edit",
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
@@ -167,7 +172,8 @@ export const programsData = {
           color: ["#5C258D", "#4389A2"],
           img: "/ict.webp",
           href: "/programs/training-&-career-development-program/CCNA-R&S1",
-          applyHref: "https://forms.gle/aYFK3WT3k3byXyNT7",
+          applyHref:
+            "https://docs.google.com/forms/d/1BOwmqBCtdAeQ8aKy6_2eJiOffETNQo8fBrEHFLUFDzo/edit",
           duration: "5 Days",
           enrollDate: "August",
           price: "400 L.E.",
