@@ -1,7 +1,7 @@
 import {
   faBug,
   faCircleCheck,
-  faMugHot,
+  faMugHot
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Ticket from "components/summit-page/Ticket";
@@ -15,10 +15,11 @@ import styles from "styles/TicketPage.module.sass";
 //Get ticket data from server
 export const getServerSideProps = async (context) => {
   const { query } = context;
+  const API_URL = process.env.API_URL;
 
   try {
     const res = await fetch(
-      `http://localhost:5500/api/summit-tickets/ticket/${query.ticketId}`
+      `${API_URL}/api/summit-tickets/ticket/${query.ticketId}`
     );
 
     // parse request body
@@ -85,14 +86,14 @@ export default function TicketPage({ ticketData, resStatus }) {
               // Different message for PTS team
               <div className={styles.ptsMessage}>
                 <h2>
-                  {`hey ${ticketData.firstName} 👋, <br />
+                  Hey {ticketData.firstName}, <br />
                   <br />
-                  You are a PTS family member, you don't need a ticket
+                  You are a PTS family member.  You don&apos;t need a ticket to enter.
                   <br />
-                  but here is one anyways ✌️
+                  But anyways, here you go ✌️
                   <br />
                   <br />
-                  Keep Rocking! 😉`}
+                  Keep Rocking! 😉
                 </h2>
               </div>
             ) : (
@@ -101,7 +102,7 @@ export default function TicketPage({ ticketData, resStatus }) {
                   icon={faCircleCheck}
                   style={{ fontSize: 60, color: "#f7a41c" }}
                 />
-                <h2>Registration Completed Successfully</h2>
+                <h2>Registration completed successfully</h2>
               </div>
             )}
           </div>
