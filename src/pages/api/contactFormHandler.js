@@ -2,7 +2,7 @@
 import nodemailer from "nodemailer";
 
 export default async function contactHandle(req, res) {
-  const { Name, Email, Message } = req.body;
+  const { Name, Email, Message, number, company } = req.body;
 
   // Open node mailer transporter
   const transporter = nodemailer.createTransport({
@@ -27,6 +27,8 @@ export default async function contactHandle(req, res) {
       <h4>new contact form submission</h4><br>
         <p><strong>User name: </strong> ${Name}</p>
         <p><strong>User Email: </strong> ${Email}</p><br>
+        <p><strong>Number: </strong> ${number}</p><br>
+        <p><strong>Company: </strong> ${company}</p><br>
         <p><strong>Message: </strong> ${Message}</p><br>
       `,
   };

@@ -1,0 +1,89 @@
+@import  './variables'
+
+.contactSection
+    @include ContainerMargin()
+    margin-bottom: 150px
+
+    .contactForm
+        .fromItem
+            display: flex
+            flex-direction: column
+            margin-top: 30px
+            width: 100%
+            @media screen and ( max-width: $breakpoint_mobile )
+                margin-top: 10px
+
+            label
+                margin: 0 0 18px 5px
+                color: $gray_600
+                font-weight: 500
+
+            input
+                height: 50px
+                width: 30%
+                padding: 10px 20px
+                appearance: none
+                @media screen and ( max-width: $breakpoint_mobile )
+                    width: 80%
+
+            textarea
+                width: 80%
+                height: 300px
+                resize: none
+                padding: 20px
+
+            input, textarea
+                background-color: $gray_300
+                border: none
+                border-radius: 10px
+
+                &:focus
+                    outline: none
+                    border: 3px solid $blue_300
+
+        .button
+            margin-top: 20px
+            margin-bottom: 50px
+
+.titleWrapper
+    margin-bottom: 30px
+    padding-top: 40px
+    width: fit-content
+
+    .titleTopWrapper
+        display: inline-flex
+        align-items: center
+        height: fit-content
+        h1
+            font-size: 3.5rem
+            text-align: justify
+            width: fit-content
+            padding-right: 20px
+            line-height: 50px
+            border-right: 3px solid $yellow_basic
+            margin: 0
+            letter-spacing: -2px
+
+            @media only screen and ( max-width: $breakpoint-mobile  )
+                font-size: 2.5rem
+                line-height: 38px
+
+        span
+            letter-spacing: 7px
+
+        h2
+            font-size: 3.5rem
+            padding-left: 20px
+            line-height: 50px
+            font-weight: 800
+            margin: 0
+            color: $yellow_basic
+            @media only screen and ( max-width: $breakpoint-mobile  )
+                font-size: 2.5rem
+                line-height: 38px
+
+    p
+        font-size: 1.5rem
+        text-align: center
+        @media only screen and ( max-width: $breakpoint-mobile  )
+            font-size: 1rem

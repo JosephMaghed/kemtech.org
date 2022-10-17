@@ -1,0 +1,97 @@
+@import './variables'
+
+.mainContainer
+    display: flex
+    flex-direction: row
+    min-height: 70vh
+    flex-wrap: wrap
+    @media only screen and ( max-width: $breakpoint-tablet  )
+        padding-bottom: 40px
+
+    .leftContainer
+        flex-grow: 1
+        background-color: $gray_200
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        filter: opacity(10)
+
+        .titleWrapper
+            margin-bottom: 30px
+            padding-top: 40px
+
+            .titleTopWrapper
+                display: inline-flex
+                align-items: center
+                height: fit-content
+                h1
+                    font-size: 3.5rem
+                    text-align: justify
+                    width: fit-content
+                    padding-right: 20px
+                    line-height: 50px
+                    border-right: 3px solid $yellow_basic
+                    margin: 0
+                    letter-spacing: -2px
+
+                    @media only screen and ( max-width: $breakpoint-mobile  )
+                        font-size: 2.5rem
+                        line-height: 38px
+
+                    span
+                        letter-spacing: 7px
+
+                h2
+                    font-size: 3.5rem
+                    padding-left: 20px
+                    line-height: 50px
+                    font-weight: 800
+                    margin: 0
+                    color: $yellow_basic
+                    @media only screen and ( max-width: $breakpoint-mobile  )
+                        font-size: 2.5rem
+                        line-height: 38px
+
+            p
+                font-size: 1.5rem
+                text-align: center
+                @media only screen and ( max-width: $breakpoint-mobile  )
+                    font-size: 1rem
+
+    .rightContainer
+        margin-top: 50px
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        flex-grow: 2
+        height: 100%
+
+        .tabsWrap
+            display: flex
+            flex-direction: row
+            min-height: 50px
+            height: fit-content
+            width: fit-content
+            border: 1px solid $gray_400
+            overflow: hidden
+            border-radius: 40px
+
+            .registerTab
+                border-radius: 40px
+                padding: 20px
+                width: 230px
+                text-align: center
+                background-color: $white_basic
+                cursor: pointer
+                transition: all ease .3s
+                @media only screen and ( max-width: $breakpoint-mobile  )
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 40vw
+
+            .activeTab
+                background-color: $blue_basic
+                color: white
