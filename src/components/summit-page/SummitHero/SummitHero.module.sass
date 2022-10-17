@@ -1,0 +1,117 @@
+@import  'styles/variables'
+
+.heroContainer
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), linear-gradient(0deg, rgba(6, 29, 60, 0.6), rgba(6, 29, 60, 0.6)), url('/summit-BG.png')
+    height: 84vh
+    background-size: cover
+    background-position: top left
+    background-repeat: no-repeat
+    background-attachment: fixed
+    color: $white_basic
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    @media only screen and ( max-width: $breakpoint-mobile )
+        gap: 30px
+        height: fit-content
+        min-height: 85vh
+
+    .heroContentContainer
+        @include ContainerPadding($top: 30px)
+        min-height: 85%
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        gap: 50px
+        justify-content: flex-start
+        align-items: center
+        align-content: center
+        @media only screen and ( max-width: 1391px  )
+            min-height: 75%
+
+        @media only screen and ( max-width: $breakpoint-mobile  )
+            gap: 30px
+
+        .rightContainer
+            p, h2
+                margin: 10px 0
+
+            .titleWrapper
+                margin-bottom: 30px
+                .titleTopWrapper
+                    display: inline-flex
+                    align-items: center
+                    height: fit-content
+                    h1
+                        font-size: 3.5rem
+                        text-align: justify
+                        width: fit-content
+                        padding-right: 20px
+                        line-height: 50px
+                        border-right: 3px solid $yellow_basic
+                        letter-spacing: -2px
+                        margin: 0
+
+                        @media only screen and ( max-width: $breakpoint-mobile  )
+                            font-size: 2.5rem
+                            line-height: 38px
+
+                    span
+                        letter-spacing: 7px
+
+                    h2
+                        font-size: 3.5rem
+                        padding-left: 20px
+                        line-height: 50px
+                        font-weight: 800
+                        margin: 0
+                        color: $yellow_basic
+                        @media only screen and ( max-width: $breakpoint-mobile  )
+                            font-size: 2.5rem
+                            line-height: 38px
+                p
+                    font-size: 1.5rem
+                    text-align: justify
+                    @media only screen and ( max-width: $breakpoint-mobile  )
+                        font-size: 1rem
+
+            .buttonsWrapper
+                margin-top: 30px
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
+                gap: 30px
+
+                @media only screen and ( max-width: $breakpoint_mobile )
+                    gap: 10px
+
+        .leftContainer
+            flex-grow: 2
+            align-self: flex-end
+
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            gap: 50px
+            @media only screen and ( max-width: $breakpoint_mobile )
+                gap: 0
+                align-self: center
+                justify-content: center
+
+            @media only screen and ( max-width: $breakpoint_mobile )
+                gap: 0
+                justify-content: space-between
+
+            p
+                text-transform: uppercase
+                font-size: 1rem
+                font-weight: 500
+                @media only screen and ( max-width: $breakpoint_tablet )
+                    font-size: 0.7rem
+
+    .counterBanner
+        width: 100%
+
+.ministerName
+    font-size: 2rem
+    font-size-adjust: 0.58

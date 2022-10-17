@@ -1,0 +1,49 @@
+@import  'styles/variables'
+.timerContainer
+
+    @include ContainerPadding($top: 20px)
+    background: radial-gradient(99.86% 19518.52% at 0.07% 48.06%, rgba(0, 70, 173, 0.7) 0%, rgba(251, 131, 117, 0.7) 0.01%, rgba(37, 45, 163, 0.7) 100%, rgba(0, 70, 173, 0.7) 100%)
+    background-attachment: fixed
+    color: #ffff
+    width: 100%
+    line-height: 28px
+    display: flex
+    flex-direction: row
+    gap: 20px
+    justify-content: space-between
+    align-content: center
+    align-items: center
+    flex-wrap: wrap
+
+    @media only screen and ( max-width: $breakpoint-tablet  )
+        justify-content: center
+        gap: 20px
+
+    p
+        margin: 0
+    .leftContainer
+        font-size: 1.5rem
+        display: flex
+        flex-direction: row
+        align-content: center
+        align-items: center
+        gap: 20px
+        flex-wrap: wrap
+        @media only screen and ( max-width: $breakpoint-tablet )
+            text-align: center
+            font-size: 1rem
+            justify-content: center
+            gap: 10px
+
+        .timerWrapper
+            display: flex
+            flex-direction: row
+            align-content: center
+            align-items: center
+            gap: 20px
+            font-weight: 900
+
+            span
+                font-size: 2rem
+                @media only screen and ( max-width: $breakpoint-tablet )
+                    font-size: 1.2rem

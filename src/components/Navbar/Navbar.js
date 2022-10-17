@@ -34,9 +34,10 @@ export default function Navbar() {
   // Data to Generate nav links
   let navLinks = [
     { pageName: "Home", pageLink: "/" },
+    { pageName: "Kemtech Forum", pageLink: "/kemtech-forum" },
     { pageName: "About kemtech", pageLink: "/about" },
     { pageName: "Kemtech programs", pageLink: "/programs" },
-    { pageName: "Community", pageLink: "/community" },
+    // { pageName: "Community", pageLink: "/community" },
     { pageName: "Careers", pageLink: "/careers" },
     { pageName: "Partners", pageLink: "/partners" },
   ];
@@ -93,7 +94,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <Banner />
+      {/* <Banner /> */}
     </header>
   );
 }

@@ -1,0 +1,32 @@
+@import  'styles/variables'
+
+.locationContainer
+    @include ContainerMargin($top-bottom: 50px)
+    .flexContainer
+        width: 100%
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        gap: 20px 60px
+        @media only screen and ( max-width: $breakpoint-tablet  )
+            flex-direction: column
+
+        .title
+            flex: 1 1 30%
+
+            display: flex
+            justify-content: center
+            flex-direction: column
+            font-weight: bolder
+            gap: 30px
+
+            .text
+                display: flex
+                align-items: center
+                flex-direction: row
+                gap: 10px
+
+        .mapWrapper
+            flex: 1 1 40%
+            border-radius: 25px
+            overflow: hidden

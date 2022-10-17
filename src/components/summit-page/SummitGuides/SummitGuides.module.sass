@@ -1,0 +1,72 @@
+@import  "styles/variables"
+//=== Section styles
+.sectionContainer
+    @include ContainerMargin($top_bottom: 70px)
+
+    .cardsWrapper
+        display: flex
+        width: 100%
+        flex-direction: row
+        flex-wrap: wrap
+        gap: 20px 50px
+
+        @media screen and ( max-width: $breakpoint_tablet )
+            justify-content: center
+
+//=== Card Styles
+.cardContainer
+    background-color: $white_basic
+    box-shadow: $shadow
+    width: 350px
+    height: 190px
+    display: flex
+    flex-direction: column
+    padding: 25px
+    border-radius: 25px
+    justify-content: center
+    gap: 30px
+
+    .topWrapper
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-content: center
+        align-items: center
+        gap: 20px
+
+        p
+            margin: 0 0 4px 0
+            text-transform: capitalize
+            font-weight: bold
+            font-size: 1.2rem
+
+        small
+            text-transform: uppercase
+            font-weight: 100
+
+.button
+    align-self: flex-end
+    padding: 10px 40px
+    height: fit-content
+    border: 1px solid $black_basic
+    width: fit-content
+    border-radius: 25px
+    cursor: pointer
+    background: linear-gradient(to right, $yellow_basic 0%, $yellow_basic 50%, #ffffff00 50%, #ffffff00 100%)
+    background-size: 200% 100%
+    background-position: 100% 0
+    transition: background-position 0.3s
+    color: $black_basic
+    font-weight: 600
+    @media only screen and ( max-width: $breakpoint_mobile )
+        font-size: 0.8rem
+
+    &:hover
+        background-position: 0 0
+
+.button__disabled
+    @extend .button
+    background-position: 0 0
+    background: $black_basic
+    color: $gray_400
+    cursor: not-allowed

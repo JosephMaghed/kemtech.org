@@ -1,0 +1,21 @@
+@import  "styles/variables"
+
+.sectionContainer
+    @include ContainerPadding($top: 50px)
+    background: $blue-basic
+
+    .imgWrapper
+        img
+            border-radius: 25px
+            scale: 0.8
+
+            @media only screen and ( max-width: $breakpoint-mobile  )
+                height: 100% !important
+                scale: 1
+                border-radius: 5px
+
+    .buttonWrapper
+        width: 100%
+        display: flex
+        justify-content: center
+        margin-top: 30px

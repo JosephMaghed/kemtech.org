@@ -1,0 +1,29 @@
+
+@import  'styles/variables'
+
+.sponsorsContainer
+    @include ContainerMargin($top-bottom: 50px)
+
+/*** -------------SponsorTier------------- ****/
+.title
+    width: 100%
+    text-align: center
+    color: $blue_400
+    font-size: 2.5rem
+    margin-bottom: 5rem
+
+.logosWrapper
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    gap: 10px 100px
+    width: 100%
+
+    .imgContainer
+        display: block
+        justify-content: center
+        align-items: center
+        width: 200px
+        height: 150px

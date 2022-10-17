@@ -1,0 +1,110 @@
+@import  "styles/variables"
+
+.mainContainer
+    @include ContainerMargin($top-bottom:50px)
+
+    .ScheduleContainersWrapper
+        display: flex
+        flex-direction: column
+        gap: 50px
+
+//======
+.container
+    width: 90%
+    min-height: 400px
+    height: fit-content
+    display: flex
+    box-shadow: $shadow
+    border-radius: 40px
+
+    @media only screen and ( max-width: $breakpoint_tablet )
+        flex-direction: column
+        width: 100%
+
+.InfoWrapper
+    width: 45%
+    display: flex
+    background: rgba(0, 70, 173, 0.2)
+    border-radius: 40px
+    @media only screen and ( max-width: $breakpoint_tablet )
+        flex-direction: column
+        width: 100%
+
+    .dateWrapper
+        width: 26%
+        height: 100%
+        background: $blue_basic
+        box-shadow: $shadow
+        border-radius: 40px
+        font-size: 1.3rem
+        font-weight: 500
+        color: $white_basic
+        text-align: center
+        display: flex
+        justify-content: center
+        flex-direction: column
+        padding: 0 20px
+
+        @media only screen and ( max-width: $breakpoint_tablet )
+            width: 100%
+            flex-direction: row
+            font-size: 1.3rem
+            padding: 1rem 0
+            p
+                margin: 1.5rem
+
+    .dayWrapper
+        width: 74%
+        display: flex
+        flex-direction: column
+        text-align: center
+        justify-content: center
+        align-content: center
+        gap: 35px
+        @media only screen and ( max-width: $breakpoint_tablet )
+            gap: 20px
+
+            width: 100%
+            padding: 2rem 0
+
+        h3
+            font-weight: 700
+            font-size: 2rem
+            color: $blue_basic
+            margin: 0
+            @media only screen and ( max-width: $breakpoint_mobile )
+                font-size: 1.5rem
+
+        small
+            font-weight: 100
+            font-size: 1.5rem
+            margin: 0
+            @media only screen and ( max-width: $breakpoint_mobile )
+                font-size: 1rem
+
+.scheduleContainer
+    display: flex
+    width: 50%
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 40px 0
+    @media only screen and ( max-width: $breakpoint_tablet )
+        width: 100%
+
+    .scheduleWrapper
+        width: 80%
+        font-weight: 600
+        @media only screen and ( max-width: $breakpoint_mobile )
+            width: 90%
+            font-size: 0.8rem
+
+        div
+            display: inline
+            margin: 0.5rem 0
+            color: $blue_basic
+
+        p
+            display: inline
+            margin-left: 1rem
+            color: $black_basic

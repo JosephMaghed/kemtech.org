@@ -41,6 +41,8 @@ $success_300: #9DF8A9
 $success_400: #83F49C
 $success_basic: #5CEC8A
 
+$shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px
+
 // Default margin or padding for the pages container
 $breakpoint_mobile: 500px
 $breakpoint_tablet: 850px
@@ -60,11 +62,11 @@ $container_desktop: 200px
     @media only screen and (max-width: $breakpoint_mobile)
         padding: $top $container_mobile
 
-@mixin ContainerMargin($top: 0)
-    margin: $top $container_desktop
+@mixin ContainerMargin($top-bottom: 0)
+    margin: $top-bottom $container_desktop
     @media only screen and (max-width: $breakpoint_laptop)
-        margin: $top $container_laptop
+        margin: $top-bottom $container_laptop
     @media only screen and (max-width: $breakpoint_tablet)
-        margin: $top $container_tablet
+        margin: $top-bottom $container_tablet
     @media only screen and (max-width: $breakpoint_mobile)
-        margin: $top $container_mobile
+        margin: $top-bottom $container_mobile
