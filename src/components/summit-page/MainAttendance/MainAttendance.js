@@ -1,37 +1,51 @@
 import CardVertical from "components/cards/CardVertical";
 import styles from "./MainAttendance.module.sass";
 
+// imgs
+import holdingChairImg from 'assets/people/abd-elaziz-mandour.jpg';
+import tradeMinImg from 'assets/people/ahmed-samir.jpg';
+import nctuPrsImg from 'assets/people/hesham-eldeep.jpg';
+import chinaAmbImg from 'assets/people/liao-liqiang.jpg';
+import eduMinImg from 'assets/people/mohamed-ashour.jpg';
+import milMinImg from 'assets/people/mohamed-salah-eldin.jpeg';
+import oroChairImg from 'assets/people/tarek-mohamed.jpeg';
+
 export const MainAttendance = () => {
   const MainAttendance = [
     {
-      img: null,
-      title: "Dr. mazen amin",
-      description: "CEO kofta ketchen",
+      img: eduMinImg,
+      title: "H.E. DR. Mohamed Ashour",
+      description: "Minster of higher education & scientific research",
     },
     {
-      img: null,
-      title: "Dr. mazen amin",
-      description: "CEO kofta ketchen",
+      img: tradeMinImg,
+      title: "H.E. Ahmed Samir",
+      description: "Minster of trade & industry",
     },
     {
-      img: null,
-      title: "Dr. mazen amin",
-      description: "CEO kofta ketchen",
+      img: milMinImg,
+      title: "H.E. Mohamed Salah Eldin",
+      description: "Minster of state for military production",
     },
     {
-      img: null,
-      title: "Dr. mazen amin",
-      description: "CEO kofta ketchen",
+      img: holdingChairImg,
+      title: "Eng. Abdel-aziz Mandour",
+      description: "Chairman of PTS Holdings",
     },
     {
-      img: null,
-      title: "Dr. mazen amin",
-      description: "CEO kofta ketchen",
+      img: oroChairImg,
+      title: "Eng. Tarek Mohamed",
+      description: "Chairman of ORO Capital Group",
     },
     {
-      img: null,
-      title: "Dr. mazen amin",
-      description: "CEO kofta ketchen",
+      img: chinaAmbImg,
+      title: "H.E. Liao Liqiang",
+      description: "Chinese Ambassador to Egypt",
+    },
+    {
+      img: nctuPrsImg,
+      title: "Prof. Dr. Hesham Eldeeb",
+      description: "President of New Cairo Technological University",
     },
   ];
 
