@@ -7,7 +7,7 @@ export const SummitCountDown = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  let deadline = "October, 25, 2022";
+  let deadline = "October, 30, 2022";
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
