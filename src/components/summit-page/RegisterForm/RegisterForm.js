@@ -37,7 +37,6 @@ export const RegistrationForm = () => {
 
     setTimeout(() => {
       if (ticket) {
-        console.log(ticket)
         router.push(`/kemtech-forum/tickets/${ticket.id}`);
       }
     }, 1000);
