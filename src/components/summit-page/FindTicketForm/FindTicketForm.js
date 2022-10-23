@@ -29,9 +29,7 @@ export const FindTicketForm = () => {
 
     if (ticketData) {
         router.push(`/kemtech-forum/tickets/${ticketData.id}`);
-      }
-
-    console.log(ticketData);
+    }
   };
 
   // Send Register request
