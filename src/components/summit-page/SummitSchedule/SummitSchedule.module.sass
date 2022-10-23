@@ -6,105 +6,97 @@
     .ScheduleContainersWrapper
         display: flex
         flex-direction: column
-        gap: 50px
+        gap: 30px
 
-//======
+        h3
+            color: $yellow_basic
+
+//====== Agenda Card Styles
 .container
     width: 90%
-    min-height: 400px
     height: fit-content
     display: flex
     box-shadow: $shadow
     border-radius: 40px
-
-    @media only screen and ( max-width: $breakpoint_tablet )
-        flex-direction: column
-        width: 100%
+    flex-direction: column
+    width: 100%
+    overflow: hidden
 
 .InfoWrapper
-    width: 45%
-    display: flex
-    background: rgba(0, 70, 173, 0.2)
     border-radius: 40px
-    @media only screen and ( max-width: $breakpoint_tablet )
-        flex-direction: column
-        width: 100%
+    width: 100%
+    z-index: 2
+    width: 100%
+    background: $blue_400
+    box-shadow: $shadow
+    border-radius: 40px
+    font-size: 2rem
+    font-weight: 500
+    color: $white_basic
+    text-align: center
+    padding: 10px 20px
+    transition: all 0.3 ease
+    cursor: pointer
 
-    .dateWrapper
-        width: 26%
-        height: 100%
+    div
+        display: flex
+        justify-content: center
+        flex-direction: row
+        gap: 20px
+
+    &:hover
         background: $blue_basic
-        box-shadow: $shadow
-        border-radius: 40px
-        font-size: 1.3rem
-        font-weight: 500
-        color: $white_basic
-        text-align: center
-        display: flex
-        justify-content: center
-        flex-direction: column
-        padding: 0 20px
 
-        @media only screen and ( max-width: $breakpoint_tablet )
-            width: 100%
-            flex-direction: row
-            font-size: 1.3rem
-            padding: 1rem 0
-            p
-                margin: 1.5rem
+    @media only screen and ( max-width: $breakpoint_tablet )
+        width: 100%
+        gap: 20px
+        font-size: 1.5rem
 
-    .dayWrapper
-        width: 74%
-        display: flex
-        flex-direction: column
-        text-align: center
-        justify-content: center
-        align-content: center
-        gap: 35px
-        @media only screen and ( max-width: $breakpoint_tablet )
-            gap: 20px
-
-            width: 100%
-            padding: 2rem 0
-
-        h3
-            font-weight: 700
-            font-size: 2rem
-            color: $blue_basic
-            margin: 0
-            @media only screen and ( max-width: $breakpoint_mobile )
-                font-size: 1.5rem
-
-        small
-            font-weight: 100
-            font-size: 1.5rem
-            margin: 0
-            @media only screen and ( max-width: $breakpoint_mobile )
-                font-size: 1rem
+.InfoWrapperActive
+    @extend .InfoWrapper
+    background: $blue_basic
 
 .scheduleContainer
     display: flex
-    width: 50%
+    // flex-grow: 3
     flex-direction: column
     justify-content: center
     align-items: center
     padding: 40px 0
-    @media only screen and ( max-width: $breakpoint_tablet )
-        width: 100%
+    transition: all 0.5s ease
+    transform: translateY(0px)
+    white-space: pre-line
 
     .scheduleWrapper
         width: 80%
+        padding: 10px 0
         font-weight: 600
         @media only screen and ( max-width: $breakpoint_mobile )
             width: 90%
-            font-size: 0.8rem
+            font-size: 0.9rem
 
-        div
-            display: inline
+        span
             margin: 0.5rem 0
             color: $blue_basic
 
-        p
-            display: inline
+        .activityDetails
             margin-left: 1rem
             color: $black_basic
+            padding-bottom: 0.5rem
+            @media only screen and ( max-width: $breakpoint_mobile )
+                margin-left: 0rem
+
+            em
+                color: $gray_600
+                font-size: 0.9rem
+                @media only screen and ( max-width: $breakpoint_mobile )
+                    width: 90%
+                    font-size: 0.8rem
+
+.scheduleContainerHidden
+    @extend  .scheduleContainer
+    transition: all 0.3s ease
+    transform: translateY(-100px)
+    height: 0
+    filter: opacity(0)
+    padding: 0

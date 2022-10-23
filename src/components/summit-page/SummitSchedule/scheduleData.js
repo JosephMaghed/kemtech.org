@@ -1,38 +1,104 @@
 export const dayOneData = [
   {
-    startTime: "00:11",
-    endTime: "00:22",
-    activityTitle: "Registration",
+    startTime: "09:30 AM",
+    endTime: "10:30 AM",
+    activityTitle: "Reception and Welcoming Ceremony for Ministers and Ambassadors",
+    description: "(Closed Meeting)",
+  },
+  {
+    startTime: "10:30 AM",
+    endTime: "11:30 AM",
+    activityTitle: "Opening of Kemtech Studio, the Egyptian Applied Technology Valley (Field Visit)",
+    description: "Eman Wadie, CEO, ORO Ventures Lab",
   },
   {
     startTime: "00:11",
     endTime: "00:22",
-    activityTitle: "Opening speech",
+    activityTitle: "Opening Speech",
+    description: "Prof. Hesham El-Deeb, President of New Cairo Technological University (NCTU)",
   },
   {
     startTime: "00:11",
     endTime: "00:22",
-    activityTitle: "Coffee break",
+    activityTitle: "Speech of the Official Partner",
+    description: "Eng. Maha Mandour, Managing Director of PTS Investments Holdings Inc.",
   },
   {
     startTime: "00:11",
     endTime: "00:22",
-    activityTitle: "Awards for students",
+    activityTitle: "Speech of the Chinese Ambassador to Egypt",
+    description: "H. E. Mr. Liao Liqiang",
   },
   {
     startTime: "00:11",
     endTime: "00:22",
-    activityTitle: "Lunch break",
+    activityTitle: "Signing Ceremony of Cooperation Protocols between Egyptian and Chinese Counterparts",
+    description: "- Signing a Cooperation Protocol between New Cairo Technological University and Shenzhen University \n -  Signing a Cooperation Protocol between New Cairo Technological University and SIMIC-IN SPRING \n - Signing a Cooperation Protocol between the Egyptian Applied Technology Valley and Shanghai Silicon Valley",
   },
   {
     startTime: "00:11",
     endTime: "00:22",
-    activityTitle: "In house projects",
+    activityTitle: "Speech of the Initiative’s Strategic Partner for “Investment Cluster Program Cheque Handing Over Ceremony to Qualified Startups from Kemtech Studio",
+    description: "Eng. Tarek Mohamed, Chairman of the Board of Directors of ORO Capital",
   },
   {
     startTime: "00:11",
     endTime: "00:22",
-    activityTitle: "Closure for the day",
+    activityTitle: "Speech of Diamond Sponsor",
+  },
+  {
+    startTime: "00:11",
+    endTime: "00:22",
+    activityTitle: "A word from University Partners Presenting Joint Projects",
+  },
+  {
+    startTime: "00:11",
+    endTime: "00:22",
+    activityTitle: "Main Speeches by Honorable Ministers",
+    description: "- H. E. Eng. Mohamed Salah El Din, Minister of State for Military Production \n - H. E. Eng.  Ahmed Samir, Minister of Trade and Industry \n- H.E. Prof. Mohamed Ayman Ashour, Minister of Higher Education and Scientific Research \n"
+  },
+  {
+    startTime: "00:11",
+    endTime: "00:22",
+    activityTitle: "Graduation Ceremony of the First Class of Higher Technological Diploma Students from Technological Universities",
+  },
+  {
+    startTime: "00:11",
+    endTime: "00:22",
+    activityTitle: "Opening Ceremony of the Career Fair and the Associated Exhibition (Field Visit)",
+    description: "Eng. Mohamed Sery, Chairman of the Board of Directors of Mentors’ Group "
+  },
+  {
+    startTime: "00:11",
+    endTime: "00:22",
+    activityTitle: "Speech on Metaverse Technology: Opportunities and Challenges",
+    description : "Eng. Medhat El-Husseini, Advisory Member of the Egyptian Applied Technology Valley"
+  },
+  {
+    startTime: "00:11",
+    endTime: "00:22",
+    activityTitle: "Speech of the Initiative’s Main Partner for Training, Career Development and Entrepreneurship Programs",
+    description: "Eng. Mohamed Sery, Chairman of the Board of Directors of Mentors’ Group"
+  },
+  {
+    startTime: "00:11",
+    endTime: "00:22",
+    activityTitle: "Panel Discussion 1:  The Role of Egyptian Technological Universities and Schools in Connecting Education to Labor Market",
+  },
+  {
+    startTime: "00:11",
+    endTime: "00:22",
+    activityTitle: "Break",
+  },
+  {
+    startTime: "00:11",
+    endTime: "00:22",
+    activityTitle: "Panel Discussion 2: The Role of Applied Technology in Supporting Sustainable Development in Africa",
+  },
+  {
+    startTime: "00:11",
+    endTime: "00:22",
+    activityTitle: "Closing and Way Forward",
   },
 ];
 
@@ -40,52 +106,7 @@ export const dayTwoData = [
   {
     startTime: "00:11",
     endTime: "00:22",
-    activityTitle: "Speech to Investors",
-  },
-  {
-    startTime: "00:11",
-    endTime: "00:22",
-    activityTitle: "Panel discussion",
-  },
-  {
-    startTime: "00:11",
-    endTime: "00:22",
-    activityTitle: "First startup pitching",
-  },
-  {
-    startTime: "00:11",
-    endTime: "00:22",
-    activityTitle: "Second startup pitching ",
-  },
-  {
-    startTime: "00:11",
-    endTime: "00:22",
-    activityTitle: "Lunch break",
-  },
-  {
-    startTime: "00:11",
-    endTime: "00:22",
-    activityTitle: "Second panel discussion",
-  },
-  {
-    startTime: "00:11",
-    endTime: "00:22",
-    activityTitle: "Third startup pitching",
-  },
-  {
-    startTime: "00:11",
-    endTime: "00:22",
-    activityTitle: "Fourth startup pitching",
-  },
-  {
-    startTime: "00:11",
-    endTime: "00:22",
-    activityTitle: "Coffee break",
-  },
-  {
-    startTime: "00:11",
-    endTime: "00:22",
-    activityTitle: "Fourth startup pitching",
+    activityTitle: "Activities of the Second Day of the Career Fair",
   },
 ];
 
@@ -93,11 +114,31 @@ export const dayThreeData = [
   {
     startTime: "00:11",
     endTime: "00:22",
-    activityTitle: "Speech to Investors",
-  },
-  {
-    startTime: "00:11",
-    endTime: "00:22",
-    activityTitle: "Open day for job affair",
+    activityTitle: "Activities of the Third Day of the Career Fair",
   },
 ];
+
+
+export const fourWeeksData = [
+  {
+    startTime: "Over The course of 4 weeks :",
+    endTime: "",
+    activityTitle: "- Training workshops “Your Path to Entrepreneurship Fellowship”  \n - The Stage: Kemtech Talks \n - Kemtech Panel Discussions \n - Startups Pitch Run: Investment Thesis \n",
+  },
+]
+
+export const InvestorsWeekStart =[
+  {
+    startTime: "9:30",
+    endTime: "5:00",
+    activityTitle: "Entrepreneurship Exhibition and Investors’ Day",
+  },
+]
+
+export const InvestorsWeekEnd =[
+  {
+    startTime: "7:00 AM",
+    endTime: "10:00 Am",
+    activityTitle: "Media Conference, Recommendations and Closing Ceremony",
+  },
+]
