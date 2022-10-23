@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Location() {
   return (
     <section className={styles.locationContainer}>
-      <h2 className="sectionTitle">Location</h2>
+      <h2 className="summitTitle">Location</h2>
       <div className={styles.flexContainer}>
         <div className={styles.title}>
           <div className={styles.text}>

@@ -22,10 +22,10 @@ export default function summitPage() {
       <SummitHero />
       <SummitIntro />
       <MainAttendance />
-      {/* <SummitOverview /> */}
+      <SummitOverview /> 
       {/* <Speakers /> */}
       {/* <SummitSponsors /> */}
-      {/* <SummitSchedule /> */}
+      <SummitSchedule />
       <RegisterInvitation />
       {/* <SummitGuides /> */}
       <Location />

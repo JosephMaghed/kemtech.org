@@ -6,7 +6,7 @@ import styles from "./RegisterInvitation.module.sass";
 export const RegisterInvitation = () => {
   return (
     <section className={styles.sectionContainer}>
-      <h2 className="sectionTitleWhite">
+      <h2 className="summitTitle">
         Get Your invitation now for <em>FREE</em>
       </h2>
       <div className={styles.imgWrapper}>

@@ -51,7 +51,7 @@ export const MainAttendance = () => {
 
   return (
     <section className={styles.sectionContainer}>
-      <h2 className="sectionTitle">
+      <h2 className="summitTitle">
         VIP<small>s</small>
       </h2>
       <div className={styles.cardsContainer}>
