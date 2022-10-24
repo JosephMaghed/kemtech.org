@@ -8,24 +8,30 @@ import nctuPrsImg from 'assets/people/hesham-eldeep.jpg';
 import chinaAmbImg from 'assets/people/liao-liqiang.jpg';
 import eduMinImg from 'assets/people/mohamed-ashour.jpg';
 import milMinImg from 'assets/people/mohamed-salah-eldin.jpeg';
+import pertoMinImg from 'assets/people/tarek-elmoula.jpg';
 import oroChairImg from 'assets/people/tarek-mohamed.jpeg';
 
 export const MainAttendance = () => {
   const MainAttendance = [
     {
       img: eduMinImg,
-      title: "H.E. DR. Mohamed Ashour",
+      title: "H.E. Prof. Mohamed Ayman Ashour",
       description: "Minster of Higher Education & Scientific Research",
     },
     {
       img: tradeMinImg,
-      title: "H.E. Ahmed Samir",
+      title: "H.E. Eng. Ahmed Samir",
       description: "Minster of Trade & Industry",
     },
     {
       img: milMinImg,
-      title: "H.E. Mohamed Salah Eldin",
+      title: "H.E. Eng. Mohamed Salah El-Din",
       description: "Minster of State for Military Production",
+    },
+    {
+      img: pertoMinImg,
+      title: "H.E. Eng. Tarek El-Moula",
+      description: "Minster of State for Petroleum & Mineral Resources",
     },
     {
       img: holdingChairImg,
