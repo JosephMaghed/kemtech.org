@@ -15,17 +15,17 @@ export const MainAttendance = () => {
     {
       img: eduMinImg,
       title: "H.E. DR. Mohamed Ashour",
-      description: "Minster of higher education & scientific research",
+      description: "Minster of Higher Education & Scientific Research",
     },
     {
       img: tradeMinImg,
       title: "H.E. Ahmed Samir",
-      description: "Minster of trade & industry",
+      description: "Minster of Trade & Industry",
     },
     {
       img: milMinImg,
       title: "H.E. Mohamed Salah Eldin",
-      description: "Minster of state for military production",
+      description: "Minster of State for Military Production",
     },
     {
       img: holdingChairImg,
