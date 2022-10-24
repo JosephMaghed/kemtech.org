@@ -33,7 +33,7 @@ export const dayOneData = [
     startTime: "11:00 AM",
     endTime: "11:15 AM",
     activityTitle: "Signing Ceremony of Cooperation Protocols between Egyptian and Chinese Counterparts",
-    description: "- Signing a Cooperation Protocol between New Cairo Technological University and Shenzhen University \n -  Signing a Cooperation Protocol between New Cairo Technological University and SIMIC-IN SPRING \n - Signing a Cooperation Protocol between the Egyptian Applied Technology Valley and Shanghai Silicon Valley",
+    description: "- Signing a Cooperation MOU between New Cairo Technological University and ShenZhen University \n - Signing a Cooperation MOU between New Cairo Technological University, SIMIC- Smart Valley and PTS projects",
   },
   {
     startTime: "11:15 AM",
