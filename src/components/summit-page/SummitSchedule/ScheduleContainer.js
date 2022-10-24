@@ -40,18 +40,19 @@ export function ScheduleContainer({
       <div className={isOpened ? styles.InfoWrapperActive : styles.InfoWrapper} onClick={()=>setOpened(!isOpened)}>
         {startDate && endDate ?
           <div>
-            <p>{months[startDate.getMonth()]}</p>
             <p>{startDate.getDate()}</p>
+            <p>{months[startDate.getMonth()]}</p>
             <p>to</p>
-            <p>{months[endDate.getMonth()]}</p>
             <p>{endDate.getDate()}</p>
+            <p>{months[endDate.getMonth()]}</p>
 
           </div>
           : 
           <div>
-            <p>{months[summitDate.getMonth()]}</p>
-            <p>{summitDate.getDate()}</p>
             <p>{days[summitDate.getDay()+1]}</p>
+            <p>{summitDate.getDate()}</p>
+            <p>{months[summitDate.getMonth()]}</p>
+
           </div>
         }
       </div>
