@@ -10,42 +10,42 @@ export function SummitSchedule() {
 
         <h3>Conference on Entrepreneurship, Innovation and Employment for Technological Universities</h3>
         <ScheduleContainer
-          date="2022-11-1"
+          date="November, 1, 2022"
           scheduleData={dayOneData}
           opened={true}
         />
 
         <ScheduleContainer
-          date="2022-11-2"
+          date="November, 2, 2022"
           scheduleData={dayTwoData}
         />
 
         <ScheduleContainer
-          date="2022-11-3"
+          date="November, 3, 2022"
           scheduleData={dayThreeData}
         />
 
         <h3>Your Path to Entrepreneurship Fellowship</h3>
 
         <ScheduleContainer
-          startDate="2022-11-6"
-          endDate="2022-11-24"
+          startDate="November, 6, 2022"
+          endDate="November, 24, 2022"
           scheduleData={fourWeeksData}
         />
 
         <h3>Entrepreneurship Exhibition and Investors’ Day</h3>
         <ScheduleContainer
-          date="2022-11-28"
+          date="November, 28, 2022"
           scheduleData={InvestorsWeekStart}
         />
 
         <ScheduleContainer
-        date="2022-11-29"
+        date="November, 29, 2022"
         scheduleData={InvestorsWeekStart}
       />
 
       <ScheduleContainer
-      date="2022-11-30"
+      date="November, 30, 2022"
       scheduleData={InvestorsWeekEnd}
     />
       </div>

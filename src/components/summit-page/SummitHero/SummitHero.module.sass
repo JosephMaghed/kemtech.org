@@ -2,9 +2,9 @@
 
 .heroContainer
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), linear-gradient(0deg, rgba(6, 29, 60, 0.6), rgba(6, 29, 60, 0.6)), url('/summit-BG.png')
-    height: 84vh
+    min-height: 90vh
     background-size: cover
-    background-position: top left
+    // background-position: top left
     background-repeat: no-repeat
     background-attachment: fixed
     color: $white_basic
@@ -13,11 +13,11 @@
     justify-content: space-between
     @media only screen and ( max-width: $breakpoint-mobile )
         gap: 30px
-        height: fit-content
+        // height: fit-content
         min-height: 85vh
 
     .heroContentContainer
-        @include ContainerPadding($top: 30px)
+        @include ContainerPadding($top: 100px)
         min-height: 85%
         display: flex
         flex-direction: row
@@ -30,6 +30,8 @@
             min-height: 75%
 
         @media only screen and ( max-width: $breakpoint-mobile  )
+            @include ContainerPadding($top: 50px)
+
             gap: 30px
 
         .rightContainer
