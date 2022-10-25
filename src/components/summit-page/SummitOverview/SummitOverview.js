@@ -6,18 +6,19 @@ export const SummitOverview = () => {
   return (
     <section className={styles.overview_container}>
       <div>
-        <h4 className="sectionTitle">Overview</h4>
+        <h4 className="summitTitle">Overview</h4>
       </div>
       <div>
         <p>
-          The "Egyptian Applied Technological Valley-Kemtech valley" initiative
-          aims to build highly specialized technical cadres and develop the
-          creative capabilities of egyptian youth, as well as support START-UPS,
-          small and medium-sized companies in the field of applied technology
-          and build digital community awareness through various programs
+        The Forum will be the official launch of "Kemtech Studio" on NCTU premises.
+        <br/>
+        <br/>
+        The studio is mainly focused on supporting the entrepreneurs during their startup journey,
+         whereas the valley adopts a one-stop shop approach for startups and then they apply
+          significant amounts of time and capital to the process of growing the startup successfully.
         </p>
       </div>
-      <OverviewIcons />
+      {/* <OverviewIcons /> */}
     </section>
   );
 };

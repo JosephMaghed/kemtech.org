@@ -12,11 +12,14 @@ import CardVertical from "components/cards/CardVertical";
 import Hero from "components/home/Hero";
 import { Navigation, Pagination } from "swiper";
 
+// imgs 
+import halaImg from 'assets/people/hala-elsadek.jpeg';
+
 export const Speakers = () => {
   const speakersArr = [
     {
-      img: null,
-      title: "Dr. Omar amin",
+      img: halaImg,
+      title: "Dr. Hala Elsadek",
       description: "CEO kofta ketchen",
     },
     {

@@ -1,35 +1,53 @@
 import { ScheduleContainer } from "./ScheduleContainer";
-import { dayOneData, dayThreeData, dayTwoData } from "./scheduleData";
+import { dayOneData, dayThreeData, dayTwoData, fourWeeksData, InvestorsWeekEnd, InvestorsWeekStart } from "./scheduleData";
 import styles from "./SummitSchedule.module.sass";
 
 export function SummitSchedule() {
   return (
     <section className={styles.mainContainer}>
-      <h2 className="sectionTitle">Schedule</h2>
+      <h2 className="summitTitle">Agenda</h2>
       <div className={styles.ScheduleContainersWrapper}>
+
+        <h3>Conference on Entrepreneurship, Innovation and Employment for Technological Universities</h3>
         <ScheduleContainer
-          date="2022-10-25"
-          mainTitle="Opening Day"
-          headingDescription="First Day"
-          time="09:00 - 16:00"
+          date="November, 1, 2022"
           scheduleData={dayOneData}
+          opened={true}
         />
 
         <ScheduleContainer
-          date="2022-10-26"
-          mainTitle="Investors Day"
-          headingDescription="Second Day"
-          time="09:00 - 16:00"
+          date="November, 2, 2022"
           scheduleData={dayTwoData}
         />
 
         <ScheduleContainer
-          date="2022-10-27"
-          mainTitle="Job Fair Day"
-          headingDescription="Third Day"
-          time="09:00 - 16:00"
+          date="November, 3, 2022"
           scheduleData={dayThreeData}
         />
+
+        <h3>Your Path to Entrepreneurship Fellowship</h3>
+
+        <ScheduleContainer
+          startDate="November, 6, 2022"
+          endDate="November, 24, 2022"
+          scheduleData={fourWeeksData}
+        />
+
+        <h3>Entrepreneurship Exhibition and Investors’ Day</h3>
+        <ScheduleContainer
+          date="November, 28, 2022"
+          scheduleData={InvestorsWeekStart}
+        />
+
+        <ScheduleContainer
+        date="November, 29, 2022"
+        scheduleData={InvestorsWeekStart}
+      />
+
+      <ScheduleContainer
+      date="November, 30, 2022"
+      scheduleData={InvestorsWeekEnd}
+    />
       </div>
     </section>
   );

@@ -49,9 +49,9 @@ export const SummitHero = () => {
 
           {/* <h2>The First Metaverse Focused Summit in Egypt</h2> */}
           <h2>Under The Auspices of</h2>
-          <h2 className={styles.ministerName}>H.E. DR. Mohamed Ayman Ashour</h2>
+          <h2 className={styles.ministerName}>H.E. Prof. Mohamed Ayman Ashour</h2>
           {/* <p>Under the Auspices Of The Minister Of Higher Education</p> */}
-          <p>Minister Of Higher Education and Scientific Research</p>
+          <p>Minister of Higher Education and Scientific Research</p>
 
           <div className={styles.buttonsWrapper}>
             <Button

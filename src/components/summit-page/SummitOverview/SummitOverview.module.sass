@@ -1,12 +1,14 @@
 @import  "styles/variables"
 // ================================================================
 .overview_container
-    @include ContainerMargin($top-bottom: 60px)
+    @include ContainerPadding($top: 60px)
+    background: Url('/patternBG.png')
+    background-size: cover
     h4
         margin: 10px 0 10px 0
 
     p
-        font-size: 1.4rem
+        font-size: 1.2rem
         line-height: 30px
         font-weight: 400
 // ================================== icon.js ==========================================

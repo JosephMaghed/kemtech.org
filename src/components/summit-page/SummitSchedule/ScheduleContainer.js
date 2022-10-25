@@ -2,11 +2,15 @@ import { useState } from "react";
 import styles from "./SummitSchedule.module.sass";
 export function ScheduleContainer({
   date,
-  mainTitle,
-  headingDescription,
-  time,
   scheduleData,
+  opened,
+  startDate,
+  endDate,
 }) {
+
+  // Opened State 
+  const [isOpened, setOpened] = useState(opened || false)
+  
   const months = [
     "Jan",
     "Feb",
@@ -22,41 +26,50 @@ export function ScheduleContainer({
     "Dec",
   ];
 
-  const days = ["SAT", "SUN", "MON", "TUE", "WED", "THU", "FRI"];
+  const days = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
 
   const summitDate = new Date(date);
 
-  console.log();
+  if(startDate && endDate){
+    startDate = new Date(startDate)
+    endDate = new Date(endDate)
+  }
 
   return (
     <div className={styles.container}>
-      <div className={styles.InfoWrapper}>
-        <div className={styles.dateWrapper}>
-          <p>{months[summitDate.getMonth()]}</p>
-          <p>{summitDate.getDate()}</p>
-          <p>{days[summitDate.getDay()]}</p>
-        </div>
+      <div className={isOpened ? styles.InfoWrapperActive : styles.InfoWrapper} onClick={()=>setOpened(!isOpened)}>
+        {startDate && endDate ?
+          <div>
+            <p>{startDate.getDate()}</p>
+            <p>{months[startDate.getMonth()]}</p>
+            <p>to</p>
+            <p>{endDate.getDate()}</p>
+            <p>{months[endDate.getMonth()]}</p>
 
-        <div className={styles.dayWrapper}>
-          <small>{headingDescription}</small>
-          <h3>{mainTitle}</h3>
-          <small>{time}</small>
-        </div>
+          </div>
+          : 
+          <div>
+            <p>{days[summitDate.getDay()]}</p>
+            <p>{summitDate.getDate()}</p>
+            <p>{months[summitDate.getMonth()]}</p>
+
+          </div>
+        }
       </div>
 
-      <div className={styles.scheduleContainer}>
+      <div className={isOpened ? styles.scheduleContainer : styles.scheduleContainerHidden}>
         {scheduleData.map((ScheduleData) => (
           <div
             key={ScheduleData.activityTitle}
             className={styles.scheduleWrapper}
           >
-            <div>
-              <span>
+            <span>
                 {ScheduleData.startTime} - {ScheduleData.endTime}
-              </span>
+            </span>
+            <div className={styles.activityDetails}>
+               <p>{ScheduleData.activityTitle}</p>
+               {ScheduleData.description && <em>{ScheduleData.description}</em>}
             </div>
-
-            <p>{ScheduleData.activityTitle}</p>
             <hr />
           </div>
         ))}
