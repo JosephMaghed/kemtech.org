@@ -76,8 +76,8 @@ export const dayOneData = [
   {
     startTime: "01:30 PM",
     endTime: "01:40 PM",
-    activityTitle: "Speech of the Initiative’s Main Partner for Training, Career Development and Entrepreneurship Programs",
-    description: "Eng. Mohamed Sery, Chairman of the Board of Directors of Mentors’ Group"
+    activityTitle: "Speech of Initiative's Main Partner for Innovation Program - Kemtix Technologies",
+    // description: "Eng. Mohamed Sery, Chairman of the Board of Directors of Mentors’ Group"
   },
   {
     startTime: "01:40 PM",
