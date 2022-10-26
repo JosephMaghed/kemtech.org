@@ -7,8 +7,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Ticket from "components/summit-page/Ticket";
 import { saveAs } from "file-saver";
 import html2canvas from "html2canvas";
+import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+
 
 import styles from "styles/TicketPage.module.sass";
 
@@ -35,6 +37,8 @@ export const getServerSideProps = async (context) => {
 };
 
 export default function TicketPage({ ticketData, resStatus }) {
+
+
   // reference to ticket component for generating img
   const printRef = useRef();
 
@@ -72,6 +76,11 @@ export default function TicketPage({ ticketData, resStatus }) {
 
   return (
     <div className={styles.pageContainer}>
+
+      <Head>
+        <title>{`${ticketData.firstName}'s Ticket | Kemtech Summit 2022`}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       {/*========== If Ticket is not registered ==========*/}
       {resStatus === 404 && <div>Not Found</div>}
 

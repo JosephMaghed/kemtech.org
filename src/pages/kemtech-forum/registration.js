@@ -18,7 +18,7 @@ export default function RegistrationPage() {
   return (
     <section className={styles.mainContainer}>
       <Head>
-        <title>Kemtech Summit Registration</title>
+        <title>Kemtech Forum Registration</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 

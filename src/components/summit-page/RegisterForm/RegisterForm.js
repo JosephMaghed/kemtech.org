@@ -35,11 +35,11 @@ export const RegistrationForm = () => {
 
     setIsRequesting(false);
 
-    setTimeout(() => {
+    // setTimeout(() => {
       if (ticket) {
         router.push(`/kemtech-forum/tickets/${ticket.id}`);
       }
-    }, 1000);
+    // }, 1000);
   };
 
   // Send Register request
