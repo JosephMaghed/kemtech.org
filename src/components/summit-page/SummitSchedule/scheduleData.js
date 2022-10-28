@@ -39,7 +39,7 @@ export const dayOneData = [
     startTime: "11:15 AM",
     endTime: "11:25 AM",
     activityTitle: "Speech of the Initiative’s Strategic Partner for “Investment Cluster Program Cheque Handing Over Ceremony to Qualified Startups from Kemtech Studio",
-    description: "Eng. Tarek Mohamed, Chairman of the Board of Directors of ORO Capital",
+    description: "Eng. Tarek Mohamed, Chairman of ORO Capital",
   },
   {
     startTime: "11:25 AM",
@@ -66,7 +66,7 @@ export const dayOneData = [
     startTime: "12:35 PM",
     endTime: "01:00 PM",
     activityTitle: "Opening Ceremony of the Career Fair and the Associated Exhibition (Field Visit)",
-    description: "Eng. Mohamed Sery, Chairman of the Board of Directors of Mentors’ Group "
+    description: "Eng. Mohamed Sery, Chairman of Mentors’ Group "
   },
   {
     startTime: "01:00 PM",

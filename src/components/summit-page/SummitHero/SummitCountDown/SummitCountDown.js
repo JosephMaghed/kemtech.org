@@ -33,7 +33,7 @@ export const SummitCountDown = () => {
   return (
     <section className={styles.timerContainer}>
       <div className={styles.leftContainer}>
-        <p> The Summit Starts in: </p>
+        <p> The Forum Starts in: </p>
 
         <div className={styles.timerWrapper}>
           <p>

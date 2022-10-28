@@ -49,7 +49,7 @@ export function ScheduleContainer({
           </div>
           : 
           <div>
-            <p>{days[summitDate.getDay()]}</p>
+            <p>{days[summitDate.getDay()+1]}</p>
             <p>{summitDate.getDate()}</p>
             <p>{months[summitDate.getMonth()]}</p>
 
