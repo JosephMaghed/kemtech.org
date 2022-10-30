@@ -73,9 +73,9 @@ export default function Navbar() {
           </div>
           <div className={styles.applyButton}>
             <Button
-              innerText="Apply now"
+              innerText="Register Now"
               type="primary"
-              href="/programs/training-&-career-development-program"
+              href="/kemtech-forum"
             />
           </div>
           <div

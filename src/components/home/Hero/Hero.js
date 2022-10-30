@@ -39,24 +39,27 @@ export const Hero = () => {
           <ScrollAnimate path={"bottom"}>
             <div className={styles.leftTop}>
               <ScrollAnimate path={"right"}>
-                <h1 className="sectionTitle">
-                  Rendering your dreams into reality
-                </h1>
+                <h1 className="sectionTitle">Explore The Next Big Thing</h1>
               </ScrollAnimate>
               <ScrollAnimate path={"left"}>
                 <p className={styles.heroText}>
-                  The “Egyptian Applied Technological Valley - Kemtech Valley”
-                  initiative aims to build highly specialized technical cadres
-                  and develop the creative capabilities of Egyptian youth, as
-                  well as support start- ups, small and medium-sized companies
-                  in the field of applied technology and build digital community
-                  awareness through various programs.
+                  Kemtech summit is the first annual event that provides a
+                  platform for Egyptian technological universities to showcase
+                  the efforts of the government of Egypt (GOE) in capacitating
+                  highly specialized technical cadres to support the
+                  technological and industrial sectors in Egypt, the MENA
+                  region, and Africa. The forum is an opportunity to connect the
+                  industrial sector and investors on the one hand and innovators
+                  among the Egyptian youth on the other hand. The forum gives
+                  youth a chance to express their ideas and capabilities and
+                  know more about the latest trends in technology so they can
+                  stay ahead of the curve.
                 </p>
               </ScrollAnimate>
               <Button
-                innerText="Apply Now"
+                innerText="Attend Kemtech Forum"
                 type="primary"
-                href="/programs/training-&-career-development-program"
+                href="/kemtech-forum"
               />
             </div>
             <div className={styles.leftBottom}>
