@@ -6,8 +6,10 @@ import holdingChairImg from 'assets/people/abd-elaziz-mandour.jpg';
 import tradeMinImg from 'assets/people/ahmed-samir.jpg';
 import nctuPrsImg from 'assets/people/hesham-eldeep.jpg';
 import chinaAmbImg from 'assets/people/liao-liqiang.jpg';
+import medhat from "assets/people/medhat-hussien.jpeg";
 import eduMinImg from 'assets/people/mohamed-ashour.jpg';
 import milMinImg from 'assets/people/mohamed-salah-eldin.jpeg';
+import moserry from 'assets/people/mohamed-seery.jpeg';
 import pertoMinImg from 'assets/people/tarek-elmoula.jpg';
 import oroChairImg from 'assets/people/tarek-mohamed.jpeg';
 
@@ -34,6 +36,11 @@ export const MainAttendance = () => {
       description: "Minster of State for Petroleum & Mineral Resources",
     },
     {
+      img: chinaAmbImg,
+      title: "H.E. Liao Liqiang",
+      description: "Chinese Ambassador to Egypt",
+    },
+    {
       img: holdingChairImg,
       title: "Eng. Abdel-aziz Mandour",
       description: "Chairman of PTS Holdings",
@@ -44,9 +51,14 @@ export const MainAttendance = () => {
       description: "Chairman of ORO Capital Group",
     },
     {
-      img: chinaAmbImg,
-      title: "H.E. Liao Liqiang",
-      description: "Chinese Ambassador to Egypt",
+      img: moserry,
+      title: "Eng. Mohamed serry",
+      description: "Founder and CEO Mentors' Group",
+    },
+    {
+      img: medhat,
+      title: "Medhat El Husseiny",
+      description: "Chief Technology Officer at Etisalat Misr",
     },
     {
       img: nctuPrsImg,
