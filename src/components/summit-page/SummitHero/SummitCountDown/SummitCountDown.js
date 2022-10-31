@@ -8,6 +8,7 @@ export const SummitCountDown = () => {
   const [seconds, setSeconds] = useState(0);
 
   let deadline = "November 1, 2022 09:00:00";
+  // let deadline = "October 1, 2022 09:00:00";
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
@@ -36,18 +37,24 @@ export const SummitCountDown = () => {
         <p> The Forum Starts in: </p>
 
         <div className={styles.timerWrapper}>
-          <p>
-            <span>{days}</span> Days
-          </p>
-          <p>
-            <span>{hours}</span> Hours
-          </p>
-          <p>
-            <span>{minutes}</span> Minutes
-          </p>
-          <p>
-            <span>{seconds}</span> Seconds
-          </p>
+          {seconds <= -1 ? <p>Kemtech Forum is live Now  🎊</p>
+        :  
+          <div className={styles.timerWrapper}>
+
+            <p>
+              <span>{days}</span> Days
+            </p>
+            <p>
+              <span>{hours}</span> Hours
+            </p>
+            <p>
+              <span>{minutes}</span> Minutes
+            </p>
+            <p>
+              <span>{seconds}</span> Seconds
+            </p>
+          </div>
+        }
         </div>
       </div>
       <Button

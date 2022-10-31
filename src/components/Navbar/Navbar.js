@@ -73,9 +73,9 @@ export default function Navbar() {
           </div>
           <div className={styles.applyButton}>
             <Button
-              innerText="Register Now"
+              innerText="Apply Now"
               type="primary"
-              href="/kemtech-forum"
+              href="https://instadeel.com/business/130/Kemtech%20valley"
             />
           </div>
           <div
