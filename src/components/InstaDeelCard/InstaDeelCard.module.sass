@@ -1,0 +1,24 @@
+@import  "styles/variables"
+
+.container
+    display: flex
+    border: 1px solid #2222
+    border-radius: 20px
+    padding: 20px
+    gap: 30px
+    margin: 20px 0
+    background-color: #F7F7F7
+
+    @media only screen and (max-width: $breakpoint_tablet)
+        justify-content: center
+        align-items: center
+        flex-direction: column-reverse
+
+    .leftWrapper
+        text-align: left
+        width: 60%
+        @media only screen and (max-width: $breakpoint_tablet)
+            width: 100%
+
+        p
+            margin-bottom: 30px

@@ -4,6 +4,7 @@ import {
   faMugHot
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import InstaDeelCard from "components/InstaDeelCard";
 import Ticket from "components/summit-page/Ticket";
 import { saveAs } from "file-saver";
 import html2canvas from "html2canvas";
@@ -132,6 +133,8 @@ export default function TicketPage({ ticketData, resStatus }) {
           <button type="button" onClick={handleDownloadImage}>
             Download Ticket
           </button>
+
+          <InstaDeelCard />
         </div>
       )}
     </div>

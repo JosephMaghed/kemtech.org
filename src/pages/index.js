@@ -12,6 +12,7 @@ import ImagesCarousel from "components/home/ImagesCarousel";
 import InitiativeGoals from "components/home/InitiativeGoals";
 import OnGoingActivities from "components/home/OnGoingActivities";
 import OurDomains from "components/home/OurDomains";
+import InstaDeelCard from "components/InstaDeelCard";
 import ProgramsView from "components/ProgramsView";
 
 //Carousel pics
@@ -29,6 +30,9 @@ export default function Home() {
       </Head>
 
       <Hero />
+      <div className={styles.InsatdeelContainer}>
+        <InstaDeelCard href="/kemtech-forum" buttonText="Register Now"/>
+      </div>
       <AboutCard />
       <Accelerators />
       <OurDomains />

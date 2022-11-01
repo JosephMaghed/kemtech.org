@@ -75,7 +75,7 @@ export default function Navbar() {
             <Button
               innerText="Apply Now"
               type="primary"
-              href="https://instadeel.com/business/130/Kemtech%20valley"
+              href="/kemtech-forum"
             />
           </div>
           <div
@@ -94,7 +94,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* <Banner /> */}
+      <Banner />
     </header>
   );
 }
