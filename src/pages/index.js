@@ -39,7 +39,7 @@ export default function Home() {
       <ApplyProcess />
       {/* <ProgramsView /> */}
       <ImagesCarousel />
-      <OnGoingActivities />
+      {/* <OnGoingActivities /> */}
 
       <InitiativeGoals />
       <ContactForm />
