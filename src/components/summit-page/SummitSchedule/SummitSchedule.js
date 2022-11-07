@@ -12,7 +12,6 @@ export function SummitSchedule() {
         <ScheduleContainer
           date="November, 1, 2022"
           scheduleData={dayOneData}
-          opened={true}
         />
 
         <ScheduleContainer
@@ -31,6 +30,7 @@ export function SummitSchedule() {
           startDate="November, 6, 2022"
           endDate="November, 24, 2022"
           scheduleData={fourWeeksData}
+          opened={true}
         />
 
         <h3>Entrepreneurship Exhibition and Investors’ Day</h3>
