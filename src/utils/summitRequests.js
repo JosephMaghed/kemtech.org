@@ -18,7 +18,7 @@ export const registerUser = async (userData) => {
   };
 
   try {
-    const res = await fetch(API_URL+"/api/summit-tickets", {
+    const res = await fetch("https://cors-anywhere.herokuapp.com/"+API_URL+"/api/summit-tickets", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ export const findTicketByEmail = async (email) => {
   const API_URL = process.env.API_URL;
 
   try {
-    const res = await fetch(API_URL+"/api/summit-tickets/ticket/email/"+email)
+    const res = await fetch("https://cors-anywhere.herokuapp.com/"+API_URL+"/api/summit-tickets/ticket/email/"+email)
     const resBody = await res.json()
     return res.status === 200 ? resBody : null
   }catch (err){
