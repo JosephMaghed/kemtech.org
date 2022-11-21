@@ -9,12 +9,30 @@ config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatic
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-function MyApp({ Component, pageProps }) {
+//
+import Router from 'next/router';
+import Script from 'next/script';
+
+
+function MyApp({ Component, pageProps, router }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-      <ToastContainer />
-    </Layout>
+    <>
+      <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+      <Script strategy="lazyOnload" id="googleAnalytics">
+        {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+        page_path: window.location.pathname,
+        });`}
+      </Script>
+      
+      <Layout>
+        <Component {...pageProps} />
+        <ToastContainer />
+      </Layout>
+    </>
   );
 }
 
