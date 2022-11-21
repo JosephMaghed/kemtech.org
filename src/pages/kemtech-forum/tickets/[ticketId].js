@@ -22,7 +22,7 @@ export const getServerSideProps = async (context) => {
 
   try {
     const res = await fetch(
-      `https://cors-anywhere.herokuapp.com/${API_URL}/api/summit-tickets/ticket/${query.ticketId}`
+      `${API_URL}/api/summit-tickets/ticket/${query.ticketId}`
     );
 
     // parse request body
