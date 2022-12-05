@@ -150,7 +150,7 @@ export default function Footer() {
 
 							<li className={styles.social}>
 								<a
-									href="geo:30.02274928075786, 31.52303803111338"
+									href="https://goo.gl/maps/mH3m9Dh4aTva1dFC6"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
