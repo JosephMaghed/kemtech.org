@@ -133,7 +133,7 @@ export default function Footer() {
 									rel="noopener noreferrer"
 								>
 									<Image alt="Linkedin logo" src={teleIcon} />
-									<span>+20 0100 122 2844</span>
+									<span>+20 100 122 2844</span>
 								</a>
 							</li>
 
