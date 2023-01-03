@@ -257,7 +257,7 @@ export const programsData = {
 			paused: null,
 		},
 	},
-	"Bashkateb-io": {
+	"bashkateb-io": {
 		name: "Bashkateb.io",
 		img: transformImg,
 		description: `Bashkateb.io program provides a stack of Business Optech platform that empowers businesses and creative professionals  focusing mainly on startups,  freelancers and SMEs that seamless managing and monitoring all business process aspects of the company while leverage AI- Driven Decision making strategy based on personalization profile.`,
