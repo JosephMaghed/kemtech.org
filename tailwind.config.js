@@ -8,7 +8,7 @@ module.exports = {
 		extend: {
 			container: {
 				center: true,
-				padding: "2rem",
+				padding: "1.5rem",
 			},
 
 			colors: {
@@ -71,6 +71,20 @@ module.exports = {
 	},
 	plugins: [require("daisyui")],
 	daisyui: {
-		themes: false,
+		themes: [
+			{
+				KemtechBrand: {
+					primary: "#252da3",
+					secondary: "#f7a41c",
+					accent: "#adb0ff",
+					neutral: "#06b6d4",
+					"base-100": "#FFFFFF",
+					info: "#3ABFF8",
+					success: "#36D399",
+					warning: "#FBBD23",
+					error: "#F87272",
+				},
+			},
+		],
 	},
 };
