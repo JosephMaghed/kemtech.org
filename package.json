@@ -21,6 +21,7 @@
     "nodemailer": "^6.7.7",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
     "react-scroll-fade-animation": "^0.5.3",
     "react-slick": "^0.29.0",
     "react-toastify": "^9.0.8",
