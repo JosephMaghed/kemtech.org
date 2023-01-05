@@ -5,7 +5,7 @@ export const ProgramCard = (props) => {
 	let { name, img, href } = props;
 
 	return (
-		<div className="card w-96 rounded-3xl bg-base-100 shadow-md ring-1 transition-all hover:scale-x-105 hover:shadow-2xl">
+		<div className="card mx-auto h-full w-full rounded-3xl bg-base-100 shadow-md ring-1 transition-all hover:scale-x-105 hover:shadow-2xl">
 			<div className="card-body items-center justify-center">
 				<div>
 					<Image src={img} alt={name} width={200} height={200} />
