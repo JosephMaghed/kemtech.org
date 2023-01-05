@@ -1,9 +1,6 @@
 import { programsData } from "data/programsData";
 import { ProgramCard } from "./ProgramsCard";
 
-//styles
-import styles from "./ProgramsView.module.sass";
-
 export const ProgramsView = () => {
 	return (
 		<section className="container mx-auto my-14 grid w-fit grid-cols-1 items-center justify-center gap-5 md:grid-cols-2 lg:grid-cols-3">
