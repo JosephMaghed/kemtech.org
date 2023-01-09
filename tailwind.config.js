@@ -67,6 +67,17 @@ module.exports = {
 					basic: "#5CEC8A",
 				},
 			},
+
+			animation: {
+				"fadeIn-right": "fadeIn-right 0.6s ease-in-out",
+			},
+
+			keyframes: {
+				"fadeIn-right": {
+					"0%": { transform: "translateX(-100px)", opacity: 0 },
+					"100%": { transform: "translateX(0)", opacity: 1 },
+				},
+			},
 		},
 	},
 	plugins: [require("daisyui")],

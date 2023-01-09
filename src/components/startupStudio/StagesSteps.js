@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const StagesSteps = () => {
 	// Track the current tab in Stages steps
-	let [stageStepValue, setStageStepValue] = useState(0);
+	let [activeStepValue, setActiveStepValue] = useState(0);
 
 	// Startup studio program stages
 	let programStages = [
@@ -69,49 +69,61 @@ const StagesSteps = () => {
 
 	return (
 		<>
-			<div className="flex w-full  flex-col justify-start md:mx-auto md:w-3/4 md:justify-center">
-				<h2 className="subtitle px-4 md:px-0">Program Stages</h2>
-				<p className="px-4 font-thin text-slate-600">
-					Lorem Ipsum is simply dummy text of the printing and
-					typesetting industry. Lorem Ipsum has been the industry's
-					standard dummy
+			<div className=" flex  w-full flex-col justify-start md:mx-auto md:w-3/4 md:justify-center">
+				<h2 className="subtitle px-4 md:px-0" data-aos="fade-right">
+					Program Stages
+				</h2>
+				<p
+					className="px-4 font-thin text-slate-600"
+					data-aos="fade-right"
+					data-aos-delay="100"
+				>
+					We are always there for you from your very first steps
 				</p>
-				<ul className="steps mt-10  mb-5 w-full px-2 md:mx-auto md:w-3/4">
+				<ul
+					className="steps mt-10 mb-5 w-full px-2 md:mx-auto md:w-3/4"
+					data-aos="fade-up"
+					data-aos-delay={300}
+				>
 					{programStages.map((stage, i) => (
 						<li
 							key={i}
-							onClick={() => setStageStepValue(i)}
+							onClick={(e) => setActiveStepValue(i)}
 							className={`step cursor-pointer whitespace-pre-line text-xs md:text-base
-                    ${i <= stageStepValue && "step-primary"}`}
+							${i <= activeStepValue && "step-primary"}`}
 						>
 							{stage.name}
 						</li>
 					))}
 				</ul>
-				<p className="mt-6 mb-2 text-center text-xl font-bold text-blue-basic">
-					{programStages[stageStepValue].name}
-				</p>
-				<p
-					className="container"
-					data-aos="fade-right"
-					data-aos-delay="200"
-				>
-					{programStages[stageStepValue].description}
-				</p>
 
-				{/* <div className="container my-4">
-                <Image
-                    src={"/imgs/students1.jpg"}
-                    alt="Round 1 teams successfully completes Startup Launchpad"
-                    width={"2028"}
-                    height={"1078"}
-                    objectFit="fill"
-                    className="scale-100 rounded-xl md:scale-90"
-                />
-            </div> */}
+				<div data-aos="fade-up" data-aos-delay="300">
+					{programStages.map((stage, i) => (
+						<div
+							key={stage.name + i}
+							className={
+								i !== activeStepValue
+									? "hidden"
+									: "animate-fadeIn-right"
+							}
+						>
+							<p className="mt-6 mb-2 text-center text-xl font-bold text-blue-basic">
+								{stage.name}
+							</p>
+							<p className="container text-center">
+								{stage.description}
+							</p>
+						</div>
+					))}
+				</div>
+
 				{/*--------------- Stages Cards --------------- */}
 				<div className="mt-10 flex w-full flex-col lg:flex-row">
-					<div className="card w-full bg-base-100 drop-shadow-md">
+					<div
+						className="card w-full bg-base-100 drop-shadow-md"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
 						<div className="card-body">
 							<h2 className="card-title text-blue-basic">
 								5 Days Introduction
@@ -122,9 +134,17 @@ const StagesSteps = () => {
 						</div>
 					</div>
 
-					<div className="divider p-6 lg:divider-horizontal"></div>
+					<div
+						className="divider p-6 lg:divider-horizontal"
+						data-aos="fade-up"
+						data-aos-delay="250"
+					></div>
 
-					<div className="card w-full bg-base-100 drop-shadow-md">
+					<div
+						className="card w-full bg-base-100 drop-shadow-md"
+						data-aos="fade-up"
+						data-aos-delay="300"
+					>
 						<div className="card-body">
 							<h2 className="card-title text-blue-basic">
 								Startup Launchpad
@@ -135,9 +155,17 @@ const StagesSteps = () => {
 						</div>
 					</div>
 
-					<div className="divider p-6 lg:divider-horizontal"></div>
+					<div
+						className="divider p-6 lg:divider-horizontal"
+						data-aos="fade-up"
+						data-aos-delay="350"
+					></div>
 
-					<div className="card w-full bg-base-100 drop-shadow-md">
+					<div
+						className="card w-full bg-base-100 drop-shadow-md"
+						data-aos="fade-up"
+						data-aos-delay="400"
+					>
 						<div className="card-body">
 							<h2 className="card-title text-blue-basic">
 								Startup Factory
