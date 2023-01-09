@@ -32,11 +32,11 @@ const ApplyProcess = () => {
 								key={step.title}
 								className="card w-full bg-yellow-basic drop-shadow-md"
 							>
-								<div className="card-body flex flex-row items-center justify-start md:flex-col md:justify-center">
+								<div className="card-body flex flex-row items-center justify-start p-6 md:flex-col md:justify-center">
 									<Image
 										src={step.icon}
 										alt={`${step.title} icon`}
-										height={80}
+										height={70}
 										width={"100%"}
 									/>
 
