@@ -10,11 +10,11 @@ const StagesSteps = () => {
 			name: "5 Days Intro",
 			description: [
 				`Don't Feel Like You're Behind Your Peers,`,
-				<br key={"brb"} />,
+				<br key={"0101"} />,
 				`For students who
 					want to join the ecosystem without much business knowledge,
 					We have designed a 5-day crash course for you.`,
-				<br key={"brb"} />,
+				<br key={"0102"} />,
 				`At the end of
 					the course, there will be a pitching day, where qualified
 					projects will win a free seat in the launchpad program`,
@@ -22,42 +22,31 @@ const StagesSteps = () => {
 		},
 		{
 			name: "Startup Launchpad",
-			description: `Startup Launchpad to unlock their capabilities and
-			develop their mindset to adapt to future changes in
-			the ecosystem, we offer you Start-up Launchpad
-			Program that includes 7 modules that&apos;ll help
-			you develop your technical and soft skills and learn
-			more about entrepreneurship world, we offer you
-			Start-up Launchpad Program that includes 7 modules
-			that&apos;ll help you develop your technical and
-			soft skills and learn more about entrepreneurship
-			world`,
+			description: [
+				<strong key={"0200"}>Are you ready to go advance?</strong>,
+				<br key={"0103"} />,
+				`For those who need to unlock their capabilities and develop
+				their mindset to adapt to future changes in the ecosystem,
+				We offer you Start-up Launchpad Program that includes 7 modules that'll
+				help you develop your technical and soft skills and learn more about
+				entrepreneurship world.`,
+			],
 		},
 		{
 			name: "Startup Factory",
-			description: `Startup Factory to unlock their capabilities and
-			develop their mindset to adapt to future changes in
-			the ecosystem, we offer you Start-up Launchpad
-			Program that includes 7 modules that&apos;ll help
-			you develop your technical and soft skills and learn
-			more about entrepreneurship world, we offer you
-			Start-up Launchpad Program that includes 7 modules
-			that&apos;ll help you develop your technical and
-			soft skills and learn more about entrepreneurship
-			world`,
+			description: [
+				<strong key={"0201"}>
+					FROM VENTURE IDEA TO VENTURE OPPORTUNITY
+				</strong>,
+				<br key={"0104"} />,
+				`We aim to support Tech-based Seed & Pre-Seed Startups
+				throughout our integrated in-kind services`,
+			],
 		},
 		{
 			name: "Fund Raising",
-			description: `Fund Raising unlock their capabilities and
-			develop their mindset to adapt to future changes in
-			the ecosystem, we offer you Start-up Launchpad
-			Program that includes 7 modules that&apos;ll help
-			you develop your technical and soft skills and learn
-			more about entrepreneurship world, we offer you
-			Start-up Launchpad Program that includes 7 modules
-			that&apos;ll help you develop your technical and
-			soft skills and learn more about entrepreneurship
-			world`,
+			description: `The opportunity to present your start-up to Investors,
+			There will be exposure to VCs, Angle Networks, and Investors`,
 		},
 		{
 			name: "Exit",
@@ -69,7 +58,7 @@ const StagesSteps = () => {
 
 	return (
 		<>
-			<div className=" flex  w-full flex-col justify-start md:mx-auto md:w-3/4 md:justify-center">
+			<section className=" flex  w-full flex-col justify-start md:mx-auto md:w-3/4 md:justify-center">
 				<h2 className="subtitle px-4 md:px-0" data-aos="fade-right">
 					Program Stages
 				</h2>
@@ -78,7 +67,7 @@ const StagesSteps = () => {
 					data-aos="fade-right"
 					data-aos-delay="100"
 				>
-					We are always there for you from your very first steps
+					We are always there from your very first steps
 				</p>
 				<ul
 					className="steps mt-10 mb-5 w-full px-2 md:mx-auto md:w-3/4"
@@ -176,7 +165,7 @@ const StagesSteps = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 		</>
 	);
 };

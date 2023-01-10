@@ -7,7 +7,7 @@ export default function StageQuiz() {
 
 	let question;
 	return (
-		<div>
+		<section>
 			<div className="flex items-center">
 				<span>
 					<MdContactSupport />
@@ -25,6 +25,6 @@ export default function StageQuiz() {
 					No
 				</button>
 			</div>
-		</div>
+		</section>
 	);
 }

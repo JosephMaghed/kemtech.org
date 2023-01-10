@@ -3,15 +3,15 @@ import Image from "next/image";
 import styles from "../styles/Home.module.sass";
 
 //page Components
+import ApplicationProcess from "components/ApplicationProcess";
 import ContactForm from "components/ContactForm";
 import AboutCard from "components/home/AboutCard";
-import ApplyProcess from "components/home/ApplyProcess";
 import Hero from "components/home/Hero";
 import ImagesCarousel from "components/home/ImagesCarousel";
 import InitiativeGoals from "components/home/InitiativeGoals";
+import InstaDeelCard from "components/home/InstaDeelCard";
 import OnGoingActivities from "components/home/OnGoingActivities";
 import OurDomains from "components/home/OurDomains";
-import InstaDeelCard from "components/InstaDeelCard";
 import StudioPrograms from "components/StudioPrograms";
 
 export default function Home() {
@@ -36,7 +36,7 @@ export default function Home() {
 			<AboutCard />
 			<StudioPrograms />
 			<OurDomains />
-			<ApplyProcess />
+			<ApplicationProcess />
 			<ImagesCarousel />
 			<InitiativeGoals />
 			<ContactForm />
