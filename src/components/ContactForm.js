@@ -66,7 +66,7 @@ const ContactForm = () => {
 				{`Let's get in touch`}
 			</h2>
 
-			<form className="space-y-3" onSubmit={onSubmitHandler}>
+			<form className="w-full space-y-3" onSubmit={onSubmitHandler}>
 				<div className="form-control w-full max-w-xs">
 					<label className="label">
 						<span className="label-text">What is your name?</span>
@@ -109,7 +109,7 @@ const ContactForm = () => {
 						id="message"
 						name="message"
 						value={message}
-						className="textarea-primary textarea w-full max-w-md"
+						className="textarea-primary textarea h-32 w-screen max-w-md"
 						placeholder="Hello kemtech, I want to ask about... "
 						onChange={(e) => setMessage(e.target.value)}
 						required

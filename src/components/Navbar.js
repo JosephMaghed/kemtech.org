@@ -35,7 +35,7 @@ export default function Navbar() {
 
 	return (
 		<header className="sticky top-0 z-50">
-			<nav className="navbar  bg-blue-basic text-white-basic">
+			<nav className="navbar justify-between bg-blue-basic text-white-basic">
 				<div className="navbar-start ">
 					<div className="dropdown">
 						<label tabIndex={0} className="btn-ghost btn lg:hidden">

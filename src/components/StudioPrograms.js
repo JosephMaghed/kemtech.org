@@ -40,7 +40,7 @@ const StudioPrograms = () => {
 						data-aos="fade-right"
 						data-aos-delay={i * 100 + 100}
 					>
-						<div className="card-body">
+						<div className="card-body text-center">
 							<Image
 								src={x.img}
 								alt={x.alt}

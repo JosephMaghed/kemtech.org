@@ -39,7 +39,9 @@ export default function Home() {
 			<ApplicationProcess />
 			<ImagesCarousel />
 			<InitiativeGoals />
-			<ContactForm />
+			<div className="container mx-auto md:w-3/4">
+				<ContactForm />
+			</div>
 		</>
 	);
 }
