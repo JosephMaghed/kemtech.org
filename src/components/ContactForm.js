@@ -109,7 +109,7 @@ const ContactForm = () => {
 						id="message"
 						name="message"
 						value={message}
-						className="textarea-primary textarea h-32 w-screen max-w-md"
+						className="textarea-primary textarea h-32 w-full max-w-md"
 						placeholder="Hello kemtech, I want to ask about... "
 						onChange={(e) => setMessage(e.target.value)}
 						required
