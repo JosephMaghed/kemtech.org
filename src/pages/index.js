@@ -10,6 +10,7 @@ import Hero from "components/home/Hero";
 import ImagesCarousel from "components/home/ImagesCarousel";
 import InitiativeGoals from "components/home/InitiativeGoals";
 import InstaDeelCard from "components/home/InstaDeelCard";
+import KemtechPoints from "components/home/KemtechPoints";
 import OnGoingActivities from "components/home/OnGoingActivities";
 import OurDomains from "components/home/OurDomains";
 import StudioPrograms from "components/StudioPrograms";
@@ -30,9 +31,7 @@ export default function Home() {
 			</Head>
 
 			<Hero />
-			<div className={styles.InsatdeelContainer}>
-				<InstaDeelCard />
-			</div>
+			<KemtechPoints />
 			<AboutCard />
 			<StudioPrograms />
 			<OurDomains />
