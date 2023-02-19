@@ -3,19 +3,17 @@ import Image from "next/image";
 import styles from "../styles/Home.module.sass";
 
 //page Components
+import ApplicationProcess from "components/ApplicationProcess";
 import ContactForm from "components/ContactForm";
 import AboutCard from "components/home/AboutCard";
-import Accelerators from "components/home/Accelerators";
-import ApplyProcess from "components/home/ApplyProcess";
 import Hero from "components/home/Hero";
 import ImagesCarousel from "components/home/ImagesCarousel";
 import InitiativeGoals from "components/home/InitiativeGoals";
+import InstaDeelCard from "components/home/InstaDeelCard";
+import KemtechPoints from "components/home/KemtechPoints";
 import OnGoingActivities from "components/home/OnGoingActivities";
 import OurDomains from "components/home/OurDomains";
-import InstaDeelCard from "components/InstaDeelCard";
-import ProgramsView from "components/ProgramsView";
-
-//Carousel pics
+import StudioPrograms from "components/StudioPrograms";
 
 export default function Home() {
 	return (
@@ -33,19 +31,16 @@ export default function Home() {
 			</Head>
 
 			<Hero />
-			<div className={styles.InsatdeelContainer}>
-				<InstaDeelCard />
-			</div>
+			<KemtechPoints />
 			<AboutCard />
-			<Accelerators />
+			<StudioPrograms />
 			<OurDomains />
-			<ApplyProcess />
-			{/* <ProgramsView /> */}
+			<ApplicationProcess />
 			<ImagesCarousel />
-			{/* <OnGoingActivities /> */}
-
 			<InitiativeGoals />
-			<ContactForm />
+			<div className="container mx-auto my-8 md:w-3/4">
+				<ContactForm />
+			</div>
 		</>
 	);
 }

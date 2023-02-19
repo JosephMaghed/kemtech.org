@@ -1,6 +1,6 @@
 import Custom404 from "components/404";
 import ActivityCard from "components/ActivityCard";
-import Accelerators from "components/home/Accelerators";
+import Accelerators from "components/StudioPrograms";
 import { programsData } from "data/programsData";
 import Image from "next/image";
 import ScrollAnimate from "react-scroll-fade-animation";

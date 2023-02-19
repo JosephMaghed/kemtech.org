@@ -6,6 +6,24 @@
 @tailwind components
 @tailwind utilities
 
+@layer components
+  .sectionTitle
+    font-size: 3rem
+    color: $blue_basic
+    font-weight: bold
+    @media only screen and ( max-width: $breakpoint_laptop )
+      font-size: 2rem
+
+  .sectionTitleWhite
+    @extend .sectionTitle
+    color: $white_basic
+
+  .subtitle
+    @apply font-semibold text-3xl text-blue-basic mb-2
+
+  .bg-primary
+    @apply bg-blue-basic
+
 html,
 body
   padding: 0
@@ -28,40 +46,3 @@ li
 
 ul
   padding: 0
-
-.sectionTitle
-  text-align: start
-  font-size: 3rem
-  color: $blue_basic
-  @media only screen and ( max-width: $breakpoint_laptop )
-    font-size: 2rem
-
-.sectionTitleWhite
-  @extend .sectionTitle
-  color: $white_basic
-
-.summitTitle
-  @extend .sectionTitle
-  // background-clip: padding-box
-  width: fit-content
-  position: relative
-  overflow: hidden
-  // z-index: 5
-  border-radius: 10px
-  padding: 10px
-  background-color: #ffffff00 !important
-
-  &::before
-    background-color: $yellow_basic
-    display: block
-    content: ""
-    width: 100%
-    height: 90%
-    position: absolute
-    // top: 0
-    right: 0
-    z-index: -1
-    bottom: -30%
-    clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%)
-
-    // left: -10%
