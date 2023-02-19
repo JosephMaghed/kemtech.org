@@ -38,7 +38,7 @@ export default function Home() {
 			<ApplicationProcess />
 			<ImagesCarousel />
 			<InitiativeGoals />
-			<div className="container mx-auto md:w-3/4">
+			<div className="container mx-auto my-8 md:w-3/4">
 				<ContactForm />
 			</div>
 		</>

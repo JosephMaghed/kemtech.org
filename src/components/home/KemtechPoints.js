@@ -8,7 +8,7 @@ const KemtechPoints = () => {
 				<div className="text-center md:w-1/2 md:text-left">
 					<div className="mb-4">
 						<p className="text-xs">Join the waiting list</p>
-						<h2 className="text-xl font-extrabold">
+						<h2 className="text-2xl font-extrabold">
 							Participate now & win up to 50k points!
 						</h2>
 					</div>

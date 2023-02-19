@@ -51,7 +51,7 @@ export default function StartupStudioProgram() {
 				<StudioPrograms />
 
 				{/*--------------- FAQ --------------- */}
-				<FAQ />
+				{/* <FAQ /> */}
 
 				{/*--------------- Contact --------------- */}
 				<div className="container mx-auto md:w-3/4">
