@@ -117,9 +117,7 @@ const StagesSteps = () => {
 							<h2 className="card-title text-blue-basic">
 								5 Days Introduction
 							</h2>
-							<p>
-								If a dog chews shoes whose shoes does he choose?
-							</p>
+							<p></p>
 						</div>
 					</div>
 
@@ -138,9 +136,7 @@ const StagesSteps = () => {
 							<h2 className="card-title text-blue-basic">
 								Startup Launchpad
 							</h2>
-							<p>
-								If a dog chews shoes whose shoes does he choose?
-							</p>
+							<p></p>
 						</div>
 					</div>
 
@@ -159,9 +155,7 @@ const StagesSteps = () => {
 							<h2 className="card-title text-blue-basic">
 								Startup Factory
 							</h2>
-							<p>
-								If a dog chews shoes whose shoes does he choose?
-							</p>
+							<p></p>
 						</div>
 					</div>
 				</div>
