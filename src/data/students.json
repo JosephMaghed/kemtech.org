@@ -1,0 +1,47 @@
+[
+  {
+    "email": "j@gmail.com",
+    "password": ""
+  },
+  {
+    "email": "joseph@gmail.com",
+    "password": "gg"
+  },
+  {
+    "email": "sds@gail.com",
+    "password": "ad"
+  },
+  {
+    "name": "Joseph",
+    "email": "sdas@gail.com",
+    "password": "ad"
+  },
+  {
+    "name": "Andrew Garcia",
+    "email": "G@gmail.com",
+    "password": "ag",
+    "academicYear": 1,
+    "Major": ""
+  },
+  {
+    "name": "4",
+    "email": "Garcia@gmail.com",
+    "password": "ag",
+    "academicYear": 1,
+    "Major": ""
+  },
+  {
+    "name": "4",
+    "email": "AndrewGarcia@gmail.com",
+    "password": "ag",
+    "academicYear": 1,
+    "Major": ""
+  },
+  {
+    "name": "H",
+    "email": "j.maged@pts.holdings",
+    "password": "00",
+    "academicYear": 1,
+    "Major": "ICT"
+  }
+]

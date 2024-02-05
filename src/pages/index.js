@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.sass";
+import cookie from 'js-cookie';
 
 //page Components
 import ApplicationProcess from "components/ApplicationProcess";
@@ -29,7 +30,6 @@ export default function Home() {
 					content="The Egyptian Applied Technological Valley - “Kemtech Valley” initiative aims to build highly specialized technical cadres and develop the creative capabilities of Egyptian youth."
 				/>
 			</Head>
-
 			<Hero />
 			<KemtechPoints />
 			<AboutCard />

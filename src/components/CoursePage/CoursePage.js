@@ -15,27 +15,26 @@ export const CoursePage = (props) => {
   // Get the Course Id
   const { courseId } = props;
 
+
+  // Check if courseId is not valid
+  if (!programsData["training-&-career-development"].activities.active[courseId]) {
+    return <Custom404 />;
+  }
+
+  const courseData = programsData["training-&-career-development"].activities.active[courseId];
+
   // If the id is not correct return 404
   // the Parent page ==> pages/program/progId/index.js handles redirection to 404
   // this code serve as a safe guard from building errors
-  const courseList = Object.keys(
-    programsData["training-&-career-development-program"].activities.active
-  );
-  //push paused courses to the list
-  courseList.push(
-    Object.keys(
-      programsData["training-&-career-development-program"].activities.paused
-    )
-  );
-  if (!courseList.includes(courseId)) return <Custom404 />;
+ 
 
   // Get the course data
-  const courseData =
-    programsData["training-&-career-development-program"].activities.active[
-      courseId
-    ];
+  // const courseData =
+  //   programsData["training-&-career-development-program"].activities.active[
+  //     courseId
+  //   ];
 
-  console.log(`img ${courseData.instructorImg}`);
+// console.log(`img ${courseData.instructorImg}`);
   return (
     <section className={styles.container}>
       {/* banner image */}

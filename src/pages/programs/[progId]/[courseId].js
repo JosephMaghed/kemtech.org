@@ -21,18 +21,18 @@ export default function CourseDetails(props) {
   useEffect(() => {
     const { courseId } = props.query;
     // List with active courses
-    const courseList = Object.keys(
-      programsData["training-&-career-development-program"].activities.active
-    );
-    //push paused courses to the list
-    courseList.push(
-      Object.keys(
-        programsData["training-&-career-development-program"].activities.paused
-      )
-    );
-    if (!courseList.includes(courseId)) {
-      router.push("/404");
-    }
+    // const courseList = Object.keys(
+    //   programsData["training-&-career-development-program"].activities.active
+    // );
+    // //push paused courses to the list
+    // courseList.push(
+    //   Object.keys(
+    //     programsData["training-&-career-development-program"].activities.paused
+    //   )
+    // );
+    // if (!courseList.includes(courseId)) {
+    //   router.push("/404");
+    // }
   }, []);
 
   const { courseId } = props.query;

@@ -9,11 +9,14 @@ export default function Custom404() {
 		<section className="container w-fit py-20 flex flex-col justify-center ">
 			<Image src={svg404} alt="Page Not Found" />
 			<div className="mx-auto mt-5">
+				<a href="/about">
+
 				<Button
 					type="secondary-black"
 					innerText="Return to kemtech"
-					href="/"
+					href="/programs"
 				/>
+				</a>
 			</div>
 		</section>
 	);

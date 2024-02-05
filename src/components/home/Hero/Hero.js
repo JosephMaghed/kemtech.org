@@ -28,8 +28,8 @@ export const Hero = () => {
 		},
 		{
 			txt: "DELIVERED BY",
-			img: oroLogo,
-			imgAlt: "Oro venture labs logo",
+			img: holdingLogo,
+			imgAlt: "Pts projects logo",
 		},
 	];
 	return (
